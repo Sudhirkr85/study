@@ -1,0 +1,578 @@
+=== NB-2023-08-26-37.pdf (Pages: 48) ===
+--- Page 1 ---
+18/HV/M–2023–26 Booklet Series
+Candidate’s Roll Number
+Question Booklet
+GENERAL STUDIES AND COMPUTER SCIENCE
+Paper—4
+Read the following instructions carefully before you begin to answer the questions.
+IMPORTANT□INSTRUCTIONS
+1. This Question Booklet is divided into two Parts, Part–I and Part–II. Part–I contains questions of
+GENERAL STUDIES . Part–II contains questions of C0MPUTER SCIENCE .
+2. Part–I consists of Question Nos. 1 to 40 and Part–II consists of Question Nos. 41 to 120.
+All questions and their responses are printed in English as well as in Hindi versions.
+3. All questions carry equal marks.
+4. Attempt questions from Part–I and Part–II .
+5. Immediately after commencement of the examination, you should check up your Question
+Booklet and ensure that the Question Booklet Series is printed on the top right-hand corner
+of the Booklet. Please check that the Booklet contains 48 printed pages including two
+pages (Page Nos. 46 and 47) for Rough Work and no page or question is missing o
+
+--- Page 2 ---
+PART—I
+( GENERAL STUDIES )
+1. How many three-digit numbers
+are divisible by 5?
+(A) 180
+(B) 200
+(C) 120
+(D) More than one of the above
+(E) None of the above
+2. The value of
+1 1
+2 1 1
+3 1 1
+4 1 1
+120/c43/c230
+/c232/c231 /c246
+/c248/c247 /c43/c230
+/c232/c231 /c246
+/c248/c247 /c43/c230
+/c232/c231 /c246
+/c248/c247 /c43/c230
+/c232/c231 /c246
+/c248/c247/c76
+is
+(A) 60·5
+(B) 30·0
+(C) 40·5
+(D) More than one of the above
+(E) None of the above
+3. The distance between Delhi and
+Agra is 200□km. Suppose you
+are travelling from Delhi to Agra
+by a car. If you can maintain an
+average speed of 90□km/hr for
+120□km and 40□km/hr for the
+remaining distance, how much
+time will you take, on average, to
+reach Agra?
+(A) 3 hr 20 min
+(B) 3 hr 30 min
+(C) 4 hr 45 min
+(D) More than one of the above
+(E) None of the above
+4. 10% loss on selling price is what
+percent loss on cost price?
+(A) 9 1
+11%
+(B) 9 2
+11%
+(C) 10%
+(D) More than one of the above
+(E) None of the above
+5. A pizza boy delivered two-fifths of
+his pizzas 
+
+--- Page 3 ---
+18/HV/M–2023–01–30□(HS) /38-A 3 [□P.T.O.
+PART—I
+( GENERAL STUDIES )
+1. VrZ AßH$moß H$s {H$VZr gßª`mE± 5 go {d^m¡`
+h¢?
+(A) 180
+(B) 200
+(C) 120
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+2. 1 1
+2 1 1
+3 1 1
+4 1 1
+120/c43/c230
+/c232/c231 /c246
+/c248/c247 /c43/c230
+/c232/c231 /c246
+/c248/c247 /c43/c230
+/c232/c231 /c246
+/c248/c247 /c43/c230
+/c232/c231 /c246
+/c248/c247/c76
+H$m _mZ h°
+(A) 60·5
+(B) 30·0
+(C) 40·5
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+3. {XÑr Am°a AmJam Ho$ ~rM H$s Xyar
+200 {H$0 _r0 h°ü& _mZ br{OE Amn {XÑr go
+AmJam EH$ H$ma ¤mam Om aho h¢ü& `{X Amn
+120 {H$0 _r0 Hoo$ {bE Am°gV J{V
+90 {H$0 _r0/Kß0 Am°a ~mH$s Xyar Ho$ {bE
+Am°gV J{V 40 {H$0 _r0/Kß0 ~ZmE aIVo h¢,
+Vmo AmnH$mo AmJam nh˛±MZo _| Am°gVZ {H$VZm
+g_` bJoJm?
+(A) 3 KßQ>m 20 {_ZQ>
+(B) 3 KßQ>m 30 {_ZQ>
+(C) 4 KßQ>m 45 {_ZQ>
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+4. {dH´$` _yÎ` na 10% H$s hm{Z, bmJV _yÎ`
+na {H$VZo ‡{VeV H$s hm{Z h°?
+(A) 9 1
+11%
+(B) 9 2
+11%
+(C) 10%
+(D) Cn`w
+
+--- Page 4 ---
+7. Two persons A and B complete a
+task in 15 days, when they work
+together. Person A completes the
+task in 20 days if he works
+alone. How many days will B
+take to finish the task alone?
+(A) 35 days
+(B) 25 days
+(C) 60 days
+(D) More than one of the above
+(E) None of the above
+8. The sum of the numerator and
+denominator of a fraction is 11.
+If 1 is added to the numerator
+and 2 is subtracted from the
+denominator, it becomes 2
+3. The
+fraction is
+(A) 5
+6
+(B) 6
+5
+(C) 3
+8
+(D) More than one of the above
+(E) None of the above
+9. An isotropic source of 2 candela
+produces light flux equal to
+(A) 2/c112 lumen
+(B) 4/c112 lumen
+(C) 8/c112 lumen
+(D) More than one of the above
+(E) None of the above
+10. The spray bottles used as
+window or household cleaner or
+perfume sprayer work on
+(A) capillary action
+(B) Bernoulli’s principle
+(C) Pascal’s law
+(D) More than one of the above
+(E) None of the above
+11. The trade name of basic lead
+carbonate is
+(A) white lead
+(B) red lead
+(C) litharge
+(D) More than one of
+
+--- Page 5 ---
+18/HV/M–2023–01–30□(HS) /38-A 5 [□P.T.O.
+7. Xmo Ï`{∫$ A Am°a B EH$ H$m_ H$mo 15 {XZm| _ßo
+nyam H$a XoVo h¢, `{X do EH$ gmW H$m_ H$aVo h¢ü&
+Ï`{∫$ A AHo$bm Cgr H$m_ H$mo 20 {XZm| _|
+nyam H$a XoVm h°ü& `h H$m_ AHo$bm B {H$VZo
+{XZm| _| nyam H$a nmEJm?
+(A) 35 {XZm| _|
+(B) 25 {XZm| _|
+(C) 60 {XZm| _|
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+8. EH$ {^ﬁ Ho$ Aße Am°a ha H$m `moJ 11 h°ü&
+`{X Aße _| 1 OmoãS> {X`m Om` Am°a ha _| go
+2 KQ>m {X`m Om`, Vmo `h 2
+3 hmo OmVm h°ü& {^ﬁ
+h°
+(A) 5
+6
+(B) 6
+5
+(C) 3
+8
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+9. 2 H°$›S>obm H$m EH$ g_{XH≤$ ÚmoV {OVZm ‡H$me
+‚bäg n°Xm H$aVm h°, dh h°
+(A) 2/c112 Î`y_oZ
+(B) 4/c112 Î`y_oZ
+(C) 8/c112 Î`y_oZ
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+10. qdS>mo `m Kaoby äbrZa `m n‚`©y_ Ò‡o`a Ho$ Í$n
+_| BÒVo_mb H$s OmZo dmbr Ò‡o ~moVb|
+{ZÂZ{b{IV _| go {H$g na H$m_ H$aVr h¢?
+(A) Ho${eH$m {H´$`m
+(B) ~aZm°br H$m {g’mßV
+(C) nmÒH$b H$m {Z`_
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go
+
+=== NB-2023-12-15-26.pdf (Pages: 48) ===
+--- Page 1 ---
+24/HV/M–2023–26 Booklet Series
+Candidate’s Roll Number
+Question Booklet
+LANGUAGE, GENERAL STUDIES AND COMPUTER SCIENCE
+Read the following instructions carefully before you begin to answer the questions.
+IMPORTANT□INSTRUCTIONS
+1. This Question Booklet is divided into three Parts—Part–I, Part–II and Part–III. Part–I contains
+questions of Language (Qualifying) , Part–II contains questions of General Studies and Part–III
+contains questions of Computer Science .
+2. Part–I consists of Question Nos. 1 to 30, Part–II consists of Question Nos. 31 to 70 and Part–III
+consists of Question Nos. 71 to 150. The questions and their responses are printed in English
+and Hindi versions both of Part–II and Part–III.
+3. All questions carry equal marks.
+4. Immediately after commencement of the examination, you should check up your Question
+Booklet and ensure that the Question Booklet Series is printed on the top right-hand corner
+of the Booklet. Please check that the Booklet contains 48 printed pages includ
+
+--- Page 2 ---
+PART—I
+( LANGUAGE )
+Directions (Q. Nos. 1 and 2) : Fill in
+the blanks with suitable articles like
+‘a’, ‘an’ and ‘the’ :
+1. There are 30 or 31 days in _____
+month.
+(A) the
+(B) a
+(C) an
+(D) More than one of the above
+(E) None of the above
+2. My father is _____ engineer in
+the Water Works Department.
+(A) the
+(B) an
+(C) a
+(D) More than one of the above
+(E) None of the above
+3. Which of the following is a part
+of bedroom?
+(A) Pillow
+(B) Table lamp
+(C) Curtains
+(D) More than one of the above
+(E) None of the above
+4. Which of the following is a part
+of a room?
+(A) Window
+(B) Ceiling
+(C) Floor
+(D) More than one of the above
+(E) None of the above
+5. Rainy season comes before
+(A) winter
+(B) spring
+(C) summer
+(D) More than one of the above
+(E) None of the above
+6. The eighth month of the year is
+(A) July
+(B) September
+(C) October
+(D) More than one of the above
+(E) None of the above
+7. Sister-in-law is
+(A) husband’s sister
+(B) wife’s sister
+(C) brother’s wife
+(D) More than one of the above
+(E) Non
+
+--- Page 3 ---
+9. "Mm±Xr' e„X _| H$m°Z-gr gßkm h°?
+(A) –Ï`dmMH$ gßkm
+(B) Om{VdmMH$ gßkm
+(C) ^mddmMH$ gßkm
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+10. {ZÂZ{b{IV e„Xm| _| go H$m°Z-gm "EH$dMZ' h°?
+(A) hÒVmja
+(B) N>m`m
+(C) Am±gy
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+11. {h›Xr e„XH$moe _| "j' H$m H´$_ {H$g dU© Ho$
+~mX AmVm h°?
+(A) Ã Ho$ n¸mV≤
+(B) k Ho$ n¸mV≤
+(C) H$ Ho$ n¸mV≤
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+12. ""{OgH$s `h nwÒVH$ h°, Cgo bm°Q>m Xmoü&'' Bg
+dmä` _| H$m°Z-gm gd©Zm_ h°?
+(A) {Z¸`dmMH$
+(B) gß~ßYdmMH$
+(C) nwÈfdmMH$
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+13. {deofU H$m ‡_wI ^oX H$m°Z-gm Zht h°?
+(A) Agmd©Zm{_H$ {deofU
+(B) JwUdmMH$ {deofU
+(C) n[a_mUdmMH$ {deofU
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+14. {ZÂZ{b{IV _| go H$m°Z-gm Aew’ e„X h°?
+(A) dr^Àg
+(B) bJmZ
+(C) AmJm_r
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+15. {ZÂZ{b{IV _| go H$m°Z-gm ew’ dV©Zr dmbm
+e„X h°?
+(A) j{Ã`
+
+
+--- Page 4 ---
+17. {ZÂZ{b{IV _| go H$m°Z-gm {dXoer e„X h°?
+(A) ~mK
+(B) narjm
+(C) Mm`
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+18. aMZm Ho$ AmYma na "{OZ e„Xm| Ho$ IßS> gmW©H$
+Z hm|' C›h| H$m°Z-gm e„X H$hm OmVm h°?
+(A) Í$ãT>
+(B) `m°{JH$
+(C) `moJÍ$ãT>
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+19. {ZÂZ{b{IV _| go {H$g dmä` _| "AH$_©H$
+{H´$`m' h°?
+(A) Cgo _V bOmAmoü&
+(B) ~m{bH$m bOmVr h°ü&
+(C) godH$ ZXr go JmJa ^aVm h°ü&
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+20. {ZÂZ{b{IV _| go H$m°Z-gm XoeO e„X h°?
+(A) Amdmam
+(B) ^m¢am
+(C) nadb
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+21. {ZÂZ{b{IV _| go H$m°Z-gm e„X Í$ãT> e„X Zht
+h°?
+(A) bH$ãS>r
+(B) ObYmam
+(C) _h{f©
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+22. "Im[aO' {H$g ^mfm H$m e„X h°?
+(A) Aa~r
+(B) \$magr
+(C) VwH$s©
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+23. Aew’ Am°a ew’ dV©Zr H$m H$m°Z-gm `wΩ_ ghr
+Zht h°?
+(A) H$mo_bmß{JZrççH$mo_bmßJr
+(B) gwlyfmççe
+
+--- Page 5 ---
+25. EH$ N>moQ>r AmH•${V H$m M_H$sbm dJ©, Omo ÒH´$sZ
+na {H$gr {Mï H$s pÒW{V H$mo ÒnÔ> H$aVm h°,
+Cgo ä`m H$hVo h¢?
+(A) H$aga
+(B) {Mn
+(C) H$_mßS>
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+26. "Hw$ÈjoÃ' Ho$ boIH$ H$m ä`m Zm_ h°?
+(A) h[aAm°Y
+(B) lrYa nmR>H$
+(C) _°{WbreaU Jw·
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+27. ""OgmoXm h[a nmbZ° Pwbmd°ü&
+hbamd° XwbamB _Îhmd¢, OmoB-gmoB H$Nw> Jmd¢ü&&''
+C∫$ H$mÏ`-nß{∫$`m| _| H$m°Z-gm ag h°?
+(A) ˚m•ßJma
+(B) dra
+(C) dmÀgÎ`
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+28. {h›Xr ^mfm Ho$ CX≤^d H$m H$mb _mZm OmVm h°
+(A) 500 B©0 ny0
+(B) 500 B©0
+(C) 1000 B©0
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+29. ^maVr` H$mÏ`emÛ _| j_merb, JÂ^ra,
+pÒWa{MŒm, Òdm{^_mZr Edß —ãT> ‡{Vk Zm`H$ H$mo
+H$hm J`m h°
+(A) Yrab{bV
+(B) YramoXmŒm
+(C) Yra ‡emßV
+(D) Cn`w©∫$ _| go EH$ go A{YH$
+(E) Cn`w©∫$ _| go H$moB© Zht
+30. {OZ e„Xm| na qbJ, dMZ, H$maH$ H$m H$moB©
+‡^md Z nãS>o, do H$hbmVo h¢
+(A) Ï``
+(B) {dH$mar
+(C) A{
+
+=== NB-2024-08-09-49.pdf (Pages: 48) ===
+--- Page 1 ---
+IMPORTANT INSTRUCTIONS
+1. This Question Booklet is divided into three Parts–Part–I, Part–II and Part–III. Part–I contains questions of
+Language (Qualifying), Part–II contains questions of General Studies  and Part –III contains questions of
+Computer Science.
+2. Part–I, Language (Qualifying)  consists of Question Nos. 1 to 30. In Part–I, English Language consists of
+Question Nos. E-1 to E-8 (common for all), Hindi Language  consists of Question Nos. H-9 to H-30, Urdu
+Language  consists of Question Nos. U-9  to U-30 and  Bengali Language  consists of Question Nos. B-9  to
+B-30 (Students are required to choose the questions from any one language out of three languages). Part-II
+consists of Question Nos. 31 to 70 and Part-III  consists of Question Nos. 71 to 150. (the questions and their
+responses are printed in English and Hindi versions both of Part-II and Part-III)
+3. All questions carry equal marks.
+4. An Answer Sheet has been supplied inside the Question Booklet to mark the answers. Y
+
+--- Page 2 ---
+213/HV/M-2024-26/HS-526-E
+Directions (Q. Nos. E-1 to E-5) Read the
+passage given below and answer the questions
+that follow :
+Kerala is just the place for you if you love
+variety. There is something here to please everyone.
+Y ou are sure to fall in love with the serene beauty of
+Kerala's magical backwaters. When you have
+experienced that, you can sample the excitement of
+Kerala's bustling cities or retreat into the villages to
+see at first-hand how time can stand still. Better still,
+take a trip to the spice gardens in the hills, to inhale
+the fragrance of fresh cardamoms if that makes your
+tastebuds tingle and fills you with dreams of food,
+you need not worry. Kerala's cuisine is known for
+its spicy hot flavours. The coconut and the spices
+give the food - especially the seafood a pungency
+that is enhanced by tamarind. Your meal would be
+incomplete without appam, rasam, fish curry and
+some delicious payasam. To wash it down, sip the
+naturally refreshing water of a tender coconut. And
+w
+
+--- Page 3 ---
+313/HV/M-2024-26/HS-526-E [P.T.O.
+(Hindi Language)
+{ZåZ{b{IV An{R>V JÚm§e Ho$ AmYma na àíZ g§§. H-9
+go H-14 VH$ Ho$ àíZm| Ho$ CÎma {X¶o Om¶| &
+aVZ Am¡a AO¶ EH$ hr ñHy$b Ho$ N>mÌ Wo & aVZ Jar~ Wm Am¡a
+AO¶ YZr & aVZ Jar~ hmoH$a ^r nT>Zo ‘| VoO Wm & g^r {ejH$
+CgHo$ ì¶dhma go àgÞ ahVo Wo & BgHo$ {dnarV AO¶ ~hþV ZQ>IQ>
+Wm & nT>Zo Ho$ ~Xbo IobZo-Hy$XZo Am¡a ~X‘mer ‘| A{YH$ ‘Z
+bJmVm Wm & aVZ Am¡a AO¶ {Xbr XmoñV Wo & Bg{bE aVZ AO¶
+H$mo AÀN>m N>mÌ ~ZZo Ho$ {bE gbmh XoVm Wm & AO¶ {ejH$m| H$s
+~mV Zht ‘mZVm Wm & EH$ ~ma aVZ go ZmamO hmoH$a AO¶ ^mJ ahm
+Wm & aVZ Zo Xm¡‹S>H$a AO¶ H$mo amoH$Zm Mmhm & BVZo hr ‘| EH$ ‘moQ>a
+Ho$ ZrMo dh {Ja J¶m &
+H-9. aVZ Zo Xm¡‹S>H$a AO¶ H$mo ³¶m| amoH$Zm Mmhm ?
+(A) aVZ AO¶ go ß¶ma H$aVm Wm
+(B) aVZ Am¡a AO¶ EH$ hr ñHy$b ‘| nT>Vo Wo
+(C) EH$ ~ma aVZ go ZmamO hmoH$a AO¶ ^mJ ahm Wm
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-10. aVZ AO¶ H$mo AÀN>m N>mÌ ~ZZo Ho$ {bE ³¶m| gbmh XoVm
+Wm ?
+(A) {Xbr XmoñV hmoZo Ho$ H$maU
+(B) EH$ ñHy$b ‘| n‹T>Zo Ho$ H$maU
+(C) ^mB
+
+--- Page 4 ---
+413/HV/M-2024-26/HS-526-E
+{ZåZ{b{IV An{R>V JÚm§e Ho$ AmYma na àíZ g§§. H-15
+go H-20 VH$ Ho$ àíZm| Ho$ CÎma {X¶o Om¶| &
+{edmOr ^maV Ho$ ‘hmZ² dram| _| go EH$ Wo & CZH$m CÔoí¶ ‘hmamUm
+àVmn Ho$ CÔoí¶ go ^r Cƒ Wm & do AnZo H$m¶m] ‘| g’$b aho & do
+Ho$db dra hr Zht, ~pëH$ EH$ AÀN>o amOZr{Vk ^r Wo & CÝhm|Zo bmoJm|
+‘| EH$ amï´> H$s ^mdZm ^a Xr Am¡a ‘amR>m amÁ¶ H$s ñWmnZm H$s & do
+H$Å>a {hÝXþ Wo Vmo ^r Xygao Ho$ Y‘© Am¡a g§ñH¥${V H$m AmXa H$aVo Wo &
+CZHo$ AÀN>o JwUm| Ho$ H$maU g^r bmoJ CZH$m AmXa H$aVo Wo & h‘
+bmoJm| H$mo CZHo$ OrdZ go {ejm boZr Mm{hE &
+H-15. {edmOr dra hmoZo Ho$ gmW Am¡a ³¶m Wo ?
+(A) EH$ AÀN>o amOZr{Vk
+(B) loð> {dMmaH$
+(C) Hw$eb g‘«mQ>
+(D) Cn`w©ŠV ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-16. {edmOr Zo bmoJm| ‘| H$m¡Z gr ^mdZm ^a Xr ?
+(A) {hÝXþËd H$s
+(B) EH$ amï´> H$s
+(C) draVm H$s
+(D) Cn`w©ŠV ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-17. {edmOr H$m¡Z Wo ?
+(A) ^maV H$m namH«$‘r ¶§moÕm
+(B) ^maV Ho$ ‘hmZ² dram| ‘| go EH$
+(C) ^maV H$m ‘hmZ² g‘«mQ²>
+(D) Cn`w©ŠV ‘| 
+
+--- Page 5 ---
+513/HV/M-2024-26/HS-526-E [P.T.O.
+H-23. "XþH$mZ na H$moB© Zht Wm &' dm³¶ ‘| {H$g H$maH$ H$m {M•
+à¶wº$ hþAm h¡ ?
+(A) AnmXmZH$maH$
+(B) gå~ÝYH$maH$
+(C) A{YH$aU H$maH$
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-24. BZ‘| VËg‘ eãX h¡ -
+(A) ~ƒm
+(B) nwîn
+(C) Mm¡Xh
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-25. BZ‘| ewÕ eãX h¡ -
+(A) {ZanamYr
+(B) à‘m{UH$
+(C) ‘hËd
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-26. BZ‘| "CËH¥$ï>' eãX H$m {dnarVmW©H$ eãX h¡ -
+(A) {ZH¥$ï>
+(B) AY‘
+(C) ZrM
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-27. BZ‘| ewÕ dm³¶ h¡ -
+(A) {H$gr ^r AmX‘r H$mo ^oO Xmo
+(B) h‘ Vmo Adí¶ Om¶|Jo
+(C) ¶h H${dVm AZoH$ ^md àH$Q> H$aVr h¡
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-28. BZ‘| "Ob' eãX H$m n¶m©¶dmMr eãX h¡ -
+(A) OrdZ
+(B) A‘¥V
+(C) nmZr
+(D) Cn¶w©³V ‘| go EH$ go A{YH$
+(E) Cn`w©ŠV _| go H$moB© Zht
+H-29. "Ohm± bmoJm| H$m {‘bZ hmo' dm³¶IÊS> Ho$ {bE EH$
+eãX h¡ -
+(A) ‘obm
+(B) gå‘obZ
+(C) ‘ob
+(D) Cn¶w
+
+=== Syllabus-292024-Computer Science_20251014_050759_beca97bb.pdf (Pages: 15) ===
+--- Page 1 ---
+
+
+--- Page 2 ---
+
+
+--- Page 3 ---
+
+
+--- Page 4 ---
+
+
+--- Page 5 ---
+
+
