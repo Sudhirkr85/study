@@ -1,0 +1,649 @@
+{
+  "test_name": "BPSC TRE 1.0 Computer Science (Paper-4, Part-II)",
+  "total_questions": 80,
+  "start_q": 41,
+  "end_q": 120,
+  "current_index": 80,
+  "responses": [
+    {
+      "q_no": 1,
+      "paper_q_no": 41,
+      "question": "Which of the following is a technique that marks the beginning of computer communications?",
+      "user_answer": "(D) More than one of the above",
+      "correct_answer": "(C) Time Sharing",
+      "is_correct": false
+    },
+    {
+      "q_no": 2,
+      "paper_q_no": 42,
+      "question": "Which language is better for writing structured code?",
+      "user_answer": "(A) PASCAL",
+      "correct_answer": "(A) PASCAL",
+      "is_correct": true
+    },
+    {
+      "q_no": 3,
+      "paper_q_no": 43,
+      "question": "Which language does a browser use to display information from the World Wide Web?",
+      "user_answer": "(E) None of the above",
+      "correct_answer": "(E) None of the above",
+      "is_correct": true
+    },
+    {
+      "q_no": 4,
+      "paper_q_no": 44,
+      "question": "Select the true statement for compiler.",
+      "user_answer": "(D) More than one of the above",
+      "correct_answer": "(D) More than one of the above",
+      "is_correct": true
+    },
+    {
+      "q_no": 5,
+      "paper_q_no": 45,
+      "question": "_____ is used to shift processes so they are contiguous, and all free memory is in one block.",
+      "user_answer": "(B) Compaction",
+      "correct_answer": "(B) Compaction",
+      "is_correct": true
+    },
+    {
+      "q_no": 6,
+      "paper_q_no": 46,
+      "question": "Which of the following is not a valid variable name in most programming languages?",
+      "user_answer": "(B) 123Variable",
+      "correct_answer": "(B) 123Variable",
+      "is_correct": true
+    },
+    {
+      "q_no": 7,
+      "paper_q_no": 47,
+      "question": "Secondary memory is the long-term store for programs and data while main memory holds program and data currently in use. What kind of an organization is this?",
+      "user_answer": "(A) Physical",
+      "correct_answer": "(A) Physical",
+      "is_correct": true
+    },
+    {
+      "q_no": 8,
+      "paper_q_no": 48,
+      "question": "If a semicolon is not used at the end of the statement, what message will be displayed by C++?",
+      "user_answer": "(B) Statement missing",
+      "correct_answer": "(B) Statement missing",
+      "is_correct": true
+    },
+    {
+      "q_no": 9,
+      "paper_q_no": 49,
+      "question": "A set of libraries that provides programmatically access to some kind of graphics 2D functions is",
+      "user_answer": "(A) Graphics package",
+      "correct_answer": "(A) Graphics package",
+      "is_correct": true
+    },
+    {
+      "q_no": 10,
+      "paper_q_no": 50,
+      "question": "Which shortcut key is used to compile and run the program in C++?",
+      "user_answer": "(B) Alt+F5",
+      "correct_answer": "(C) Ctrl+F9",
+      "is_correct": false
+    },
+    {
+      "q_no": 11,
+      "paper_q_no": 51,
+      "question": "What does the control unit generate to control other units?",
+      "user_answer": "(C) Control signals",
+      "correct_answer": "(D) More than one of the above",
+      "is_correct": false
+    },
+    {
+      "q_no": 12,
+      "paper_q_no": 52,
+      "question": "Which of the following is user-defined header file extension used in C++?",
+      "user_answer": "(C) h",
+      "correct_answer": "(C) h",
+      "is_correct": true
+    },
+    {
+      "q_no": 13,
+      "paper_q_no": 53,
+      "question": "The most common addressing technique employed by a CPU is",
+      "user_answer": "dont know",
+      "correct_answer": "(A) direct",
+      "is_correct": false
+    },
+    {
+      "q_no": 14,
+      "paper_q_no": 54,
+      "question": "What will happen if the following C++ statement is compiled and executed?\nint *ptr = NULL;\ndelete ptr;",
+      "user_answer": "(B) The program is compiled and executed successfully",
+      "correct_answer": "(B) The program is compiled and executed successfully",
+      "is_correct": true
+    },
+    {
+      "q_no": 15,
+      "paper_q_no": 55,
+      "question": "In various devices, _____ are used to overcome the difference in data transfer speed.",
+      "user_answer": "nhi pta",
+      "correct_answer": "(B) buffer registers",
+      "is_correct": false
+    },
+    {
+      "q_no": 16,
+      "paper_q_no": 56,
+      "question": "What do we use to extend the connectivity of the processor bus?",
+      "user_answer": "(A) PCI bus",
+      "correct_answer": "(A) PCI bus",
+      "is_correct": true
+    },
+    {
+      "q_no": 17,
+      "paper_q_no": 57,
+      "question": "In memory mapped I/O",
+      "user_answer": "(A) the I/O devices and the memory share the same address space",
+      "correct_answer": "(A) the I/O devices and the memory share the same address space",
+      "is_correct": true
+    },
+    {
+      "q_no": 18,
+      "paper_q_no": 58,
+      "question": "What is the addressing called that is used in an instruction of the form ADD X Y?",
+      "user_answer": "(C) Absolute",
+      "correct_answer": "(C) Absolute",
+      "is_correct": true
+    },
+    {
+      "q_no": 19,
+      "paper_q_no": 59,
+      "question": "Which of the following correctly declares an array in C++?",
+      "user_answer": "(C) int array[10];",
+      "correct_answer": "(C) int array[10];",
+      "is_correct": true
+    },
+    {
+      "q_no": 20,
+      "paper_q_no": 60,
+      "question": "SQL views are also known as",
+      "user_answer": "(B) virtual tables",
+      "correct_answer": "(B) virtual tables",
+      "is_correct": true
+    },
+    {
+      "q_no": 21,
+      "paper_q_no": 61,
+      "question": "How many primary keys can be there in a table?",
+      "user_answer": "(A) Only 1",
+      "correct_answer": "(A) Only 1",
+      "is_correct": true
+    },
+    {
+      "q_no": 22,
+      "paper_q_no": 62,
+      "question": "What will be the output of the following C++ code?\nchar s1[6]=\"Hello\"; char s2[6]=\"World\"; char s3[12]=s1+\" \"+s2;",
+      "user_answer": "(C) Error",
+      "correct_answer": "(C) Error",
+      "is_correct": true
+    },
+    {
+      "q_no": 23,
+      "paper_q_no": 63,
+      "question": "Which of the following is not constraint in SQL?",
+      "user_answer": "(B) Not null",
+      "correct_answer": "(C) Union",
+      "is_correct": false
+    },
+    {
+      "q_no": 24,
+      "paper_q_no": 64,
+      "question": "Which of the following is not a valid aggregate function?",
+      "user_answer": "(B) COMPUTE",
+      "correct_answer": "(B) COMPUTE",
+      "is_correct": true
+    },
+    {
+      "q_no": 25,
+      "paper_q_no": 65,
+      "question": "Who is the father of computer?",
+      "user_answer": "(B) Charles Babbage",
+      "correct_answer": "(B) Charles Babbage",
+      "is_correct": true
+    },
+    {
+      "q_no": 26,
+      "paper_q_no": 66,
+      "question": "If we have not specified ASC or DESC after an SQL ORDER BY clause, which of the following is used by default?",
+      "user_answer": "(B) ASC",
+      "correct_answer": "(B) ASC",
+      "is_correct": true
+    },
+    {
+      "q_no": 27,
+      "paper_q_no": 67,
+      "question": "In IA-32 architecture along with the general flags, which of the following conditional flags is provided?",
+      "user_answer": "mhipta",
+      "correct_answer": "(E) None of the above",
+      "is_correct": false
+    },
+    {
+      "q_no": 28,
+      "paper_q_no": 68,
+      "question": "Which of the following is true about the HAVING clause?",
+      "user_answer": "(C) Similar to WHERE clause but is used for groups rather than rows",
+      "correct_answer": "(C) Similar to WHERE clause but is used for groups rather than rows",
+      "is_correct": true
+    },
+    {
+      "q_no": 29,
+      "paper_q_no": 69,
+      "question": "The method of accessing the I/O devices by repeatedly checking the status flags is",
+      "user_answer": "(C) I/O-mapped I/O",
+      "correct_answer": "(A) program-controlled I/O",
+      "is_correct": false
+    },
+    {
+      "q_no": 30,
+      "paper_q_no": 70,
+      "question": "_____ clause creates temporary relation for the query on which it is defined.",
+      "user_answer": "(A) WITH",
+      "correct_answer": "(A) WITH",
+      "is_correct": true
+    },
+    {
+      "q_no": 31,
+      "paper_q_no": 71,
+      "question": "The SQL statement SELECT ROUND (65.726, -1) FROM DUAL; prints",
+      "user_answer": "(C) 726",
+      "correct_answer": "(A) 70",
+      "is_correct": false
+    },
+    {
+      "q_no": 32,
+      "paper_q_no": 72,
+      "question": "The matrix contains m rows and n columns. The matrix is called Sparse Matrix if",
+      "user_answer": "Skipped",
+      "correct_answer": "(A) total number of zero elements > (m*n)/2",
+      "is_correct": false
+    },
+    {
+      "q_no": 33,
+      "paper_q_no": 73,
+      "question": "_____ command makes the updates performed by the transaction permanent in the database.",
+      "user_answer": "(B) COMMIT",
+      "correct_answer": "(B) COMMIT",
+      "is_correct": true
+    },
+    {
+      "q_no": 34,
+      "paper_q_no": 74,
+      "question": "Which of the following is the basic approach for joining tables?",
+      "user_answer": "(B) Natural JOIN",
+      "correct_answer": "(B) Natural JOIN",
+      "is_correct": true
+    },
+    {
+      "q_no": 35,
+      "paper_q_no": 75,
+      "question": "What is the time complexity of an infix to postfix conversion algorithm?",
+      "user_answer": "(B) O(N)",
+      "correct_answer": "(B) O(N)",
+      "is_correct": true
+    },
+    {
+      "q_no": 36,
+      "paper_q_no": 76,
+      "question": "Which of the following is the advantage of the array data structure?",
+      "user_answer": "(B) Easier to access the elements in an array",
+      "correct_answer": "(B) Easier to access the elements in an array",
+      "is_correct": true
+    },
+    {
+      "q_no": 37,
+      "paper_q_no": 77,
+      "question": "Which data structure is mainly used for implementing the recursive algorithm?",
+      "user_answer": "(B) Stack",
+      "correct_answer": "(B) Stack",
+      "is_correct": true
+    },
+    {
+      "q_no": 38,
+      "paper_q_no": 78,
+      "question": "What is the postfix expression for the corresponding infix expression? a + b * c + (d * e)",
+      "user_answer": "(A) a b c * + d e * +",
+      "correct_answer": "(A) a b c * + d e * +",
+      "is_correct": true
+    },
+    {
+      "q_no": 39,
+      "paper_q_no": 79,
+      "question": "Which one of the following is not the type of queue?",
+      "user_answer": "(E) None of the above",
+      "correct_answer": "(E) None of the above",
+      "is_correct": true
+    },
+    {
+      "q_no": 40,
+      "paper_q_no": 80,
+      "question": "The necessary condition to be checked before deletion from the queue is",
+      "user_answer": "(B) underflow",
+      "correct_answer": "(B) underflow",
+      "is_correct": true
+    },
+    {
+      "q_no": 41,
+      "paper_q_no": 81,
+      "question": "After performing following set of operations, what does the final list contain?",
+      "user_answer": "(A) 10 30 10 15",
+      "correct_answer": "(C) 10 30 40 15",
+      "is_correct": false
+    },
+    {
+      "q_no": 42,
+      "paper_q_no": 82,
+      "question": "A linear data structure in which insertion and deletion operations can be performed from both the ends is",
+      "user_answer": "(C) deque",
+      "correct_answer": "(C) deque",
+      "is_correct": true
+    },
+    {
+      "q_no": 43,
+      "paper_q_no": 83,
+      "question": "Condition used to specify that circular queue is empty",
+      "user_answer": "(A) Front=rear= -1",
+      "correct_answer": "(A) Front=rear= -1",
+      "is_correct": true
+    },
+    {
+      "q_no": 44,
+      "paper_q_no": 84,
+      "question": "Functionality of code: fun(int x) { q1.offer(x); }",
+      "user_answer": "(A) Perform push( ) with push as the costlier operation",
+      "correct_answer": "(B) Perform push( ) with pop as the costlier operation",
+      "is_correct": false
+    },
+    {
+      "q_no": 45,
+      "paper_q_no": 85,
+      "question": "Which one of the following techniques is not used in the binary tree?",
+      "user_answer": "(A) Randomized traversal",
+      "correct_answer": "(A) Randomized traversal",
+      "is_correct": true
+    },
+    {
+      "q_no": 46,
+      "paper_q_no": 86,
+      "question": "Which of the following is not a feature of DBMS?",
+      "user_answer": "(C) Single-user access only",
+      "correct_answer": "(C) Single-user access only",
+      "is_correct": true
+    },
+    {
+      "q_no": 47,
+      "paper_q_no": 87,
+      "question": "Which of the following statements is not true about the doubly linked list?",
+      "user_answer": "(B) It requires extra space.",
+      "correct_answer": "(C) Implementation of doubly linked list is easier than the singly linked list.",
+      "is_correct": false
+    },
+    {
+      "q_no": 48,
+      "paper_q_no": 88,
+      "question": "Referencing relation attribute values must occur in referenced relation...",
+      "user_answer": "(C) referencing",
+      "correct_answer": "(A) referential",
+      "is_correct": false
+    },
+    {
+      "q_no": 49,
+      "paper_q_no": 89,
+      "question": "Which of the following options is not true about the binary search tree?",
+      "user_answer": "(C) The left and right subtrees should also be a binary search tree.",
+      "correct_answer": "(E) None of the above",
+      "is_correct": false
+    },
+    {
+      "q_no": 50,
+      "paper_q_no": 90,
+      "question": "The expression Y=AB+BC+AC shows the _____ operation.",
+      "user_answer": "(C) POS",
+      "correct_answer": "(B) SOP",
+      "is_correct": false
+    },
+    {
+      "q_no": 51,
+      "paper_q_no": 91,
+      "question": "What are the canonical forms of Boolean expressions?",
+      "user_answer": "(C) SOM and POM",
+      "correct_answer": "(C) SOM and POM",
+      "is_correct": true
+    },
+    {
+      "q_no": 52,
+      "paper_q_no": 92,
+      "question": "Derive the Boolean expression for logic circuit with inputs A, B, C, D, E",
+      "user_answer": "(E) None of the above",
+      "correct_answer": "(A) C(A+B)DE",
+      "is_correct": false
+    },
+    {
+      "q_no": 53,
+      "paper_q_no": 93,
+      "question": "Boolean algebra can be used",
+      "user_answer": "(B) in building logic symbols",
+      "correct_answer": "(D) More than one of the above",
+      "is_correct": false
+    },
+    {
+      "q_no": 54,
+      "paper_q_no": 94,
+      "question": "What does the control unit generate to control other units?",
+      "user_answer": "(C) Control signals",
+      "correct_answer": "(C) Control signals",
+      "is_correct": true
+    },
+    {
+      "q_no": 55,
+      "paper_q_no": 95,
+      "question": "To display time in railway stations which digital circuit is used?",
+      "user_answer": "skip",
+      "correct_answer": "(A) Seven-segment decoder",
+      "is_correct": false
+    },
+    {
+      "q_no": 56,
+      "paper_q_no": 96,
+      "question": "What kind of transmission medium is most appropriate to carry data in a computer network that is exposed to electrical interference?",
+      "user_answer": "(B) Optical fiber",
+      "correct_answer": "(B) Optical fiber",
+      "is_correct": true
+    },
+    {
+      "q_no": 57,
+      "paper_q_no": 97,
+      "question": "Which network topology requires a central controller or hub?",
+      "user_answer": "(A) Star",
+      "correct_answer": "(A) Star",
+      "is_correct": true
+    },
+    {
+      "q_no": 58,
+      "paper_q_no": 98,
+      "question": "A collection of hyperlinked documents on the Internet forms the",
+      "user_answer": "(A) World Wide Web (WWW)",
+      "correct_answer": "(A) World Wide Web (WWW)",
+      "is_correct": true
+    },
+    {
+      "q_no": 59,
+      "paper_q_no": 99,
+      "question": "Which of the following is not a step in the Header translation procedure?",
+      "user_answer": "(D) More than one of the above",
+      "correct_answer": "(C) The IPv6 flow label is considered",
+      "is_correct": false
+    },
+    {
+      "q_no": 60,
+      "paper_q_no": 100,
+      "question": "Which one of the following would breach the integrity of a system?",
+      "user_answer": "(D) More than one of the above",
+      "correct_answer": "(B) Full access rights for all users",
+      "is_correct": false
+    },
+    {
+      "q_no": 61,
+      "paper_q_no": 101,
+      "question": "Which sublayer of the data link layer performs data link functions that depend upon the type of medium?",
+      "user_answer": "(A) Logical link control sublayer",
+      "correct_answer": "(B) Media access control sublayer",
+      "is_correct": false
+    },
+    {
+      "q_no": 62,
+      "paper_q_no": 102,
+      "question": "Which one of the following is not a network topology?",
+      "user_answer": "(A) Peer-to-peer",
+      "correct_answer": "(A) Peer-to-peer",
+      "is_correct": true
+    },
+    {
+      "q_no": 63,
+      "paper_q_no": 103,
+      "question": "How do structures and classes in C++ differ?",
+      "user_answer": "(B) In structures, members are public by default, whereas, in classes, they are private by default",
+      "correct_answer": "(B) In structures, members are public by default, whereas, in classes, they are private by default",
+      "is_correct": true
+    },
+    {
+      "q_no": 64,
+      "paper_q_no": 104,
+      "question": "When the mail server sends mail to other mail servers it becomes",
+      "user_answer": "(B) SMTP server",
+      "correct_answer": "(A) SMTP client",
+      "is_correct": false
+    },
+    {
+      "q_no": 65,
+      "paper_q_no": 105,
+      "question": "The length of an IPv6 address is",
+      "user_answer": "(B) 64 bits",
+      "correct_answer": "(E) None of the above",
+      "is_correct": false
+    },
+    {
+      "q_no": 66,
+      "paper_q_no": 106,
+      "question": "What is the use of ios::trunc mode?",
+      "user_answer": "(C) To truncate an existing file to zero",
+      "correct_answer": "(C) To truncate an existing file to zero",
+      "is_correct": true
+    },
+    {
+      "q_no": 67,
+      "paper_q_no": 107,
+      "question": "Which layer of the TCP/IP stack corresponds to the OSI model transport layer?",
+      "user_answer": "(A) Host-to-host",
+      "correct_answer": "(A) Host-to-host",
+      "is_correct": true
+    },
+    {
+      "q_no": 68,
+      "paper_q_no": 108,
+      "question": "Which of the following statements is/are correct about file opening modes?",
+      "user_answer": "(B) 2, 3",
+      "correct_answer": "(B) 2, 3",
+      "is_correct": true
+    },
+    {
+      "q_no": 69,
+      "paper_q_no": 109,
+      "question": "Which of the following is true with regard to the ping command?",
+      "user_answer": "(B) The ping command checks the port level connectivity between source destinations endpoints",
+      "correct_answer": "(C) Ping summarizes the packet loss and round-trip delay between two IP endpoints",
+      "is_correct": false
+    },
+    {
+      "q_no": 70,
+      "paper_q_no": 110,
+      "question": "The correct statement for a function that takes pointer to a float, pointer to a pointer to char, and returns pointer to pointer to int",
+      "user_answer": "(C) int **fun(float *, char **)",
+      "correct_answer": "(C) int **fun(float *, char **)",
+      "is_correct": true
+    },
+    {
+      "q_no": 71,
+      "paper_q_no": 111,
+      "question": "The private key in asymmetric key cryptography is kept by",
+      "user_answer": "(A) Sender",
+      "correct_answer": "(B) Receiver",
+      "is_correct": false
+    },
+    {
+      "q_no": 72,
+      "paper_q_no": 112,
+      "question": "What will be the output of C++ recursive factorial code with factorial(a+1)?",
+      "user_answer": "(C) Segmentation fault (विभाजन दोष)",
+      "correct_answer": "(C) Segmentation fault (विभाजन दोष)",
+      "is_correct": true
+    },
+    {
+      "q_no": 73,
+      "paper_q_no": 113,
+      "question": "Which of the following features must be supported by any programming language to become a pure object-oriented programming language?",
+      "user_answer": "(D) More than one of the above",
+      "correct_answer": "(D) More than one of the above",
+      "is_correct": true
+    },
+    {
+      "q_no": 74,
+      "paper_q_no": 114,
+      "question": "Which is correct syntax of inheritance?",
+      "user_answer": "(E) None of the above",
+      "correct_answer": "(D) More than one of the above",
+      "is_correct": false
+    },
+    {
+      "q_no": 75,
+      "paper_q_no": 115,
+      "question": "Which one of the following is the correct definition of is_array(); function in C++?",
+      "user_answer": "(A) It checks that the specified variable is of the array or not",
+      "correct_answer": "(A) It checks that the specified variable is of the array or not",
+      "is_correct": true
+    },
+    {
+      "q_no": 76,
+      "paper_q_no": 116,
+      "question": "Which of the following statements is correct about the class?",
+      "user_answer": "(A) An object is an instance of its class",
+      "correct_answer": "(A) An object is an instance of its class",
+      "is_correct": true
+    },
+    {
+      "q_no": 77,
+      "paper_q_no": 117,
+      "question": "Which of the following can be used to create an abstract class in the C++ programming language?",
+      "user_answer": "(A) By using the pure virtual function in the class",
+      "correct_answer": "(A) By using the pure virtual function in the class",
+      "is_correct": true
+    },
+    {
+      "q_no": 78,
+      "paper_q_no": 118,
+      "question": "Which of the following statements is correct about the C++ programming language?",
+      "user_answer": "(D) More than one of the above",
+      "correct_answer": "(D) More than one of the above",
+      "is_correct": true
+    },
+    {
+      "q_no": 79,
+      "paper_q_no": 119,
+      "question": "Which feature of OOP is indicated by code with class student and derived class topper?",
+      "user_answer": "(A) Encapsulation and inheritance",
+      "correct_answer": "(A) Encapsulation and inheritance",
+      "is_correct": true
+    },
+    {
+      "q_no": 80,
+      "paper_q_no": 120,
+      "question": "Which of the following natural elements is the primary element in computer chips?",
+      "user_answer": "(B) Silicon",
+      "correct_answer": "(B) Silicon",
+      "is_correct": true
+    }
+  ]
+}
