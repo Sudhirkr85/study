@@ -1,0 +1,545 @@
+﻿{
+    "test_name":  "BPSC TRE 2.0 Computer Science (Paper-Part-III)",
+    "total_questions":  80,
+    "start_q":  71,
+    "end_q":  150,
+    "current_index":  67,
+    "responses":  [
+                      {
+                          "question":  "The brain of computer is",
+                          "q_no":  1,
+                          "is_correct":  true,
+                          "user_answer":  "(A) CPU",
+                          "correct_answer":  "(A) CPU",
+                          "paper_q_no":  71
+                      },
+                      {
+                          "question":  "Intel 8085 microprocessor is of _____ generation.",
+                          "q_no":  2,
+                          "is_correct":  false,
+                          "user_answer":  "(A) first",
+                          "correct_answer":  "(B) second",
+                          "paper_q_no":  72
+                      },
+                      {
+                          "question":  "The maximum memory size of third generation microprocessor is",
+                          "q_no":  3,
+                          "is_correct":  false,
+                          "user_answer":  "(C) 16 GB",
+                          "correct_answer":  "(B) 16 MB",
+                          "paper_q_no":  73
+                      },
+                      {
+                          "question":  "CPU on a single chip is called",
+                          "q_no":  4,
+                          "is_correct":  false,
+                          "user_answer":  "(C) solid-state device",
+                          "correct_answer":  "(A) microprocessor",
+                          "paper_q_no":  74
+                      },
+                      {
+                          "question":  "Computer on a single chip is called",
+                          "q_no":  5,
+                          "is_correct":  false,
+                          "user_answer":  "(B) microprocessor",
+                          "correct_answer":  "(A) microcontroller",
+                          "paper_q_no":  75
+                      },
+                      {
+                          "question":  "Which one of the following is used for playing video games?",
+                          "q_no":  6,
+                          "is_correct":  false,
+                          "user_answer":  "(C) Joystick",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  76
+                      },
+                      {
+                          "question":  "_____ is used to store softwares that does not update.",
+                          "q_no":  7,
+                          "is_correct":  true,
+                          "user_answer":  "(C) ROM",
+                          "correct_answer":  "(C) ROM",
+                          "paper_q_no":  77
+                      },
+                      {
+                          "question":  "Which of the following contains a laser?",
+                          "q_no":  8,
+                          "is_correct":  true,
+                          "user_answer":  "(A) CD Drive",
+                          "correct_answer":  "(A) CD Drive",
+                          "paper_q_no":  78
+                      },
+                      {
+                          "question":  "A computer program that converts an assembly language program into equivalent machine language program is called",
+                          "q_no":  9,
+                          "is_correct":  true,
+                          "user_answer":  "(B) assembler",
+                          "correct_answer":  "(B) assembler",
+                          "paper_q_no":  79
+                      },
+                      {
+                          "question":  "A computer program that converts a high-level language program into an equivalent machine language program is called",
+                          "q_no":  10,
+                          "is_correct":  true,
+                          "user_answer":  "(B) compiler",
+                          "correct_answer":  "(B) compiler",
+                          "paper_q_no":  80
+                      },
+                      {
+                          "question":  "A computer program that translates high-level language program into machine language program statement-by-statement is called",
+                          "q_no":  11,
+                          "is_correct":  true,
+                          "user_answer":  "(C) interpreter",
+                          "correct_answer":  "(C) interpreter",
+                          "paper_q_no":  81
+                      },
+                      {
+                          "question":  "Which of the following is not an operating system?",
+                          "q_no":  12,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Oracle",
+                          "correct_answer":  "(C) Oracle",
+                          "paper_q_no":  82
+                      },
+                      {
+                          "question":  "A software that runs on a computer hardware and serves as a platform for other softwares to run is called",
+                          "q_no":  13,
+                          "is_correct":  true,
+                          "user_answer":  "(A) system software",
+                          "correct_answer":  "(B) operating system / DELETED (Bonus)",
+                          "paper_q_no":  83
+                      },
+                      {
+                          "question":  "Which of the following is not a system tool?",
+                          "q_no":  14,
+                          "is_correct":  false,
+                          "user_answer":  "(A) Scandisk",
+                          "correct_answer":  "(C) Folder",
+                          "paper_q_no":  84
+                      },
+                      {
+                          "question":  "The key/keys used to delete a file without allowing it to store in recycle bin is/are",
+                          "q_no":  15,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Shift + Delete",
+                          "correct_answer":  "(B) Shift + Delete",
+                          "paper_q_no":  85
+                      },
+                      {
+                          "question":  "The three main components of a digital computer system are",
+                          "q_no":  16,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(C) memory, CPU, I/O",
+                          "paper_q_no":  86
+                      },
+                      {
+                          "question":  "FFFF will be the last memory location in a memory of size",
+                          "q_no":  17,
+                          "is_correct":  false,
+                          "user_answer":  "(A) 16K",
+                          "correct_answer":  "(C) 64K",
+                          "paper_q_no":  87
+                      },
+                      {
+                          "question":  "The cost of storing a bit is minimum in",
+                          "q_no":  18,
+                          "is_correct":  true,
+                          "user_answer":  "(C) magnetic tape",
+                          "correct_answer":  "(C) magnetic tape",
+                          "paper_q_no":  88
+                      },
+                      {
+                          "question":  "Tera means",
+                          "q_no":  19,
+                          "is_correct":  false,
+                          "user_answer":  "(C) 2^30",
+                          "correct_answer":  "(B) 2^40",
+                          "paper_q_no":  89
+                      },
+                      {
+                          "question":  "Which of the following system softwares resides always in main memory?",
+                          "q_no":  20,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Loader",
+                          "correct_answer":  "(A) Loader",
+                          "paper_q_no":  90
+                      },
+                      {
+                          "question":  "The postfix expression equivalent of the prefix expression * + ab - cd is",
+                          "q_no":  21,
+                          "is_correct":  true,
+                          "user_answer":  "(A) ab + cd - *",
+                          "correct_answer":  "(A) ab + cd - *",
+                          "paper_q_no":  91
+                      },
+                      {
+                          "question":  "Which data structure is used to convert infix notation to postfix notation?",
+                          "q_no":  22,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Stack",
+                          "correct_answer":  "(A) Stack",
+                          "paper_q_no":  92
+                      },
+                      {
+                          "question":  "The data structure in which data are added at the rear and deleted from front is called",
+                          "q_no":  23,
+                          "is_correct":  true,
+                          "user_answer":  "(B) queue",
+                          "correct_answer":  "(B) queue",
+                          "paper_q_no":  93
+                      },
+                      {
+                          "question":  "Queue data structure uses",
+                          "q_no":  24,
+                          "is_correct":  false,
+                          "user_answer":  "(A) FIFO",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  94
+                      },
+                      {
+                          "question":  "Stack data structure uses",
+                          "q_no":  25,
+                          "is_correct":  true,
+                          "user_answer":  "(B) LIFO",
+                          "correct_answer":  "(B) LIFO",
+                          "paper_q_no":  95
+                      },
+                      {
+                          "question":  "A constructor is called whenever",
+                          "q_no":  26,
+                          "is_correct":  true,
+                          "user_answer":  "(A) an object is created",
+                          "correct_answer":  "(A) an object is created",
+                          "paper_q_no":  96
+                      },
+                      {
+                          "question":  "All members of a structure in C++ are _____ by default.",
+                          "q_no":  27,
+                          "is_correct":  true,
+                          "user_answer":  "(A) public",
+                          "correct_answer":  "(A) public",
+                          "paper_q_no":  97
+                      },
+                      {
+                          "question":  "In C++, all members of a class are _____ by default.",
+                          "q_no":  28,
+                          "is_correct":  true,
+                          "user_answer":  "(B) private",
+                          "correct_answer":  "(B) private",
+                          "paper_q_no":  98
+                      },
+                      {
+                          "question":  "In C++, what does a class hold?",
+                          "q_no":  29,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Data and functions",
+                          "correct_answer":  "(C) Data and functions",
+                          "paper_q_no":  99
+                      },
+                      {
+                          "question":  "The number of access specifiers in class of C++ is",
+                          "q_no":  30,
+                          "is_correct":  true,
+                          "user_answer":  "(B) 3",
+                          "correct_answer":  "(B) 3",
+                          "paper_q_no":  100
+                      },
+                      {
+                          "question":  "Which of the following is used to define the members of a class externally in C++?",
+                          "q_no":  31,
+                          "is_correct":  true,
+                          "user_answer":  "(B) ::",
+                          "correct_answer":  "(B) ::",
+                          "paper_q_no":  101
+                      },
+                      {
+                          "question":  "Which concept of C++ is used to reuse the written code?",
+                          "q_no":  32,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Inheritance",
+                          "correct_answer":  "(B) Inheritance",
+                          "paper_q_no":  102
+                      },
+                      {
+                          "question":  "What will be the output of program fragment with int i = 10; void main() { int i = 20; { int i = 30; printf(i, ::i); } }?",
+                          "q_no":  33,
+                          "is_correct":  true,
+                          "user_answer":  "(A) 30,10",
+                          "correct_answer":  "(A) 30,10",
+                          "paper_q_no":  103
+                      },
+                      {
+                          "question":  "Choose the correct statement about inline function in C++.",
+                          "q_no":  34,
+                          "is_correct":  true,
+                          "user_answer":  "(A) It speeds up the execution",
+                          "correct_answer":  "(A) It speeds up the execution",
+                          "paper_q_no":  104
+                      },
+                      {
+                          "question":  "What will be the output of int a = 5; cout \u003c\u003c (a\u003c\u003c2);?",
+                          "q_no":  35,
+                          "is_correct":  true,
+                          "user_answer":  "(B) FIRST 20 SECOND",
+                          "correct_answer":  "(B) FIRST 20 SECOND",
+                          "paper_q_no":  105
+                      },
+                      {
+                          "question":  "cout in C++ stands for",
+                          "q_no":  36,
+                          "is_correct":  false,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(B) character output",
+                          "paper_q_no":  106
+                      },
+                      {
+                          "question":  "Group of instructions that directs a computer is called",
+                          "q_no":  37,
+                          "is_correct":  true,
+                          "user_answer":  "(C) program",
+                          "correct_answer":  "(C) program",
+                          "paper_q_no":  107
+                      },
+                      {
+                          "question":  "A computer program consists of",
+                          "q_no":  38,
+                          "is_correct":  true,
+                          "user_answer":  "(C) algorithms written in computer language",
+                          "correct_answer":  "(C) algorithms written in computer language",
+                          "paper_q_no":  108
+                      },
+                      {
+                          "question":  "The topology with highest reliability is",
+                          "q_no":  39,
+                          "is_correct":  true,
+                          "user_answer":  "(C) mesh",
+                          "correct_answer":  "(C) mesh",
+                          "paper_q_no":  109
+                      },
+                      {
+                          "question":  "End-to-end connectivity is provided from host-to-host in",
+                          "q_no":  40,
+                          "is_correct":  true,
+                          "user_answer":  "(B) transport layer",
+                          "correct_answer":  "(B) transport layer",
+                          "paper_q_no":  110
+                      },
+                      {
+                          "question":  "The _____ measures the number of lost or garbled messages as a fraction of total sent.",
+                          "q_no":  41,
+                          "is_correct":  true,
+                          "user_answer":  "(A) residual error rate",
+                          "correct_answer":  "(A) residual error rate",
+                          "paper_q_no":  111
+                      },
+                      {
+                          "question":  "A high-speed communication equipment typically would not be needed for",
+                          "q_no":  42,
+                          "is_correct":  true,
+                          "user_answer":  "(A) e-mail",
+                          "correct_answer":  "(A) e-mail",
+                          "paper_q_no":  112
+                      },
+                      {
+                          "question":  "A _____ topology uses a single connection to connect all devices together.",
+                          "q_no":  43,
+                          "is_correct":  true,
+                          "user_answer":  "(A) bus",
+                          "correct_answer":  "(A) bus",
+                          "paper_q_no":  113
+                      },
+                      {
+                          "question":  "A _____ is used to connect networking devices that are in a very close geographic area.",
+                          "q_no":  44,
+                          "is_correct":  true,
+                          "user_answer":  "(B) LAN",
+                          "correct_answer":  "(B) LAN",
+                          "paper_q_no":  114
+                      },
+                      {
+                          "question":  "In computer network, what is the size of IP address in IPv4?",
+                          "q_no":  45,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 32 bits",
+                          "correct_answer":  "(C) 32 bits",
+                          "paper_q_no":  115
+                      },
+                      {
+                          "question":  "What is the size of MAC address in computer network?",
+                          "q_no":  46,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 48 bits",
+                          "correct_answer":  "(C) 48 bits",
+                          "paper_q_no":  116
+                      },
+                      {
+                          "question":  "Gaining illegal entry to computer files through remote terminals is called",
+                          "q_no":  47,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Hacking",
+                          "correct_answer":  "(A) Hacking",
+                          "paper_q_no":  117
+                      },
+                      {
+                          "question":  "A computer virus is a software program which has the essential ability to",
+                          "q_no":  48,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(C) clone itself",
+                          "paper_q_no":  118
+                      },
+                      {
+                          "question":  "Copying computer program/software without permission of authors is called",
+                          "q_no":  49,
+                          "is_correct":  true,
+                          "user_answer":  "(B) software piracy",
+                          "correct_answer":  "(B) software piracy",
+                          "paper_q_no":  119
+                      },
+                      {
+                          "question":  "A hard disk becomes totally inaccessible when a computer virus corrupts",
+                          "q_no":  50,
+                          "is_correct":  true,
+                          "user_answer":  "(A) partition table",
+                          "correct_answer":  "(A) partition table",
+                          "paper_q_no":  120
+                      },
+                      {
+                          "question":  "An attribute of one table matching primary key of another table is called as",
+                          "q_no":  51,
+                          "is_correct":  true,
+                          "user_answer":  "(A) foreign key",
+                          "correct_answer":  "(A) foreign key",
+                          "paper_q_no":  121
+                      },
+                      {
+                          "question":  "If every non-key attribute is fully dependent on primary key, then relation will be in",
+                          "q_no":  52,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Second Normal Form (2NF)",
+                          "correct_answer":  "(B) Second Normal Form (2NF)",
+                          "paper_q_no":  122
+                      },
+                      {
+                          "question":  "In relational database, the data type of values in each column of a table is called",
+                          "q_no":  53,
+                          "is_correct":  false,
+                          "user_answer":  "(A) attribute",
+                          "correct_answer":  "(B) domain",
+                          "paper_q_no":  123
+                      },
+                      {
+                          "question":  "In relational database, number of attributes of a relation is called the",
+                          "q_no":  54,
+                          "is_correct":  true,
+                          "user_answer":  "(B) degree",
+                          "correct_answer":  "(B) degree",
+                          "paper_q_no":  124
+                      },
+                      {
+                          "question":  "Which of the following SQL commands is used to change attribute values of rows?",
+                          "q_no":  55,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Update",
+                          "correct_answer":  "(A) Update",
+                          "paper_q_no":  125
+                      },
+                      {
+                          "question":  "To retrieve information from a database, which SQL command is used?",
+                          "q_no":  56,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Select",
+                          "correct_answer":  "(C) Select",
+                          "paper_q_no":  126
+                      },
+                      {
+                          "question":  "Which SQL command is used to modify the structure of a table?",
+                          "q_no":  57,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Alter",
+                          "correct_answer":  "(A) Alter",
+                          "paper_q_no":  127
+                      },
+                      {
+                          "question":  "Which SQL keyword is used to display data based on certain pattern?",
+                          "q_no":  58,
+                          "is_correct":  false,
+                          "user_answer":  "(C) BETWEEN",
+                          "correct_answer":  "(B) LIKE",
+                          "paper_q_no":  128
+                      },
+                      {
+                          "question":  "Degree and cardinality 4 and 3. Add 3 attributes and 4 tuples. New cardinality and degree?",
+                          "q_no":  59,
+                          "is_correct":  true,
+                          "user_answer":  "(B) 7, 7",
+                          "correct_answer":  "(B) 7, 7",
+                          "paper_q_no":  129
+                      },
+                      {
+                          "question":  "Which SQL command is used to remove a table from a database?",
+                          "q_no":  60,
+                          "is_correct":  true,
+                          "user_answer":  "(B) DROP",
+                          "correct_answer":  "(B) DROP",
+                          "paper_q_no":  130
+                      },
+                      {
+                          "question":  "The register that contains address of next instruction to be executed is called",
+                          "q_no":  61,
+                          "is_correct":  true,
+                          "user_answer":  "(A) program counter",
+                          "correct_answer":  "(A) program counter",
+                          "paper_q_no":  131
+                      },
+                      {
+                          "question":  "The register that contains instruction that is being executed is called",
+                          "q_no":  62,
+                          "is_correct":  true,
+                          "user_answer":  "(C) instruction register",
+                          "correct_answer":  "(C) instruction register",
+                          "paper_q_no":  132
+                      },
+                      {
+                          "question":  "Register which holds address of memory location to/from which data are transferred",
+                          "q_no":  63,
+                          "is_correct":  true,
+                          "user_answer":  "(B) memory address register",
+                          "correct_answer":  "(B) memory address register",
+                          "paper_q_no":  133
+                      },
+                      {
+                          "question":  "A storage device used to compensate difference in flow of data is known as",
+                          "q_no":  64,
+                          "is_correct":  true,
+                          "user_answer":  "(C) buffer",
+                          "correct_answer":  "(C) buffer",
+                          "paper_q_no":  134
+                      },
+                      {
+                          "question":  "Memory in which any location reached in fixed amount of time after specifying address",
+                          "q_no":  65,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Random Access Memory",
+                          "correct_answer":  "(B) Random Access Memory",
+                          "paper_q_no":  135
+                      },
+                      {
+                          "question":  "If (X567)_8 + (2YX5)_8 = (71YX)_8, then values of X and Y are",
+                          "q_no":  66,
+                          "is_correct":  false,
+                          "user_answer":  "(C) 4, 4",
+                          "correct_answer":  "(A) 4, 3",
+                          "paper_q_no":  136
+                      },
+                      {
+                          "question":  "Range of numbers that can be represented in 8-bit using 2s complement is",
+                          "q_no":  67,
+                          "is_correct":  true,
+                          "user_answer":  "(C) –128 to +127",
+                          "correct_answer":  "(C) –128 to +127",
+                          "paper_q_no":  137
+                      }
+                  ]
+}
