@@ -31,4 +31,4 @@
 - **2026-10-22**: Cloned to active workspace `app/study`.
 - **2026-10-22**: Comprehensive PYQ Analysis of Part-II (General Studies) across TRE 1.0, TRE 2.0, and TRE 3.0. Established 5x8 = 40 Questions blueprint.
 - **2026-10-24**: **BPSC TRE 1.0 (26-08-2023) Paper-4 Part-II (Computer Science)** full 80-question test completed! Score: **53 / 80 (66.25% Accuracy)**. Session saved in [`test_session_tre1.json`](test_session_tre1.json).
-- **2026-10-25**: **BPSC TRE 2.0 (15-12-2023) Paper-Part-III (Computer Science)** test underway! Questions 1 to 67 completed. Score: **52 / 67 (77.61% Accuracy)**. Session saved in [`test_session_tre2.json`](test_session_tre2.json).
+- **2026-10-25**: **BPSC TRE 2.0 (15-12-2023) Paper-Part-III (Computer Science)** full 80-question test completed! Score: **60 / 80 (75.00% Accuracy)**. Session saved in [`test_session_tre2.json`](test_session_tre2.json).

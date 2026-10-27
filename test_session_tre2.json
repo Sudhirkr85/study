@@ -3,7 +3,7 @@
     "total_questions":  80,
     "start_q":  71,
     "end_q":  150,
-    "current_index":  67,
+    "current_index":  80,
     "responses":  [
                       {
                           "question":  "The brain of computer is",
@@ -537,9 +537,113 @@
                           "question":  "Range of numbers that can be represented in 8-bit using 2s complement is",
                           "q_no":  67,
                           "is_correct":  true,
-                          "user_answer":  "(C) –128 to +127",
-                          "correct_answer":  "(C) –128 to +127",
+                          "user_answer":  "(C) â€“128 to +127",
+                          "correct_answer":  "(C) â€“128 to +127",
                           "paper_q_no":  137
+                      },
+                      {
+                          "question":  "If (11X1Y)8 = (12C9)16, then the values of X and Y are",
+                          "q_no":  68,
+                          "is_correct":  false,
+                          "user_answer":  "(B) 5, 7",
+                          "correct_answer":  "(C) 3, 1",
+                          "paper_q_no":  138
+                      },
+                      {
+                          "question":  "Which of the following 4-bit numbers equals its 2s complement?",
+                          "q_no":  69,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 1000",
+                          "correct_answer":  "(C) 1000",
+                          "paper_q_no":  139
+                      },
+                      {
+                          "question":  "The number of 1s in the binary representation of 16^3*9 + 16^2*7 + 16*5 + 3",
+                          "q_no":  70,
+                          "is_correct":  true,
+                          "user_answer":  "(B) 9",
+                          "correct_answer":  "(B) 9",
+                          "paper_q_no":  140
+                      },
+                      {
+                          "question":  "The Boolean expression x + x\u0027y equals",
+                          "q_no":  71,
+                          "is_correct":  true,
+                          "user_answer":  "(A) x + y",
+                          "correct_answer":  "(A) x + y",
+                          "paper_q_no":  141
+                      },
+                      {
+                          "question":  "The Boolean expression AB + AB\u0027 + A\u0027C + AC is independent of Boolean variable",
+                          "q_no":  72,
+                          "is_correct":  false,
+                          "user_answer":  "nhi pta",
+                          "correct_answer":  "(B) B",
+                          "paper_q_no":  142
+                      },
+                      {
+                          "question":  "The Boolean expression A + BC equals",
+                          "q_no":  73,
+                          "is_correct":  true,
+                          "user_answer":  "(C) (A + B)(A + C)",
+                          "correct_answer":  "(C) (A + B)(A + C)",
+                          "paper_q_no":  143
+                      },
+                      {
+                          "question":  "The Boolean expression x + xy will be equal to",
+                          "q_no":  74,
+                          "is_correct":  false,
+                          "user_answer":  "(B) y",
+                          "correct_answer":  "(A) x",
+                          "paper_q_no":  144
+                      },
+                      {
+                          "question":  "The Boolean expression x(x + y) is equal to",
+                          "q_no":  75,
+                          "is_correct":  true,
+                          "user_answer":  "(A) x",
+                          "correct_answer":  "(A) x",
+                          "paper_q_no":  145
+                      },
+                      {
+                          "question":  "If x is a Boolean variable, then (((x) ) ) will be",
+                          "q_no":  76,
+                          "is_correct":  true,
+                          "user_answer":  "(B) x",
+                          "correct_answer":  "(B) x",
+                          "paper_q_no":  146
+                      },
+                      {
+                          "question":  "In two-valued Boolean algebra, the maximum number of Boolean functions for two variables will be",
+                          "q_no":  77,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 16",
+                          "correct_answer":  "(C) 16",
+                          "paper_q_no":  147
+                      },
+                      {
+                          "question":  "Simplified Boolean function of F = AC + AB + ABC + BC",
+                          "q_no":  78,
+                          "is_correct":  false,
+                          "user_answer":  "nhi pta",
+                          "correct_answer":  "(A) F = C + AB",
+                          "paper_q_no":  148
+                      },
+                      {
+                          "question":  "Which of the following logic gates is called universal gate?",
+                          "q_no":  79,
+                          "is_correct":  true,
+                          "user_answer":  "(C) NAND",
+                          "correct_answer":  "(C) NAND",
+                          "paper_q_no":  149
+                      },
+                      {
+                          "question":  "The minimum number of NAND gates required to implement f = x\u0027y + xy\u0027 is",
+                          "q_no":  80,
+                          "is_correct":  false,
+                          "user_answer":  "(A) 3",
+                          "correct_answer":  "(B) 4",
+                          "paper_q_no":  150
                       }
                   ]
 }
