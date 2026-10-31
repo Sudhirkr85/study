@@ -1,4 +1,4 @@
-﻿[Windows.Media.Ocr.OcrEngine, Windows.Foundation.Diagnostics, ContentType = WindowsRuntime] | Out-Null
+[Windows.Media.Ocr.OcrEngine, Windows.Foundation.Diagnostics, ContentType = WindowsRuntime] | Out-Null
 [Windows.Graphics.Imaging.BitmapDecoder, Windows.Graphics.Imaging, ContentType = WindowsRuntime] | Out-Null
 [Windows.Storage.StorageFile, Windows.Storage, ContentType = WindowsRuntime] | Out-Null
 
@@ -20,10 +20,10 @@ function Ocr-Image($path) {
 
 $allText = ""
 for ($i = 1; $i -le 15; $i++) {
-    $p = "D:\study\syllabus_pages\page_$i.png"
+    $p = "C:\Users\sudhi\OneDrive\Desktop\study\syllabus_pages\page_$i.png"
     Write-Host "Processing page $i..."
     $txt = Ocr-Image $p
     $allText += "`n`n=== PAGE $i ===`n`n" + $txt
 }
-[System.IO.File]::WriteAllText("D:\study\syllabus_extracted.txt", $allText, [System.Text.Encoding]::UTF8)
-Write-Host "Done! Saved to D:\study\syllabus_extracted.txt"
+[System.IO.File]::WriteAllText("C:\Users\sudhi\OneDrive\Desktop\study\syllabus_extracted.txt", $allText, [System.Text.Encoding]::UTF8)
+Write-Host "Done! Saved to C:\Users\sudhi\OneDrive\Desktop\study\syllabus_extracted.txt"

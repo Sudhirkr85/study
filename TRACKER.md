@@ -1,5 +1,6 @@
 # 🎯 BPSC Computer Science Exam Preparation Tracker
-> **Goal:** Complete Mastery Plan for CS & General Studies (BPSC TRE Pattern)  
+> **Goal:** 🎯 **TARGET 75+ / 80 Marks in Computer Science (Part-III)** + Complete GS (BPSC TRE Pattern)  
+> **Master Blueprint:** See [`EXAM_BLUEPRINT.md`](EXAM_BLUEPRINT.md) for strict boundaries, score history, and BPSC 5-option drill protocols.  
 > **Git Policy:** Local commits only. **Push ONLY when user explicitly commands "done push" or "push".**
 
 ---
@@ -33,4 +34,5 @@
 - **2026-10-24**: **BPSC TRE 1.0 (26-08-2023) Paper-4 Part-II (Computer Science)** full 80-question test completed! Score: **53 / 80 (66.25% Accuracy)**. Session saved in [`test_session_tre1.json`](test_session_tre1.json).
 - **2026-10-25**: **BPSC TRE 2.0 (15-12-2023) Paper-Part-III (Computer Science)** full 80-question test completed! Score: **60 / 80 (75.00% Accuracy)**. Session saved in [`test_session_tre2.json`](test_session_tre2.json).
 - **2026-10-31**: **BPSC TRE 3.0 (09-08-2024) Paper-Part-III (Computer Science)** full 80-question test completed! Score: **52 / 80 (65.00% Accuracy)**. Session saved in [`test_session_tre3.json`](test_session_tre3.json).
-- **2026-10-31**: **Consolidated PYQ Mastery Analysis (TRE 1.0 + 2.0 + 3.0)** completed: **165 / 240 (68.75% Total Accuracy)**. Identified core target weak areas: *Digital Electronics & Number Systems (54.1%)*, *COA & Microprocessors (51.9%)*, *OS Paging/Disk (53.8%)*, and *Emerging Tech (50.0%)*. Next phase: Targeted preparation on weak high-yield modules.
+- **2026-10-31**: **Consolidated PYQ Mastery Analysis (TRE 1.0 + 2.0 + 3.0)** completed: **165 / 240 (68.75% Total Accuracy)**. Identified core target weak areas: *Option D & E trap*, *COA & Microprocessors*, *OS Paging/Disk*.
+- **2026-10-31**: **Target 75+ / 80 Mission Protocol Locked**: Created [`EXAM_BLUEPRINT.md`](EXAM_BLUEPRINT.md) establishing anti-GATE boundary, BPSC 5-option mandatory drills, and mandatory pre-session score & syllabus recall protocol.
