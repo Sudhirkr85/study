@@ -1,0 +1,649 @@
+﻿{
+    "test_name":  "BPSC TRE 3.0 Computer Science (Paper-Part-III)",
+    "total_questions":  80,
+    "start_q":  71,
+    "end_q":  150,
+    "current_index":  80,
+    "responses":  [
+                      {
+                          "question":  "Digital circuit can be made by the repeated use of the _________.",
+                          "q_no":  1,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  71
+                      },
+                      {
+                          "question":  "Which of the following is correct for Digital Circuits?",
+                          "q_no":  2,
+                          "is_correct":  false,
+                          "user_answer":  "(B) They process information using continuous voltage levels",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  72
+                      },
+                      {
+                          "question":  "Which of the following is an example of a digital Electronic?",
+                          "q_no":  3,
+                          "is_correct":  false,
+                          "user_answer":  "(C) Digital cameras",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  73
+                      },
+                      {
+                          "question":  "An OR gate has 4 inputs. The number of words in truth table will be _______.",
+                          "q_no":  4,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 16",
+                          "correct_answer":  "(C) 16",
+                          "paper_q_no":  74
+                      },
+                      {
+                          "question":  "When does a negative level triggered flip-flop in Digital Electronics changes its state?",
+                          "q_no":  5,
+                          "is_correct":  true,
+                          "user_answer":  "(A) When the clock is Negative",
+                          "correct_answer":  "(A) When the clock is Negative",
+                          "paper_q_no":  75
+                      },
+                      {
+                          "question":  "What is the result of the operation 1010 AND 1100 in binary?",
+                          "q_no":  6,
+                          "is_correct":  true,
+                          "user_answer":  "(A) 1000",
+                          "correct_answer":  "(A) 1000",
+                          "paper_q_no":  76
+                      },
+                      {
+                          "question":  "In a half-adder circuit, what are the outputs?",
+                          "q_no":  7,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Sum and Carry",
+                          "correct_answer":  "(A) Sum and Carry",
+                          "paper_q_no":  77
+                      },
+                      {
+                          "question":  "Which of the following is the type of Read Only Memory (ROM)?",
+                          "q_no":  8,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  78
+                      },
+                      {
+                          "question":  "What is a PLA?",
+                          "q_no":  9,
+                          "is_correct":  false,
+                          "user_answer":  "(C) Programmable Logic Architecture",
+                          "correct_answer":  "(B) Programmable Logic Array",
+                          "paper_q_no":  79
+                      },
+                      {
+                          "question":  "How many select lines are required for an 8-to-1 multiplexer?",
+                          "q_no":  10,
+                          "is_correct":  true,
+                          "user_answer":  "(B) 3",
+                          "correct_answer":  "(B) 3",
+                          "paper_q_no":  80
+                      },
+                      {
+                          "question":  "Convert the decimal number 1234 to binary, octal, and hexadecimal.",
+                          "q_no":  11,
+                          "is_correct":  false,
+                          "user_answer":  "(B) Binary: 11001110010, Octal: 1712, Hexadecimal: 72A",
+                          "correct_answer":  "(A) Binary: 10011010010, Octal: 2322, Hexadecimal: 4D2",
+                          "paper_q_no":  81
+                      },
+                      {
+                          "question":  "What is Booths algorithm used for?",
+                          "q_no":  12,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Binary multiplication",
+                          "correct_answer":  "(C) Binary multiplication",
+                          "paper_q_no":  82
+                      },
+                      {
+                          "question":  "Which of the following is error detection code used in digital logic?",
+                          "q_no":  13,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  83
+                      },
+                      {
+                          "question":  "When performing BCD addition, what is the maximum value that can be represented in a single BCD digit?",
+                          "q_no":  14,
+                          "is_correct":  false,
+                          "user_answer":  "(C) 15",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  84
+                      },
+                      {
+                          "question":  "Convert the binary number 1011.1101 to its decimal equivalent.",
+                          "q_no":  15,
+                          "is_correct":  false,
+                          "user_answer":  "(A) 11.75",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  85
+                      },
+                      {
+                          "question":  "What is De Morgans theorem used for in digital logic?",
+                          "q_no":  16,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Simplifying Boolean expressions",
+                          "correct_answer":  "(A) Simplifying Boolean expressions",
+                          "paper_q_no":  86
+                      },
+                      {
+                          "question":  "What is the purpose of the dont care condition in digital logic?",
+                          "q_no":  17,
+                          "is_correct":  false,
+                          "user_answer":  "(C) To ensure that all possible input combinations are covered in truth tables",
+                          "correct_answer":  "(A) To indicate that the value of a variable does not affect the output",
+                          "paper_q_no":  87
+                      },
+                      {
+                          "question":  "Which of the following data structures stores elements in a non-linear relationship?",
+                          "q_no":  18,
+                          "is_correct":  true,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  88
+                      },
+                      {
+                          "question":  "Which data structure is used for efficient searching, insertion, and deletion of elements?",
+                          "q_no":  19,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Hash Table",
+                          "correct_answer":  "(C) Hash Table",
+                          "paper_q_no":  89
+                      },
+                      {
+                          "question":  "In a binary search tree, which subtree of a node contains elements that are greater than the nodes value?",
+                          "q_no":  20,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Right subtree",
+                          "correct_answer":  "(B) Right subtree",
+                          "paper_q_no":  90
+                      },
+                      {
+                          "question":  "The result evaluating the postfix expression 10 5 + 60 6/ * 8 -",
+                          "q_no":  21,
+                          "is_correct":  true,
+                          "user_answer":  "(A) 142",
+                          "correct_answer":  "(A) 142",
+                          "paper_q_no":  91
+                      },
+                      {
+                          "question":  "In a balanced binary tree, the height of two sub-trees of every node can not differ by more than",
+                          "q_no":  22,
+                          "is_correct":  false,
+                          "user_answer":  "(A) 2",
+                          "correct_answer":  "(B) 1",
+                          "paper_q_no":  92
+                      },
+                      {
+                          "question":  "Write the output of: int a[ ] = {1,2,3,} *p;",
+                          "q_no":  23,
+                          "is_correct":  false,
+                          "user_answer":  "(C) Runtime error",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  93
+                      },
+                      {
+                          "question":  "A queue has configuration a, b, c, d. To get d, c, b, a need minimum of",
+                          "q_no":  24,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 4 deletions and 4 additions",
+                          "correct_answer":  "(C) 4 deletions and 4 additions",
+                          "paper_q_no":  94
+                      },
+                      {
+                          "question":  "The order of the binary search algorithm is _______.",
+                          "q_no":  25,
+                          "is_correct":  true,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  95
+                      },
+                      {
+                          "question":  "Preorder of BST is 15, 10, 12, 11, 20, 18, 16, 19. Find postorder.",
+                          "q_no":  26,
+                          "is_correct":  false,
+                          "user_answer":  "(C) 19, 16, 18, 20, 11, 12, 10, 15",
+                          "correct_answer":  "(B) 11, 12, 10, 16, 19, 18, 20, 15",
+                          "paper_q_no":  96
+                      },
+                      {
+                          "question":  "How many distinct binary search trees can be created out of 4 distinct keys?",
+                          "q_no":  27,
+                          "is_correct":  true,
+                          "user_answer":  "(C) 14",
+                          "correct_answer":  "(C) 14",
+                          "paper_q_no":  97
+                      },
+                      {
+                          "question":  "Output of program with sizeof(k /= i+j)",
+                          "q_no":  28,
+                          "is_correct":  false,
+                          "user_answer":  "(B) 4 1",
+                          "correct_answer":  "(C) 4 15",
+                          "paper_q_no":  98
+                      },
+                      {
+                          "question":  "Which of the following statements is true about Big-O notation?",
+                          "q_no":  29,
+                          "is_correct":  true,
+                          "user_answer":  "(B) It represents the upper bound of an algorithms runtime",
+                          "correct_answer":  "(B) It represents the upper bound of an algorithms runtime",
+                          "paper_q_no":  99
+                      },
+                      {
+                          "question":  "Which of the following is NOT a step in the Divide and Conquer algorithm?",
+                          "q_no":  30,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  100
+                      },
+                      {
+                          "question":  "Merge Sort is an example of which algorithm design paradigm?",
+                          "q_no":  31,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Divide and Conquer",
+                          "correct_answer":  "(B) Divide and Conquer",
+                          "paper_q_no":  101
+                      },
+                      {
+                          "question":  "How many edges does a spanning tree of a graph with N vertices have?",
+                          "q_no":  32,
+                          "is_correct":  true,
+                          "user_answer":  "(B) N - 1",
+                          "correct_answer":  "(B) N - 1",
+                          "paper_q_no":  102
+                      },
+                      {
+                          "question":  "Which of the following is NOT a graph traversal algorithm?",
+                          "q_no":  33,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  103
+                      },
+                      {
+                          "question":  "Which of the following is NOT an NP-Complete problem?",
+                          "q_no":  34,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Shortest Path Problem",
+                          "correct_answer":  "(C) Shortest Path Problem",
+                          "paper_q_no":  104
+                      },
+                      {
+                          "question":  "Which of the following is an advantage of using arrays?",
+                          "q_no":  35,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Random access to elements using an index",
+                          "correct_answer":  "(C) Random access to elements using an index",
+                          "paper_q_no":  105
+                      },
+                      {
+                          "question":  "Which of the following is NOT a basic operation performed on a data structure?",
+                          "q_no":  36,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Encryption",
+                          "correct_answer":  "(A) Encryption",
+                          "paper_q_no":  106
+                      },
+                      {
+                          "question":  "Which of the following is a type of operating system?",
+                          "q_no":  37,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  107
+                      },
+                      {
+                          "question":  "Which of the following is NOT a memory management technique used by operating systems?",
+                          "q_no":  38,
+                          "is_correct":  false,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(C) Fragmentation",
+                          "paper_q_no":  108
+                      },
+                      {
+                          "question":  "Which of the following is a file system commonly used in operating systems?",
+                          "q_no":  39,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  109
+                      },
+                      {
+                          "question":  "Which of the following is NOT a type of interrupt?",
+                          "q_no":  40,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Memory interrupt",
+                          "correct_answer":  "(B) Memory interrupt",
+                          "paper_q_no":  110
+                      },
+                      {
+                          "question":  "What is a page in paging?",
+                          "q_no":  41,
+                          "is_correct":  false,
+                          "user_answer":  "(B) A fixed-size block of physical memory",
+                          "correct_answer":  "(A) A fixed-size block of virtual memory",
+                          "paper_q_no":  111
+                      },
+                      {
+                          "question":  "In a system with a page size of 4 KB and physical address 64 GB, bits for page offset?",
+                          "q_no":  42,
+                          "is_correct":  false,
+                          "user_answer":  "(A) 10 bits",
+                          "correct_answer":  "(B) 12 bits",
+                          "paper_q_no":  112
+                      },
+                      {
+                          "question":  "What is a segment base in segmentation?",
+                          "q_no":  43,
+                          "is_correct":  true,
+                          "user_answer":  "(A) The starting address of a segment in physical memory",
+                          "correct_answer":  "(A) The starting address of a segment in physical memory",
+                          "paper_q_no":  113
+                      },
+                      {
+                          "question":  "What causes thrashing to occur?",
+                          "q_no":  44,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Excessive paging activity",
+                          "correct_answer":  "(A) Excessive paging activity",
+                          "paper_q_no":  114
+                      },
+                      {
+                          "question":  "Using 6 GB physical and 10 GB virtual memory, how much is swapped out?",
+                          "q_no":  45,
+                          "is_correct":  false,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(B) 4 GB",
+                          "paper_q_no":  115
+                      },
+                      {
+                          "question":  "How is the TLB typically organized?",
+                          "q_no":  46,
+                          "is_correct":  false,
+                          "user_answer":  "(C) As a set-associative cache",
+                          "correct_answer":  "(B) As an associative cache",
+                          "paper_q_no":  116
+                      },
+                      {
+                          "question":  "Which of the following is a common file operation?",
+                          "q_no":  47,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  117
+                      },
+                      {
+                          "question":  "FCFS disk head movements starting at 53 for 98 183 37 122 14 124 65 67",
+                          "q_no":  48,
+                          "is_correct":  false,
+                          "user_answer":  "nhi pta",
+                          "correct_answer":  "(A) 640",
+                          "paper_q_no":  118
+                      },
+                      {
+                          "question":  "Thread shares with other threads belonging to the same process its",
+                          "q_no":  49,
+                          "is_correct":  true,
+                          "user_answer":  "(C) code section and data section",
+                          "correct_answer":  "(C) code section and data section",
+                          "paper_q_no":  119
+                      },
+                      {
+                          "question":  "Which of the following is NOT a type of DBMS?",
+                          "q_no":  50,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Sequential DBMS",
+                          "correct_answer":  "(C) Sequential DBMS",
+                          "paper_q_no":  120
+                      },
+                      {
+                          "question":  "In a relational database, what is a primary key?",
+                          "q_no":  51,
+                          "is_correct":  true,
+                          "user_answer":  "(A) A key used to uniquely identify each record in a table",
+                          "correct_answer":  "(A) A key used to uniquely identify each record in a table",
+                          "paper_q_no":  121
+                      },
+                      {
+                          "question":  "Which normal form ensures every non-prime attribute is fully functionally dependent on primary key?",
+                          "q_no":  52,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Second Normal Form (2NF)",
+                          "correct_answer":  "(B) Second Normal Form (2NF)",
+                          "paper_q_no":  122
+                      },
+                      {
+                          "question":  "Which SQL command is used to add new rows to a database table?",
+                          "q_no":  53,
+                          "is_correct":  true,
+                          "user_answer":  "(C) INSERT",
+                          "correct_answer":  "(C) INSERT",
+                          "paper_q_no":  123
+                      },
+                      {
+                          "question":  "Which of the following is a disadvantage of using a distributed database system?",
+                          "q_no":  54,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Data inconsistency",
+                          "correct_answer":  "(C) Data inconsistency",
+                          "paper_q_no":  124
+                      },
+                      {
+                          "question":  "What is the primary function of a router in a computer network?",
+                          "q_no":  55,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(B) To connect multiple networks together",
+                          "paper_q_no":  125
+                      },
+                      {
+                          "question":  "In the OSI model, which layer is responsible for routing and forwarding data packets?",
+                          "q_no":  56,
+                          "is_correct":  true,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  126
+                      },
+                      {
+                          "question":  "Which device is used to connect multiple devices within the same local area network (LAN)?",
+                          "q_no":  57,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Switch",
+                          "correct_answer":  "(B) Switch",
+                          "paper_q_no":  127
+                      },
+                      {
+                          "question":  "Which protocol is used to send email over the Internet?",
+                          "q_no":  58,
+                          "is_correct":  true,
+                          "user_answer":  "(B) SMTP",
+                          "correct_answer":  "(B) SMTP",
+                          "paper_q_no":  128
+                      },
+                      {
+                          "question":  "What is the purpose of a subnet mask in TCP/IP networking?",
+                          "q_no":  59,
+                          "is_correct":  false,
+                          "user_answer":  "(A) To identify the network portion of an IP address",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  129
+                      },
+                      {
+                          "question":  "What is the maximum data rate of Bluetooth version 5.0?",
+                          "q_no":  60,
+                          "is_correct":  true,
+                          "user_answer":  "(B) 2 Mbps",
+                          "correct_answer":  "(B) 2 Mbps",
+                          "paper_q_no":  130
+                      },
+                      {
+                          "question":  "Which of the following is a software development life cycle model?",
+                          "q_no":  61,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  131
+                      },
+                      {
+                          "question":  "Which of the following is NOT a software development requirement?",
+                          "q_no":  62,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Physical requirements",
+                          "correct_answer":  "(C) Physical requirements",
+                          "paper_q_no":  132
+                      },
+                      {
+                          "question":  "What is the main difference between verification and validation in software testing?",
+                          "q_no":  63,
+                          "is_correct":  false,
+                          "user_answer":  "(A) Verification ensures the software is bug-free, while validation ensures it meets requirements",
+                          "correct_answer":  "(C) Verification checks if the software is built right, while validation checks if the right software is built",
+                          "paper_q_no":  133
+                      },
+                      {
+                          "question":  "What is the purpose of a software prototype?",
+                          "q_no":  64,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  134
+                      },
+                      {
+                          "question":  "What is the primary goal of software engineering?",
+                          "q_no":  65,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Meets user requirements within budget \u0026 schedule",
+                          "correct_answer":  "(B) Meets user requirements within budget \u0026 schedule",
+                          "paper_q_no":  135
+                      },
+                      {
+                          "question":  "Which of the following is a pillar of OOP?",
+                          "q_no":  66,
+                          "is_correct":  true,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  136
+                      },
+                      {
+                          "question":  "Which keyword is used in Java to implement inheritance?",
+                          "q_no":  67,
+                          "is_correct":  true,
+                          "user_answer":  "(A) extends",
+                          "correct_answer":  "(A) extends",
+                          "paper_q_no":  137
+                      },
+                      {
+                          "question":  "What is the access specifier used to make members of a class accessible only within the same package?",
+                          "q_no":  68,
+                          "is_correct":  false,
+                          "user_answer":  "(E) None of the above",
+                          "correct_answer":  "(C) package-private",
+                          "paper_q_no":  138
+                      },
+                      {
+                          "question":  "Inheritance in OOP allows a class to:",
+                          "q_no":  69,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Inherit properties and behavior from another class",
+                          "correct_answer":  "(A) Inherit properties and behavior from another class",
+                          "paper_q_no":  139
+                      },
+                      {
+                          "question":  "What is the purpose of HTML in a web application?",
+                          "q_no":  70,
+                          "is_correct":  true,
+                          "user_answer":  "(A) To define the structure of web pages",
+                          "correct_answer":  "(A) To define the structure of web pages",
+                          "paper_q_no":  140
+                      },
+                      {
+                          "question":  "Which of the following is an example of a server-side scripting language commonly used in web applications?",
+                          "q_no":  71,
+                          "is_correct":  false,
+                          "user_answer":  "(C) C++",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  141
+                      },
+                      {
+                          "question":  "What is the computational complexity of the halting problem?",
+                          "q_no":  72,
+                          "is_correct":  true,
+                          "user_answer":  "(C) Not computable",
+                          "correct_answer":  "(C) Not computable",
+                          "paper_q_no":  142
+                      },
+                      {
+                          "question":  "Which of the following is NOT a component of a Turing machine?",
+                          "q_no":  73,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(B) Output tape",
+                          "paper_q_no":  143
+                      },
+                      {
+                          "question":  "Which wireless communication technology is commonly used in IoT devices for short-range communication?",
+                          "q_no":  74,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Bluetooth",
+                          "correct_answer":  "(A) Bluetooth",
+                          "paper_q_no":  144
+                      },
+                      {
+                          "question":  "Which of the following is an example of an IoT protocol used for device communication?",
+                          "q_no":  75,
+                          "is_correct":  true,
+                          "user_answer":  "(C) MQTT",
+                          "correct_answer":  "(C) MQTT",
+                          "paper_q_no":  145
+                      },
+                      {
+                          "question":  "Which of the following is a subfield of AI?",
+                          "q_no":  76,
+                          "is_correct":  false,
+                          "user_answer":  "(A) Machine Learning",
+                          "correct_answer":  "(D) More than one of the above",
+                          "paper_q_no":  146
+                      },
+                      {
+                          "question":  "Which of the following is a supervised learning algorithm?",
+                          "q_no":  77,
+                          "is_correct":  true,
+                          "user_answer":  "(A) Decision Tree",
+                          "correct_answer":  "(A) Decision Tree",
+                          "paper_q_no":  147
+                      },
+                      {
+                          "question":  "Which of the following is NOT a common type of E-Commerce model?",
+                          "q_no":  78,
+                          "is_correct":  false,
+                          "user_answer":  "(B) Consumer-to-Business (C2B)",
+                          "correct_answer":  "(E) None of the above",
+                          "paper_q_no":  148
+                      },
+                      {
+                          "question":  "Which of the following is an example of a B2C E-Commerce website?",
+                          "q_no":  79,
+                          "is_correct":  true,
+                          "user_answer":  "(B) Amazon",
+                          "correct_answer":  "(B) Amazon",
+                          "paper_q_no":  149
+                      },
+                      {
+                          "question":  "Which of the following is a multimedia authoring tool?",
+                          "q_no":  80,
+                          "is_correct":  false,
+                          "user_answer":  "(D) More than one of the above",
+                          "correct_answer":  "(C) Adobe Flash",
+                          "paper_q_no":  150
+                      }
+                  ]
+}
