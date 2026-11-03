@@ -16,7 +16,7 @@
 | - *GS Sub-unit* | • Indian National Movement & Bihar History | ⚪ Upcoming | Pending Note | 8 Qs |
 | - *GS Sub-unit* | • Geography (Physical, Indian & Bihar) | ⚪ Upcoming | Pending Note | 8 Qs |
 | - *GS Sub-unit* | • Current Affairs, Science & Tech | ⚪ Upcoming | Pending Note | 8 Qs |
-| **Part-III (CS)** | 03. Computer Organization & Architecture (COA) | ⚪ Upcoming | - | ~12 Qs |
+| **Part-III (CS)** | 03. Computer Organization & Architecture (COA) | 🟡 Active | [`notes/02_Computer_Organization_and_Architecture.md`](notes/02_Computer_Organization_and_Architecture.md) | ~12 Qs |
 | **Part-III (CS)** | 04. Data Structures & Algorithms | ⚪ Upcoming | - | ~15 Qs |
 | **Part-III (CS)** | 05. C++ & Object-Oriented Programming | ⚪ Upcoming | - | ~15 Qs |
 | **Part-III (CS)** | 06. DBMS & SQL | ⚪ Upcoming | - | ~12 Qs |
