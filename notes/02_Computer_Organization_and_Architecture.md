@@ -1,222 +1,147 @@
-# 📘 Subject 02: Computer Organization & Architecture (COA) + Microprocessors
-> **Target:** 🎯 BPSC TRE Computer Science (Part-III) — Target 12 / 12 Marks  
-> **Syllabus Reference:** CSHT-101 / ELHT & NCERT Class 11-12 Computer Systems  
-> **Master Rule:** High-yield factual clarity + Memory tricks (Zero GATE theoretical derivations)
+# 🖥️ Subject 02: Computer Organization & Architecture (COA) and Microprocessors
+
+> **🎯 Target:** 12 / 12 Marks in BPSC TRE Part-III  
+> **Exam Standard:** NCERT Class 11-12 + BCA/B.Tech Core Definitions (Anti-GATE Rule: Direct, Factual & High-Yield)  
+> **Trap Alert:** Always apply the *Rule of 2* before selecting (D) or (E).
 
 ---
 
-## 📌 Chapter 1: Basic Computer Organization & System Bus
+## 🗺️ Master Roadmap & Chapter Breakdown
 
-### 1.1 Computer Architectural Paradigms
-| Architecture | Features | Memory Separation | Bus System |
-| :--- | :--- | :---: | :---: |
-| **Von Neumann (Stored Program)** | Data & Instructions share the same memory & bus. Bottleneck: **Von Neumann Bottleneck** (can't fetch instruction and data simultaneously). | Single shared memory | Shared Bus |
-| **Harvard Architecture** | Separate memory for program (code) and data. Simultaneous instruction fetch & data access possible. | Separate Instruction & Data Memory | Separate Buses |
-
----
-
-### 1.2 System Bus Architecture
-The CPU communicates with memory and I/O devices via three distinct buses:
-
-```
-+--------------------------------------------------------------+
-|                           CPU                                |
-+--------------------------------------------------------------+
-     |                 | (Unidirectional)   | (Bidirectional)
-     |                 v                    v
-     |          [Address Bus] --------> [Memory / I/O]
-     |                 ^                    ^
-     |                 | (Bidirectional)    |
-     +--------> [ Data Bus ] <--------------+
-     |                 ^
-     |                 | (Bidirectional / Individual lines)
-     +--------> [Control Bus] <-------------> [Memory / I/O]
-```
-
-1. **Address Bus (Unidirectional):**
-   * Direction: CPU $\to$ Memory / I/O.
-   * If Address bus has **$k$ bits**, total addressable locations $= \mathbf{2^k}$.
-   * *Formula:* Capacity $= 2^k \times (\text{word size})$.
-2. **Data Bus (Bidirectional):**
-   * Direction: Both ways (CPU $\leftrightarrow$ Memory / I/O).
-   * Determines the **word length** of the CPU (e.g., 8-bit, 16-bit, 32-bit).
-3. **Control Bus:**
-   * Transmits control & timing signals: $\overline{\text{RD}}$ (Read), $\overline{\text{WR}}$ (Write), $\text{IO}/\overline{\text{M}}$, Clock, Reset, Interrupts.
-
----
-
-## 📌 Chapter 2: CPU Registers & Instruction Execution Cycle
-
-### 2.1 Essential CPU Registers (High-Yield BPSC Table)
-| Register Name | Full Form | Function / BPSC Direct Fact |
-| :--- | :--- | :--- |
-| **PC** | Program Counter | Holds the address of the **NEXT instruction** to be fetched and executed. Automatically incremented. |
-| **IR** | Instruction Register | Holds the **CURRENT instruction** that was fetched and is currently being decoded. |
-| **MAR** | Memory Address Register | Holds the physical address of the memory location currently being read from or written to. Connected directly to **Address Bus**. |
-| **MDR / MBR** | Memory Data / Buffer Register | Holds the data/contents read from or to be written into memory. Connected directly to **Data Bus**. |
-| **AC** | Accumulator | Holds immediate operands and stores the output/result of ALU operations. |
-| **SP** | Stack Pointer | Holds the memory address of the **top of the stack** (LIFO). In 8085: Decrements during `PUSH`, Increments during `POP`. |
-| **PSW** | Program Status Word | Combination of **Accumulator + Flag Register** (Status flags: Carry, Zero, Sign, Parity, Auxiliary Carry). |
-
----
-
-### 2.2 Instruction Execution Cycle Steps
-1. **Fetch:**
-   * $\text{MAR} \leftarrow \text{PC}$
-   * $\text{MDR} \leftarrow \text{Memory}[\text{MAR}]$
-   * $\text{IR} \leftarrow \text{MDR}$
-   * $\text{PC} \leftarrow \text{PC} + 1$ (points to next instruction)
-2. **Decode:** Control unit decodes opcode in $\text{IR}$ to determine required operation.
-3. **Read Effective Address:** If indirect addressing is used, fetch effective memory address.
-4. **Execute:** ALU performs operation; result stored in Accumulator/Registers.
-5. **Interrupt Check:** Check for pending interrupt signals before next instruction cycle.
-
----
-
-## 📌 Chapter 3: Microprocessor Evolution & Generations (Past Error Fix!)
-
-> [!IMPORTANT]
-> **Candidate Mistake Trap in TRE 2.0:** 
-> * 8085 is **2nd Generation** (8-bit, NMOS).
-> * Microprocessor vs Microcontroller difference.
-
-### 3.1 Generations Table
-| Generation | Word Size | Clock / Tech | Examples | Features |
-| :---: | :---: | :---: | :--- | :--- |
-| **1st Gen (1971-73)** | 4-bit / 8-bit | PMOS | Intel **4004** (world's 1st $\mu\text{P}$), 4040, 8008 | Low speed, single-function calculators |
-| **2nd Gen (1974-78)** | **8-bit** | **NMOS, +5V** | **Intel 8080, Intel 8085**, Motorola 6800, Zilog Z80 | Faster, multi-power supply (8080) to single +5V (8085) |
-| **3rd Gen (1978-81)** | **16-bit** | HMOS | **Intel 8086, 8088, 80186, 80286**, Z8000 | Pipelining introduced (8086), segmentation |
-| **4th Gen (1981-93)** | **32-bit** | HMOS / CMOS | **Intel 80386, 80486**, Motorola 68020/030 | Paging, Virtual Memory, built-in Math coprocessor (80486) |
-| **5th Gen (1993+)** | **64-bit** | Superscalar | **Pentium series, Core i3/i5/i7/i9**, AMD Ryzen | Superscalar execution, Multi-core |
-
----
-
-### 3.2 Address Bus & Maximum Addressable Memory (Direct PYQ Formula)
-$$\text{Max Addressable Memory} = 2^{(\text{Address Lines})} \text{ Bytes}$$
-
-| Processor | Address Bus Width | Data Bus Width | Maximum Direct Memory Capacity |
-| :--- | :---: | :---: | :--- |
-| **Intel 8085** | 16 bits | 8 bits | $2^{16} = \mathbf{64\text{ KB}}$ |
-| **Intel 8086** | 20 bits | 16 bits | $2^{20} = \mathbf{1\text{ MB}}$ |
-| **Intel 8088** | 20 bits | 8 bits (external) | $2^{20} = \mathbf{1\text{ MB}}$ |
-| **Intel 80286** | 24 bits | 16 bits | $2^{24} = \mathbf{16\text{ MB}}$ |
-| **Intel 80386** | 32 bits | 32 bits | $2^{32} = \mathbf{4\text{ GB}}$ |
-| **Intel 80486** | 32 bits | 32 bits | $2^{32} = \mathbf{4\text{ GB}}$ |
-
----
-
-### 3.3 Microprocessor vs Microcontroller
-* **Microprocessor ($\mu\text{P}$):**
-  * **"CPU on a single chip"**.
-  * Contains ALU, Control Unit, and Registers ONLY.
-  * RAM, ROM, I/O ports, timers, and serial interfaces must be connected **externally**.
-  * Used in general-purpose computing (PCs, Laptops). Examples: 8085, 8086, Core i5.
-* **Microcontroller ($\mu\text{C}$):**
-  * **"Complete Computer on a single chip"** (Single chip computer).
-  * Contains CPU + RAM + ROM + I/O ports + Timers/Counters on a single integrated chip.
-  * Used in embedded dedicated systems (Washing machines, Microwave ovens, Cars). Examples: **Intel 8051**, PIC, ATmega328.
-
----
-
-## 📌 Chapter 4: Intel 8085 Microprocessor Architecture & Details
-
-### 4.1 Key Specifications of 8085
-* **Pin Count:** **40 pins** (DIP - Dual In-line Package).
-* **Power Supply:** Single **$+5\text{V}$ DC**.
-* **Operating Frequency:** **$3\text{ MHz}$** standard (External crystal frequency is divided by 2: Crystal $= 6\text{ MHz}$).
-* **Data Bus:** 8-bit ($D_0 - D_7$), multiplexed with lower address bus as $\mathbf{AD_0 - AD_7}$.
-* **Address Bus:** 16-bit ($A_8 - A_{15}$ upper 8 bits, $AD_0 - AD_7$ lower 8 bits).
-* **ALE (Address Latch Enable):** Active HIGH signal used to demultiplex $AD_0 - AD_7$.
-  * When $\text{ALE} = 1 \implies$ Bus contains **Address** ($A_0 - A_7$).
-  * When $\text{ALE} = 0 \implies$ Bus contains **Data** ($D_0 - D_7$).
-
----
-
-### 4.2 8085 Interrupts (Priority & Vector Locations)
-BPSC loves direct questions on 8085 interrupts!
-
-| Interrupt | Priority | Maskable / Non-maskable | Trigger Type | Vectored? | Vector Location |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **TRAP (RST 4.5)** | **1 (Highest)** | **Non-Maskable (NMI)** | Level & Edge | Yes | $4.5 \times 8 = 36 = \mathbf{0024H}$ |
-| **RST 7.5** | 2 | Maskable | Edge-triggered | Yes | $7.5 \times 8 = 60 = \mathbf{003CH}$ |
-| **RST 6.5** | 3 | Maskable | Level-triggered | Yes | $6.5 \times 8 = 52 = \mathbf{0034H}$ |
-| **RST 5.5** | 4 | Maskable | Level-triggered | Yes | $5.5 \times 8 = 44 = \mathbf{002CH}$ |
-| **INTR** | **5 (Lowest)** | Maskable | Level-triggered | **No (Non-vectored)** | Provided externally |
-
-> [!TIP]
-> **Vector Address Calculation Formula:**  
-> $\text{Vector Address in Hex} = (\text{RST Number} \times 8) \text{ converted to Hexadecimal}$.  
-> *Example:* For RST 7.5 $\implies 7.5 \times 8 = 60$.  
-> $60 \div 16 = 3$ (Remainder 12, which is $\text{C}$) $\implies \mathbf{003CH}$.
+- [x] **Chapter 1: Basic Computer Organization & System Bus**
+  - [x] Topic 1.1: Functional Units (CPU, ALU, CU, Memory, I/O) & Von Neumann vs Harvard
+    - Core: Input, Output, CPU (ALU + CU + Registers), Memory.
+    - Von Neumann: Shared memory & shared bus for Data + Instructions -> Von Neumann Bottleneck.
+    - Harvard: Separate memory & separate buses -> simultaneous fetch possible.
+  - [x] Topic 1.2: System Bus Architecture (Data, Address, Control Bus)
+    - Address Bus: Unidirectional (CPU -> Memory/IO). Width = Max Memory Capacity ($2^k$).
+      - Breakdown Trick: $16\text{-bit} = 2^6 \times 2^{10} = 64\text{ KB}$ (8085).
+      - $20\text{-bit} = 2^0 \times 2^{20} = 1\text{ MB}$ (8086).
+      - $24\text{-bit} = 2^4 \times 2^{20} = 16\text{ MB}$ (80286).
+      - $32\text{-bit} = 2^2 \times 2^{30} = 4\text{ GB}$ (Pentium/x86).
+    - Data Bus: Bidirectional (CPU <-> Memory/IO). Width = Word length / transfer per cycle (8-bit = 1 byte, 16-bit = 2 bytes).
+    - Control Bus: Bidirectional overall. Read/Write/Timing/Interrupt signals.
+  - [x] Topic 1.3: CPU Dedicated Registers & Instruction Cycle (Fetch-Decode-Execute)
+    - PC (Program Counter): Address of NEXT instruction. Auto-increments ($PC \leftarrow PC + 1$).
+    - MAR (Memory Address Register): Holds memory address being accessed. Connected to Address Bus.
+    - MDR/MBR (Memory Data Register): Holds data being read/written. Connected to Data Bus.
+    - IR (Instruction Register): Holds CURRENT instruction being decoded by CU.
+    - AC (Accumulator): Holds ALU calculation results / intermediate values.
+    - Cycle: Fetch ($MAR \leftarrow [PC]$, $MDR \leftarrow M[MAR]$, $IR \leftarrow [MDR]$, $PC \leftarrow [PC]+1$) -> Decode (CU) -> Execute (ALU).
+- [x] **Chapter 2: Microprocessors (8085 & 8086) & Generations (🔥 High-Yield)**
+  - [x] Topic 2.1: Microprocessor Generations, Features & Maximum Memory Addressing
+    - 1st Gen: Intel 4004 (4-bit, 1st commercial uP), 8008 (8-bit) [PMOS].
+    - 2nd Gen: Intel 8080, Intel 8085 (8-bit, NMOS) -> $2^{16} = 64\text{ KB}$.
+    - 3rd Gen: Intel 8086 (16-bit, 20-bit address = $1\text{ MB}$), 80286 (16-bit, 24-bit address = $16\text{ MB}$) [HMOS].
+    - 4th Gen: Intel 80386 (1st 32-bit uP, 32-bit address = $4\text{ GB}$), 80486.
+    - 5th Gen: Pentium series, Core i3/i5/i7 (64-bit, superscalar).
+  - [x] Topic 2.2: 8085 Architecture, Registers, Flags & Control Pins
+    - 40-pin DIP, +5V, NMOS, 3 MHz standard clock (6 MHz crystal / 2).
+    - 8-bit Data Bus ($D_0-D_7$), 16-bit Address Bus ($A_0-A_{15}$) -> 64 KB memory.
+    - $AD_0-AD_7$ multiplexed: Demultiplexed using ALE pin ($ALE=1 \implies \text{Address}$, $ALE=0 \implies \text{Data}$).
+    - Registers: A (Accumulator), B, C, D, E, H, L (all 8-bit). Pairs: BC, DE, HL (HL = default Memory Pointer 'M').
+    - 16-bit Registers: PC (Program Counter) & SP (Stack Pointer).
+    - Flag Register (8-bit with 5 active flags): Sign (S), Zero (Z), Auxiliary Carry (AC - BCD/DAA), Parity (P - Even), Carry (CY).
+    - Control Pins: $IO/\overline{M}$ (1 = IO, 0 = Memory), READY (slow device wait), HOLD/HLDA (DMA).
+  - [x] Topic 2.3: 8085 Interrupts (TRAP, RST 7.5/6.5/5.5, INTR)
+    - 5 Hardware Interrupts in priority order: TRAP (Rank 1, Non-maskable, Edge+Level) > RST 7.5 (Maskable, Edge) > RST 6.5 (Maskable, Level) > RST 5.5 (Maskable, Level) > INTR (Rank 5, Maskable, Level, Non-vectored).
+    - Vector Address Formula: $(\text{Interrupt No.}) \times 8 \rightarrow \text{Hex}$.
+      - TRAP ($4.5 \times 8 = 36 = 16 \times 2 + 4$) $\rightarrow$ `0024H`.
+      - RST 6.5 ($6.5 \times 8 = 52 = 16 \times 3 + 4$) $\rightarrow$ `0034H`.
+      - RST 7.5 ($7.5 \times 8 = 60 = 16 \times 3 + 12[\text{C}]$) $\rightarrow$ `003CH`.
+    - Active Low pins: Work on `0` (e.g. $\overline{\text{INTA}}$, $\overline{\text{RD}}$, $\overline{\text{WR}}$).
+  - [x] Topic 2.4: 8086 Basics, Segmentation & 20-bit Physical Address Calculation
+    - 16-bit uP, 40 pins, 16-bit Data Bus, 20-bit Address Bus -> $2^{20} = 1\text{ MB}$ memory ($00000\text{H}-\text{FFFFFH}$).
+    - Pipelined 2 Units: BIU (Bus Interface Unit: fetches instructions into 6-byte queue, calculates physical address) + EU (Execution Unit: ALU, General Registers, Flags, decodes & executes).
+    - Segmentation: Total 1 MB divided into max $64\text{ KB}$ segments (CS, DS, SS, ES with offsets IP, SI/DI, SP/BP).
+    - Physical Address Shortcut: $\text{Segment Address} \times 10\text{H} + \text{Offset}$ (append `0` to Segment, then add Offset in Hex).
+  - [x] Topic 2.5: Microprocessor vs Microcontroller
+    - Microprocessor: CPU only on chip; external RAM, ROM, I/O (e.g. 8085, 8086, PC). General purpose.
+    - Microcontroller: "Computer on a single chip" - CPU + RAM + ROM + Timers + I/O on single IC (e.g. 8051, PIC, Arduino AVR). Dedicated/embedded systems (washing machines, microwave, cars).
+- [x] **Chapter 3: Instruction Formats & Addressing Modes**
+  - [x] Topic 3.1: Instruction Formats (0, 1, 2, 3-address instructions)
+    - Instruction = Opcode (what to do) + Operands (on what).
+    - Opcode bit calculation: $2^{\text{bits}} \ge N \implies$ e.g. 128 operations $= 2^7 \implies 7\text{ bits}$.
+    - 3-Address: `ADD R1, R2, R3` (Source & Dest distinct; RISC).
+    - 2-Address: `ADD R1, R2` (One register is both source and destination; x86/CISC).
+    - 1-Address: `ADD X` (Accumulator $AC$ is implicitly assumed).
+    - 0-Address: `ADD` (STACK-organized computers, Postfix/RPN evaluation).
+  - [x] Topic 3.2: Addressing Modes (Immediate, Direct, Indirect, Indexed, Relative, etc.)
+    - Immediate: Operand in instruction itself (e.g. `MVI A, 05H`). Fast, no memory access.
+    - Direct: $EA = A$. 1 memory reference.
+    - Indirect: $EA = \text{Mem}[A]$. Used for **Pointers**. 2 memory references.
+    - Register: Operand in CPU register (e.g. `MOV A, B`). **Fastest execution**.
+    - Register Indirect: $EA = [R]$ (e.g. `MOV A, M` with HL pair).
+    - Indexed: $EA = A + XR$. Specifically used for **Arrays** & tabular data.
+    - Relative (PC Relative): $EA = PC + A$. Used for **Branch / Jump** instructions & relocatable code.
+    - Base Register: $EA = BR + A$. Used for **Program Relocation** by OS.
+- [x] **Chapter 4: Memory Hierarchy & Cache Memory**
+  - [x] Topic 4.1: Memory Hierarchy (Speed, Capacity, Cost)
+    - Pyramid Order (Top to Bottom): CPU Registers (<1ns) -> Cache (1-10ns, SRAM) -> Main Memory (50-100ns, DRAM) -> Secondary (ms, HDD/SSD) -> Tertiary.
+    - Top to Bottom: Speed decreases, Access time increases, Cost per bit decreases, Capacity increases.
+    - Bottom to Top: Speed increases, Access time decreases, Cost per bit increases, Capacity decreases.
+  - [x] Topic 4.2: Semiconductor Memory (SRAM vs DRAM, ROM types)
+    - SRAM: Flip-Flops/Transistors, No refreshing needed, Fast (1-10ns), High cost. Used in **Cache Memory**.
+    - DRAM: 1 Transistor + 1 Capacitor, **Periodic Refreshing REQUIRED** (leaks charge), Slower (50-100ns), High density/cheap. Used in **Main RAM**.
+    - ROM Types:
+      - PROM: Blank chip, programmed **only ONCE** by burning fusible links.
+      - EPROM: Erased by **Ultraviolet (UV) rays** through quartz window.
+      - EEPROM: Erased **Electrically** byte-by-byte in circuit.
+      - Flash Memory: Advanced EEPROM erased **Electrically at BLOCK level** (SSDs, Pen drives).
+  - [x] Topic 4.3: Cache Memory, Locality of Reference (Spatial vs Temporal)
+    - Cache: High-speed SRAM between CPU and Main RAM.
+    - Hit Ratio: $\text{Hits} / \text{Total References}$. Miss Ratio $= 1 - \text{Hit Ratio}$.
+    - Locality of Reference (Why cache works):
+      - **Temporal Locality (Time):** Recently accessed data/code will be accessed again soon. Examples: **Loops (`for`/`while`)**, counters, subroutine variables.
+      - **Spatial Locality (Space):** Data near recently accessed memory will be accessed soon. Examples: **Arrays**, sequential instruction execution.
+  - [x] Topic 4.4: Cache Mapping Techniques & Write Policies
+    - Direct Mapping: 1 fixed line per block. Simple, cheapest, high conflict miss.
+    - Fully Associative: Block can go to ANY free line. Zero conflict miss, expensive hardware.
+    - Set-Associative: Compromise. Block maps to specific Set, then any line in set. Most common in modern CPUs.
+    - Write-Through: Cache + RAM updated **simultaneously**. Simple, consistent, slower.
+    - Write-Back: Cache updated first; RAM updated only when block replaced. Uses **Dirty Bit** (Modified Bit). Super fast.
+- [x] **Chapter 5: Input-Output (I/O) Organization & Data Transfer**
+  - [x] Topic 5.1: Data Transfer Techniques (Programmed, Interrupt-driven, DMA)
+    - Programmed I/O: CPU in continuous 'busy-waiting' polling loop. High CPU time waste.
+    - Interrupt-driven I/O: Device sends interrupt when ready; CPU pauses and transfers data via CPU registers.
+    - DMA (Direct Memory Access): High-speed data transfer directly between I/O device and RAM **without passing through CPU registers**.
+    - DMA initialization by CPU: Requires Starting Address, Word Count, and Transfer Direction (Read/Write).
+  - [x] Topic 5.2: Direct Memory Access (DMA) & Controllers
+    - Signals: HOLD (DMA requests bus from CPU) & HLDA (CPU grants bus to DMA, tri-stating buses).
+    - Modes:
+      - Burst Mode (Block Transfer): DMA transfers entire block at once without releasing bus; CPU suspended during transfer (Fastest).
+      - Cycle Stealing Mode: DMA steals 1 clock/bus cycle to transfer 1 byte, returns bus to CPU immediately; CPU not frozen.
+      - Transparent Mode: DMA transfers only when CPU is decoding/executing internally (no bus use).
+    - Chip: Intel 8257 / 8237 = Programmable DMA Controller.
+      - (Compare: 8255 = PPI Parallel Ports, 8259 = PIC Interrupt Controller, 8253/8254 = Timer).
+  - [x] Topic 5.3: Memory-mapped I/O vs Isolated (I/O-mapped) I/O
+    - Memory-Mapped I/O: Common 16-bit address space for Memory and I/O. Uses normal memory instructions (`MOV`, `LDA`, `STA`). Reduces usable RAM space.
+    - Isolated I/O (I/O-Mapped): Separate address space. 8-bit port address ($2^8 = 256$ ports). Requires special instructions: **`IN`** and **`OUT`**. RAM capacity unaffected. Uses $IO/\overline{M} = 1$.
+- [x] **Chapter 6: Pipelining, RISC vs CISC**
+  - [x] Topic 6.1: Pipelining Basics, Stages & Speedup
+    - Concept: Assembly line technique. Overlaps execution of multiple instructions.
+    - 5 Classic Stages: IF (Fetch) -> ID (Decode) -> EX (Execute) -> MEM (Memory) -> WB (Write Back).
+    - Advantage: Increases **Throughput** (does not decrease individual instruction latency).
+    - Maximum Theoretical Speedup: $S_{\text{max}} = k$ (where $k$ = number of stages in pipeline).
+  - [x] Topic 6.2: Pipeline Hazards (Structural, Data, Control)
+    - Structural Hazard: Hardware resource conflict (2 instructions need same resource at once). Solution: Separate Instruction & Data Caches (Harvard style) or resource duplication.
+    - Data Hazard: Data dependency (RAW - Read After Write). Solution: **Operand Forwarding (Bypassing)**, instruction reordering, NOP stalls.
+    - Control Hazard: Caused by Branch, Jump, Call instructions. Solution: **Branch Prediction**, delayed branch.
+  - [x] Topic 6.3: RISC vs CISC Architecture Differences
+    - RISC: Reduced Instruction Set. Fixed length instructions, 1 cycle execution, **Load/Store Architecture** (only Load/Store touch RAM), many general registers, **Hardwired Control Unit** (faster), easy pipelining. Examples: ARM (smartphones, Apple Silicon), MIPS, RISC-V.
+    - CISC: Complex Instruction Set. Variable length instructions (1 to 15 bytes), multi-cycle execution, arithmetic directly accesses memory, fewer registers, **Microprogrammed Control Unit**, complex pipelining. Examples: Intel x86 (8086, Pentium, Core series), AMD.
 
 ---
 
-## 📌 Chapter 5: Addressing Modes (Definitions & Examples)
-
-| Addressing Mode | Definition | Example Instruction |
-| :--- | :--- | :--- |
-| **Immediate** | Data (operand) is directly specified in the instruction itself. | `MVI A, 32H` (Move 32H immediately into Reg A) |
-| **Register** | Operand is stored in a CPU register; no memory reference. | `MOV A, B` (Copy contents of Reg B into Reg A) |
-| **Direct** | 16-bit physical memory address of operand is given in instruction. | `LDA 2050H` (Load Accumulator from memory `2050H`) |
-| **Register Indirect** | Address of operand is stored in a register pair (usually H-L pair). | `MOV A, M` (Move content of memory pointed by HL into A) |
-| **Implied / Implicit** | Operand is implicitly defined by the opcode itself; no operand specified. | `CMA` (Complement Accumulator), `STC` (Set Carry), `NOP` |
-| **Relative** | Effective address $= \text{PC} + \text{Displacement}$ (used in branch/jumps). | `BR +12` |
-| **Indexed** | Effective address $= \text{Base/Index Register} + \text{Offset}$. | Array access `A[i]` |
-
----
-
-## 📌 Chapter 6: Memory Hierarchy & Cache Memory
-
-### 6.1 Memory Hierarchy Pyramid
-$$\text{Registers} \longrightarrow \text{Cache (L1, L2, L3)} \longrightarrow \text{Main Memory (RAM/ROM)} \longrightarrow \text{Secondary (SSD/HDD)} \longrightarrow \text{Magnetic Tape}$$
-
-* **Going Top $\to$ Bottom:**
-  * Access Time / Latency: **Increases** (Registers fastest, Tape slowest)
-  * Storage Capacity: **Increases**
-  * Cost per bit: **Decreases**
+## 🏆 Subject Mastery Summary: COA & Microprocessors
+- **Total Chapters Mastered:** 6 / 6 (100%)
+- **Target BPSC Part-III Marks Secured:** **~12 / 12 Marks**
+- **Core Leakage Areas Repaired:**
+  - Microprocessor generations & memory limits ($2^k$)
+  - 8085 pins, flags, and interrupt priority/addressing
+  - 8086 20-bit physical address shortcut ($\text{Segment} \times 10\text{H} + \text{Offset}$)
+  - Cache mapping, Write-back/Dirty bit, and Locality of Reference
+  - DMA cycle stealing vs burst mode & 8257 chip
+  - Pipelining throughput, hazards, and RISC vs CISC
 
 ---
-
-### 6.2 Cache Mapping Techniques
-| Mapping Scheme | Mechanism | Advantages | Disadvantages |
-| :--- | :--- | :--- | :--- |
-| **Direct Mapping** | Each memory block maps to exactly ONE fixed cache line: $i = j \pmod m$. | Simple, fastest tag search, cheapest. | High **conflict miss / thrashing**. |
-| **Fully Associative** | A memory block can be placed in **ANY** cache line. | Minimum conflict miss, most flexible. | Expensive hardware (requires parallel associative tag comparison). |
-| **$k$-way Set Associative** | Cache divided into sets of $k$ lines. Block maps to a specific set, but can go into any line within that set. | Best trade-off between Direct & Fully Associative. | Moderate complexity. |
-
----
-
-### 6.3 Cache Write Policies & Formulas
-1. **Write-Through:**
-   * CPU writes data simultaneously to both **Cache** and **Main Memory**.
-   * *Advantage:* Always consistent. *Disadvantage:* Slower memory write speed.
-2. **Write-Back (Copy-Back):**
-   * CPU updates only the **Cache**. Main memory updated only when that block is replaced/evicted.
-   * Uses a **Dirty Bit** (Modified bit): $1 =$ Block modified, $0 =$ Unmodified.
-3. **Average Memory Access Time (AMAT):**
-   $$T_{\text{avg}} = T_{\text{cache}} + (1 - H) \times T_{\text{miss\_penalty}}$$
-   *(where $H$ is the Cache Hit Ratio)*
-
----
-
-## 📌 Chapter 7: Control Unit (CU) & RISC vs CISC
-
-### 7.1 Hardwired vs Microprogrammed Control Unit
-| Parameter | Hardwired Control Unit | Microprogrammed Control Unit |
-| :--- | :--- | :--- |
-| **Implementation** | Combinational logic gates, flip-flops, decoders. | Microprograms stored in a special **Control Memory (ROM)**. |
-| **Speed** | **Very Fast** | Slower (requires micro-instruction fetch) |
-| **Flexibility / Modification** | Extremely difficult (requires rewiring) | **Easy** (just update ROM microcode) |
-| **Instruction Set** | Suited for **RISC** | Suited for **CISC** |
-
----
-
-### 7.2 RISC vs CISC Architecture
-| Feature | RISC (Reduced Instruction Set Computer) | CISC (Complex Instruction Set Computer) |
-| :--- | :--- | :--- |
-| **Instruction Count & Size** | Fewer, fixed-length instructions (e.g. 32-bit). | Large number, variable-length instructions. |
-| **Execution Speed** | Single-cycle execution per instruction. | Multi-cycle execution. |
-| **Memory Access** | **Load/Store architecture** (Only LOAD and STORE access memory). | Memory operands allowed in arithmetic instructions (e.g. `ADD [BX], AX`). |
-| **Registers** | Large number of general-purpose registers. | Few general-purpose registers. |
-| **Pipelining** | Highly efficient and easy to pipeline. | Difficult to pipeline. |
-| **Examples** | ARM, MIPS, RISC-V, SPARC. | Intel x86 (8086, Pentium), Motorola 68000. |
