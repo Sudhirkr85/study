@@ -21,6 +21,9 @@
       - $32\text{-bit} = 2^2 \times 2^{30} = 4\text{ GB}$ (Pentium/x86).
     - Data Bus: Bidirectional (CPU <-> Memory/IO). Width = Word length / transfer per cycle (8-bit = 1 byte, 16-bit = 2 bytes).
     - Control Bus: Bidirectional overall. Read/Write/Timing/Interrupt signals.
+    - **Expansion & Peripheral Buses (BPSC TRE 1.0 PYQ):**
+      - **PCI Bus (Peripheral Component Interconnect):** Used to extend the connectivity of the processor bus to peripheral devices (graphics, sound, NIC).
+      - **SCSI / USB:** External peripheral interface buses.
   - [x] Topic 1.3: CPU Dedicated Registers & Instruction Cycle (Fetch-Decode-Execute)
     - PC (Program Counter): Address of NEXT instruction. Auto-increments ($PC \leftarrow PC + 1$).
     - MAR (Memory Address Register): Holds memory address being accessed. Connected to Address Bus.
@@ -106,6 +109,9 @@
     - Interrupt-driven I/O: Device sends interrupt when ready; CPU pauses and transfers data via CPU registers.
     - DMA (Direct Memory Access): High-speed data transfer directly between I/O device and RAM **without passing through CPU registers**.
     - DMA initialization by CPU: Requires Starting Address, Word Count, and Transfer Direction (Read/Write).
+    - **I/O Channels (Channel Processors - Mainframe/High-End):**
+      - **Selector Channel:** High-speed data transfer with one high-speed device at a time (e.g. magnetic disk, tape) in burst mode.
+      - **Multiplexor Channel:** Manages concurrent transfers with multiple slow/medium speed devices simultaneously (e.g. printers, terminals).
   - [x] Topic 5.2: Direct Memory Access (DMA) & Controllers
     - Signals: HOLD (DMA requests bus from CPU) & HLDA (CPU grants bus to DMA, tri-stating buses).
     - Modes:
