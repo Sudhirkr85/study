@@ -148,56 +148,96 @@
 </style>
 </head>
 <body>
-<h1 class="chapter-title">📘 BPSC CS Module 01: Digital Electronics & Number Systems (Desi Tricks & Sequence Notes)</h1>
-<div class="callout"><strong>🎯 Target:</strong> 15 / 15 Marks in Part-III (BPSC TRE Standard)<br><strong>Rule:</strong> Bina kisi faltu formula ya LaTeX code ke — Seedhi sequence, Desi tricks, aur pakke marks.</div>
+<h1 class="chapter-title">📘 BPSC CS Module 01: Digital Electronics & Number Systems</h1>
+<h2 class="">📖 Master Classroom Edition & BPSC 5-Option Practice Module</h2>
+<div class="callout"><strong>🎯 Mission Target:</strong> 15 / 15 Marks in Part-III (BPSC TRE Computer Science)<br><strong>Exam Philosophy:</strong> Anti-GATE Rule (Direct, Conceptual, NCERT Class 11-12 & BCA Core Standard)<br><strong>Golden BPSC Rule:</strong> Rule of 2 — Har option ko scan karo. Do option sahi mile to Option (D) "More than one of the above" pakka!</div>
 <hr>
-<h2 class="">🔢 Sequence 1: Number Systems & Fast Conversion</h2>
-<h3 class="">1.1 Base aur Bit Capacity (1 Line Yaad Rakho)</h3>
+<h1 class="chapter-title">📑 Table of Contents</h1>
+<p>1. <strong>Chapter 1:</strong> Number Systems & Fast Conversions (All Bases & Fractions)</p>
+<p>2. <strong>Chapter 2:</strong> Binary Arithmetic, Complements & Overflow</p>
+<p>3. <strong>Chapter 3:</strong> Binary Codes (BCD, Excess-3, Gray, Parity, Hamming Code)</p>
+<p>4. <strong>Chapter 4:</strong> Boolean Algebra, Logic Laws & Canonical Forms (SOP & POS)</p>
+<p>5. <strong>Chapter 5:</strong> Logic Gates (Basic, Universal, Exclusive & Bubble Equivalents)</p>
+<p>6. <strong>Chapter 6:</strong> Karnaugh Maps (K-Map), Implicants & Minimization</p>
+<p>7. <strong>Chapter 7:</strong> Combinational Logic Circuits (Adders, Subtractors, MUX, DEMUX, Decoders, Encoders)</p>
+<p>8. <strong>Chapter 8:</strong> Sequential Logic Circuits (Latches, Flip-Flops, Tables & Race-Around)</p>
+<p>9. <strong>Chapter 9:</strong> Registers & Counters (Shift Registers, Ring, Johnson, Ripple & Synchronous)</p>
+<p>10. <strong>Chapter 10:</strong> BPSC TRE 5-Option Model Question Drill (With In-depth Trap Breakdown)</p>
+<hr>
+<h1 class="chapter-title">🏛️ CHAPTER 1: Number Systems & Fast Conversions</h1>
+<p>Computer hardware sirf electronic switches (Transistors) se bana hota hai, jo sirf do hi states samajhte hain: <strong>ON (1)</strong> ya <strong>OFF (0)</strong>. Isliye computer ka basic base binary (base 2) hota hai. Lekin human readability aur memory address representation ke liye hum Octal (Base 8) aur Hexadecimal (Base 16) use karte hain.</p>
+<hr>
+<h2 class="">1.1 Base (Radix) & Digits Table</h2>
+<div class="table-wrapper"><table><thead><tr><th>Number System</th><th>Base (Radix <span class="math">r</span>)</th><th>Allowed Digits / Symbols</th><th>Ek Digit Kitne Bits Leta Hai?</th><th>Use Case</th></tr></thead><tbody><tr><td><strong>Binary</strong></td><td><strong>2</strong></td><td><code>0, 1</code></td><td>1 bit</td><td>Computer hardware internal</td></tr><tr><td><strong>Octal</strong></td><td><strong>8</strong></td><td><code>0, 1, 2, 3, 4, 5, 6, 7</code></td><td><strong>3 bits</strong> (<span class="math">2^3 = 8</span>)</td><td>PDP minicomputers, UNIX permissions</td></tr><tr><td><strong>Decimal</strong></td><td><strong>10</strong></td><td><code>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</code></td><td>~3.32 bits</td><td>Human calculation</td></tr><tr><td><strong>Hexadecimal</strong></td><td><strong>16</strong></td><td><code>0-9</code> aur <code>A(10), B(11), C(12), D(13), E(14), F(15)</code></td><td><strong>4 bits</strong> (<span class="math">2^4 = 16</span>)</td><td>Memory addresses, MAC address, Color codes</td></tr></tbody></table></div>
+<div class="callout">💡 <strong>BPSC Trap:</strong> Hexadecimal me letters case-insensitive hote hain (<code>A</code> ya <code>a</code> dono ka matlab 10 hai). <code>A</code> se lekar <code>F</code> tak values hamesha yaad honi chahiye:<br><code>A = 10</code>, <code>B = 11</code>, <code>C = 12</code>, <code>D = 13</code>, <code>E = 14</code>, <code>F = 15</code>.</div>
+<hr>
+<h2 class="">1.2 Base Conversion Master Techniques</h2>
+<h3 class="">Method 1: Any Base <span class="math">r \to</span> Decimal (Base 10)</h3>
+<p>Formula: Digits ko unki positional weight (<span class="math">r^i</span>) se multiply karke jod do.</p>
 <ul>
-<li><strong>Binary (Base 2):</strong> Digits <code>0, 1</code> → Har digit <strong>1 bit</strong> leta hai.</li>
-<li><strong>Octal (Base 8):</strong> Digits <code>0 se 7</code> → Har digit <strong>3 bits</strong> leta hai (<span class="math">2^3 = 8</span>).</li>
-<li><strong>Decimal (Base 10):</strong> Digits <code>0 se 9</code></li>
-<li><strong>Hexadecimal (Base 16):</strong> Digits <code>0 se 9</code> aur <code>A(10), B(11), C(12), D(13), E(14), F(15)</code> → Har digit <strong>4 bits</strong> leta hai (<span class="math">2^4 = 16</span>).</li>
+<li>Integer part: Point ke left side <span class="math">r^0, r^1, r^2, \dots</span></li>
+<li>Fractional part: Point ke right side <span class="math">r^{-1}, r^{-2}, r^{-3}, \dots</span></li>
 </ul>
+<p><strong>Example:</strong> <span class="math">(1101.101)_2</span> to Decimal</p>
+<p>$<span class="math">1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 + 1 \times 2^{-1} + 0 \times 2^{-2} + 1 \times 2^{-3}</span>$</p>
+<p>$<span class="math">= 8 + 4 + 0 + 1 + 0.5 + 0 + 0.125 = \mathbf{13.625_{10}}</span>$</p>
+<p><strong>Example:</strong> <span class="math">(2A.4)_{16}</span> to Decimal</p>
+<p>$<span class="math">2 \times 16^1 + 10 \times 16^0 + 4 \times 16^{-1} = 32 + 10 + 0.25 = \mathbf{42.25_{10}}</span>$</p>
 <hr>
-<h3 class="">1.2 Binary se Octal aur Hexadecimal Grouping Rule</h3>
-<pre><code>                      [ POINT . ]
-        INTEGER PART                        POINT KE BAAD
-  &lt;=== (Right se Left jao)                 (Left se Right jao) ===&gt;
-  Point se shuru karke PEECHE chalo        Point se shuru karke AAGE chalo
-  (Kam pade to aage 0 lagao)               (Kam pade to peeche 0 lagao)</code></pre>
-<h4 class="">📌 Point ke dono taraf ka simple rule:</h4>
-<p>1. <strong>Octal ke liye:</strong> <strong>3-3 bits</strong> ke jode banao.</p>
-<p>2. <strong>Hexadecimal ke liye:</strong> <strong>4-4 bits</strong> ke jode banao.</p>
-<p>3. <strong>Point se pehle:</strong> Point ke theek bagal se shuru karo aur <strong>Ulte haath (Left ←)</strong> ki taraf chalo.</p>
-<p>4. <strong>Point ke baad:</strong> Point ke theek bagal se shuru karo aur <strong>Seedhe haath (Right →)</strong> ki taraf chalo.</p>
+<h3 class="">Method 2: Decimal (Base 10) <span class="math">\to</span> Any Base <span class="math">r</span></h3>
 <ul>
-<li><strong>Example 1: (110101.11)₂ ko Octal me badlo</strong></li>
-<li>Point se pehle (←): <code>101</code> = <strong>5</strong>, <code>110</code> = <strong>6</strong> ⇒ Ban gaya <strong>65</strong></li>
-<li>Point ke baad (→): <code>11</code> tha, 3 bit banane ke liye right me 0 joda → <code>110</code> = <strong>6</strong> ⇒ Ban gaya <strong>.6</strong></li>
-<li>👉 <strong>Answer:</strong> <strong>(65.6)₈</strong></li>
-<li><strong>Example 2: (10110111)₂ ko Hex me badlo</strong></li>
-<li>4-4 ka joda banao right to left:</li>
-<li>Pehla joda: <code>0111</code> = <strong>7</strong></li>
-<li>Doosra joda: <code>1011</code> = 11 = <strong>B</strong></li>
-<li>👉 <strong>Answer:</strong> <strong>(B7)₁₆</strong></li>
+<li><strong>Integer part ke liye:</strong> Target base <span class="math">r</span> se <strong>Divide</strong> karo, remainder ko <strong>Bottom to Top (Neeche se Upar)</strong> likho.</li>
+<li><strong>Fraction part ke liye:</strong> Target base <span class="math">r</span> se <strong>Multiply</strong> karo, integer part ko <strong>Top to Bottom (Upar se Neeche)</strong> likho.</li>
 </ul>
-<hr>
-<h3 class="">1.3 Point wala Decimal se Binary (2 se Multiply Trick)</h3>
-<p>Agar point wala decimal number diya ho (jaise <code>0.625</code>), toh divide nahi karte — <strong>2 se guna (multiply)</strong> karte hain:</p>
-<p>1. Har baar <strong>× 2</strong> karo.</p>
-<p>2. Point se pehle jo number (<code>1</code> ya <code>0</code>) aaye, usko bahar nikal kar alag likh lo.</p>
-<p>3. Bacha hua point wala hissa fir se 2 se guna karo.</p>
-<p>4. Jab point ke baad <code>.00</code> ho jaye toh ruk jao, aur <strong>Upar se Neeche</strong> padh lo:</p>
-<pre><code>0.625 × 2 = 1.25  --&gt; 1 bahar nikala (bacha 0.25)
-0.25  × 2 = 0.50  --&gt; 0 bahar nikala (bacha 0.50)
-0.50  × 2 = 1.00  --&gt; 1 bahar nikala (bacha 0.00 -&gt; Bas yahan ruk jao!)
+<pre><code>Example: (25.625)₁₀ to Binary
 
-Upar se neeche padho: 1 -&gt; 0 -&gt; 1
-👉 Answer: (0.101)₂</code></pre>
+Step A (Integer 25):               Step B (Fraction 0.625):
+2 | 25                             0.625 × 2 = 1.25  --&gt; 1 bahar nikala (bacha 0.25)
+2 | 12 - Remainder 1 (LSB)         0.25  × 2 = 0.50  --&gt; 0 bahar nikala (bacha 0.50)
+2 |  6 - Remainder 0               0.50  × 2 = 1.00  --&gt; 1 bahar nikala (bacha 0.00 -&gt; FINISH!)
+2 |  3 - Remainder 0
+2 |  1 - Remainder 1               Upar se Neeche padho: .101
+  |  0 - Remainder 1 (MSB)
+Neeche se Upar padho: 11001
+
+Final Result: (25.625)₁₀ = (11001.101)₂</code></pre>
 <hr>
-<h2 class="">🔢 Sequence 2: 2's Complement 3-Second Inspection Trick</h2>
-<p>Pen chalane ki zaroorat nahi hai, bas aankhon se dekho:</p>
+<h3 class="">Method 3: Binary <span class="math">\leftrightarrow</span> Octal (3-Bit Grouping) & Hexadecimal (4-Bit Grouping)</h3>
+<p>Binary se Octal/Hex me badalne ke liye Decimal me jane ki koi zaroorat nahi hai. Direct grouping rule use karein:</p>
+<pre><code>                      [ DECIMAL POINT . ]
+        INTEGER PART                        FRACTIONAL PART
+  &lt;=== (Right to Left)                     (Left to Right) ===&gt;
+  Point se shuru karke PEECHE chalo        Point se shuru karke AAGE chalo
+  (Kam pade to Left me 0 lagao)            (Kam pade to Right me 0 lagao)</code></pre>
+<ul>
+<li><strong>Example (Binary to Octal):</strong> <span class="math">(1011010.11)_2</span></li>
+<li>Integer part: <code>001</code> <code>011</code> <code>010</code> (Point ke bagal se 3-3 ka group banaya, aage zero lagaya) <span class="math">\to</span> <strong>1</strong>, <strong>3</strong>, <strong>2</strong></li>
+<li>Fraction part: <code>110</code> (Point ke bagal se 3 bit banane ke liye right me 0 lagaya) <span class="math">\to</span> <strong>6</strong></li>
+<li><strong>Result:</strong> <span class="math">(132.6)_8</span></li>
+<li><strong>Example (Binary to Hexadecimal):</strong> <span class="math">(11010110.101)_2</span></li>
+<li>Integer part: <code>1101</code> <code>0110</code> <span class="math">\to</span> <code>13</code> (<strong>D</strong>), <code>6</code> <span class="math">\to</span> <strong>D6</strong></li>
+<li>Fraction part: <code>1010</code> (Right me 0 joda 4 bit poora karne ke liye) <span class="math">\to</span> <code>10</code> (<strong>A</strong>)</li>
+<li><strong>Result:</strong> <span class="math">(D6.A)_{16}</span></li>
+</ul>
+<hr>
+<h1 class="chapter-title">⚙️ CHAPTER 2: Binary Arithmetic, Complements & Overflow</h1>
+<hr>
+<h2 class="">2.1 <span class="math">r</span>'s Complement & <span class="math">(r-1)</span>'s Complement</h2>
+<p>Kisi bhi base <span class="math">r</span> me do tarah ke complement hote hain:</p>
+<p>1. <strong><span class="math">(r-1)</span>'s Complement (Radix Minus One):</strong> Har digit ko base ke maximum digit se subtract karo.</p>
+<ul>
+<li>Binary me: <strong>1's Complement</strong> (Saari bits invert: <code>0 ↔ 1</code>).</li>
+<li>Decimal me: <strong>9's Complement</strong> (Har digit ko <code>9</code> se ghatao).</li>
+</ul>
+<p>2. <strong><span class="math">r</span>'s Complement (Radix Complement):</strong></p>
+<p>   $<span class="math">\mathbf{r\text{'s Complement} = (r-1)\text{'s Complement} + 1}</span>$</p>
+<ul>
+<li>Binary me: <strong>2's Complement</strong> = <span class="math">\text{1's Complement} + 1</span>.</li>
+<li>Decimal me: <strong>10's Complement</strong> = <span class="math">\text{9's Complement} + 1</span>.</li>
+</ul>
+<hr>
+<h2 class="">2.2 2's Complement 3-Second Inspection Shortcut</h2>
+<p>Exam me 1's complement nikal kar <code>+ 1</code> jodne me time waste mat karo:</p>
 <pre><code>           [ 1   0   1   1   0   0 ]
              │   │   │   │   └───┴── Right side ke 0s: Bilkul SAME rakho (00)
              │   │   │   └────────── Pehla 1 jo mila: Isko bhi SAME rakho (1)
@@ -205,103 +245,314 @@ Upar se neeche padho: 1 -&gt; 0 -&gt; 1
 
              Result: 0 1 0 1 0 0</code></pre>
 <ul>
-<li><strong>Step 1:</strong> Rightmost (seedhe haath) se dekhna shuru karo.</li>
-<li><strong>Step 2:</strong> Jab tak <strong>pehla 1</strong> na mile, saare 0 aur wo pehla 1 <strong>SAME</strong> utaar do.</li>
-<li><strong>Step 3:</strong> Us pehle 1 ke baad baayein (left) side ki baaki saari bits ko <strong>ULAT do (0 ko 1, 1 ko 0)</strong>.</li>
+<li><strong>Niyam:</strong> LSB (seedhe haath) se dekho. Jab tak pehla <code>1</code> na mile, saare 0 aur wo pehla <code>1</code> SAME copy karo. Uske baad left ki saari bits ko invert (<code>0 ko 1, 1 ko 0</code>) kar do!</li>
 </ul>
 <hr>
-<h2 class="">🔢 Sequence 3: n-Bit Range Direct Formula</h2>
-<div class="table-wrapper"><table><thead><tr><th>Representation</th><th>Minimum se Maximum Range</th><th>Zero (0) ke roop</th><th>Total Distinct Values</th></tr></thead><tbody><tr><td><strong>Unsigned (Positive only)</strong></td><td><strong>0 se +(2ⁿ - 1)</strong></td><td>Sirf 1 (<code>00...0</code>)</td><td>2ⁿ</td></tr><tr><td><strong>Signed Magnitude</strong></td><td><strong>-(2ⁿ⁻¹ - 1) se +(2ⁿ⁻¹ - 1)</strong></td><td>2 (<code>+0</code> aur <code>-0</code>)</td><td>2ⁿ - 1</td></tr><tr><td><strong>1's Complement</strong></td><td><strong>-(2ⁿ⁻¹ - 1) se +(2ⁿ⁻¹ - 1)</strong></td><td>2 (<code>+0</code> aur <code>-0</code>)</td><td>2ⁿ - 1</td></tr><tr><td><strong>2's Complement</strong></td><td><strong>-2ⁿ⁻¹ se +(2ⁿ⁻¹ - 1)</strong></td><td><strong>Sirf 1 (<code>00...0</code>)</strong></td><td><strong>2ⁿ</strong></td></tr></tbody></table></div>
+<h2 class="">2.3 Signed Number Representations & Range Comparison</h2>
+<div class="table-wrapper"><table><thead><tr><th>Representation</th><th>MSB (Sign bit)</th><th>Positive Range</th><th>Negative Range</th><th>Zero (0) ke Representation</th><th>Total Distinct Numbers</th></tr></thead><tbody><tr><td><strong>Unsigned</strong></td><td>Data bit</td><td><span class="math">0</span> to <span class="math">+(2^n - 1)</span></td><td>None</td><td>1 (<code>00...0</code>)</td><td><span class="math">2^n</span></td></tr><tr><td><strong>Signed Magnitude</strong></td><td>0 = +, 1 = -</td><td><span class="math">0</span> to <span class="math">+(2^{n-1} - 1)</span></td><td><span class="math">-(2^{n-1} - 1)</span> to <span class="math">0</span></td><td><strong>2 (<code>+0</code> and <code>-0</code>)</strong></td><td><span class="math">2^n - 1</span></td></tr><tr><td><strong>1's Complement</strong></td><td>0 = +, 1 = -</td><td><span class="math">0</span> to <span class="math">+(2^{n-1} - 1)</span></td><td><span class="math">-(2^{n-1} - 1)</span> to <span class="math">0</span></td><td><strong>2 (<code>+0</code> and <code>-0</code>)</strong></td><td><span class="math">2^n - 1</span></td></tr><tr><td><strong>2's Complement</strong></td><td>0 = +, 1 = -</td><td><span class="math">0</span> to <span class="math">+(2^{n-1} - 1)</span></td><td><strong><span class="math">-2^{n-1}</span> to <span class="math">0</span></strong></td><td><strong>Sirf 1 (<code>00...0</code>)</strong></td><td><strong><span class="math">2^n</span></strong></td></tr></tbody></table></div>
+<div class="callout">🎯 <strong>Direct Exam Fact for <span class="math">n = 8</span> Bits:</strong><br>* 2's complement range: <strong><span class="math">-128</span> se <span class="math">+127</span></strong><br>* 1's complement range: <strong><span class="math">-127</span> se <span class="math">+127</span></strong><br>* 2's complement me 1 extra negative number hota hai: <strong><span class="math">-128</span> (<code>10000000</code>)</strong> jiska koi positive counterpart 8-bit me nahi hota!<br>* 2's complement me MSB ka weight negative hota hai: <strong><span class="math">-2^{n-1}</span></strong> (8-bit me MSB = <span class="math">-128</span>).</div>
+<hr>
+<h2 class="">2.4 Overflow Condition in Signed Arithmetic</h2>
+<p>Jab do same sign ke numbers ko add karne par opposite sign ka result aa jaye, toh <strong>Overflow</strong> hota hai:</p>
 <ul>
-<li>🎯 <strong>8-Bit Direct Exam Numbers (<span class="math">n = 8</span>):</strong></li>
-<li>2's Complement range: <strong>-128 se +127</strong></li>
-<li>Extra negative number: <strong>-128</strong> (<code>10000000</code>)</li>
-<li>MSB ka weight 2's complement me hamesha negative hota hai: <strong>-2ⁿ⁻¹</strong> (8-bit me <code>-128</code>).</li>
+<li><span class="math">(+A) + (+B) \implies</span> Agar result Negative aa jaye <span class="math">\to</span> <strong>Overflow!</strong></li>
+<li><span class="math">(-A) + (-B) \implies</span> Agar result Positive aa jaye <span class="math">\to</span> <strong>Overflow!</strong></li>
+<li>Opposite sign (<span class="math">+A</span> aur <span class="math">-B</span>) me overflow <strong>kabhi nahi hota</strong>.</li>
+<li><strong>Hardware Detection Formula:</strong></li>
+</ul>
+<p>  $<span class="math">\mathbf{V = C_{\text{in}} \oplus C_{\text{out}}}</span>$</p>
+<p>  (MSB me aane wala Carry aur MSB se bahar nikalne wala Carry ka XOR agar <code>1</code> hai, toh Overflow hua hai!)</p>
+<hr>
+<h1 class="chapter-title">🏷️ CHAPTER 3: Binary Codes (BCD, Excess-3, Gray, Hamming)</h1>
+<hr>
+<h2 class="">3.1 Classification of Binary Codes</h2>
+<pre><code>                          BINARY CODES
+                               │
+       ┌───────────────────────┴───────────────────────┐
+   Weighted Codes                               Non-Weighted Codes
+   (Har bit ka fixed weight)                    (Position ka weight nahi hota)
+   - BCD (8421)                                 - Excess-3 (XS-3)
+   - 2421, 5421                                 - Gray Code (Unit Distance)
+   - 8 4 -2 -1</code></pre>
+<hr>
+<h2 class="">3.2 BCD Code (Binary Coded Decimal / 8421 Code)</h2>
+<ul>
+<li>Decimal ke har ek digit (<span class="math">0</span> se <span class="math">9</span>) ko <strong>4-bit binary</strong> me represent kiya jata hai.</li>
+<li>Valid BCD numbers: <code>0000</code> (<span class="math">0</span>) se lekar <code>1001</code> (<span class="math">9</span>) tak.</li>
+<li><strong>Invalid BCD States:</strong> 4 bit me total 16 combinations hote hain (<span class="math">0</span> to <span class="math">15</span>). BCD me sirf 10 valid hain (<span class="math">0</span> to <span class="math">9</span>).</li>
+<li><strong>Invalid States: 10 se 15</strong> (<code>1010</code> se <code>1111</code>) <span class="math">\to</span> <strong>Total 6 Invalid States</strong> hoti hain!</li>
+<li><strong>BCD Addition Correction Rule:</strong></li>
+<li>Agar do BCD numbers ko jodne par sum <span class="math">> 9</span> aa jaye ya carry generate ho jaye, toh answer invalid hota hai.</li>
+<li>Correct karne ke liye answer me <strong><span class="math">+6</span> (<code>0110</code>)</strong> add kiya jata hai!</li>
 </ul>
 <hr>
-<h2 class="">🔢 Sequence 4: Codes (BCD, Excess-3, Gray, Hamming)</h2>
-<p>1. <strong>BCD (8421):</strong></p>
+<h2 class="">3.3 Excess-3 Code (XS-3)</h2>
 <ul>
-<li>Valid digits: <strong>0 se 9</strong> (<code>0000</code> se <code>1001</code>).</li>
-<li>Invalid states: <strong>10 se 15</strong> (Total 6 invalid codes hote hain).</li>
-<li><strong>Addition Rule:</strong> Agar do BCD jodte waqt sum 9 se bada aa jaye ya carry nikle → <strong>+6 (<code>0110</code>)</strong> add kar do.</li>
+<li>BCD number me binary <code>3</code> (<code>0011</code>) jodne par Excess-3 code banta hai:</li>
 </ul>
-<p>2. <strong>Excess-3 (XS-3):</strong></p>
+<p>  $<span class="math">\mathbf{\text{Excess-3} = \text{BCD} + 0011_2}</span>$</p>
 <ul>
-<li>Formula: <strong>BCD + 3 (<code>0011</code>)</strong>.</li>
-<li><strong>Self-Complementing Code:</strong> Excess-3 ka 1's complement nikaloge toh wo us number ka <strong>9's complement</strong> ban jata hai.</li>
-</ul>
-<p>3. <strong>Gray Code (Unit Distance Code):</strong></p>
-<ul>
-<li>Do lagatar numbers ke beech me <strong>sirf 1 bit</strong> ka difference hota hai.</li>
-<li>Shaft encoders aur error reduction me use hota hai.</li>
-</ul>
-<p>4. <strong>Hamming Code (Error Detection & Correction):</strong></p>
-<ul>
-<li>Error Detect karne ke liye minimum distance: <strong>d_min ≥ s + 1</strong></li>
-<li>Error Correct karne ke liye minimum distance: <strong>d_min ≥ 2t + 1</strong></li>
-<li>Parity bits (<span class="math">p</span>) formula: <strong>2ᵖ ≥ m + p + 1</strong></li>
+<li><strong>Self-Complementing Code:</strong> Excess-3 ka 1's complement lene par jo code milta hai, wo original decimal digit ka <strong>9's complement</strong> hota hai! (BPSC me bar-bar poocha jata hai: "Which of the following is a self-complementing code? <span class="math">\implies</span> <strong>Excess-3 and 2421</strong>").</li>
 </ul>
 <hr>
-<h2 class="">🔢 Sequence 5: Universal Gates Ginti Trick (1, 2, 3, 4, 5)</h2>
-<p>Dono universal gates ke liye bas ye simple sequence yaad rakho:</p>
-<pre><code>  NAND Gates ki Ginti:  NOT (1) ──&gt; AND (2) ──&gt; OR (3) ──&gt; XOR (4) ──&gt; XNOR (5)
-  NOR Gates ki Ginti:   NOT (1) ──&gt; OR (2)  ──&gt; AND (3) ──&gt; XNOR (4) ──&gt; XOR (5)</code></pre>
-<div class="table-wrapper"><table><thead><tr><th>Target Gate</th><th>Kitne NAND Lagenge?</th><th>Kitne NOR Lagenge?</th></tr></thead><tbody><tr><td><strong>NOT</strong></td><td><strong>1</strong></td><td><strong>1</strong></td></tr><tr><td><strong>AND</strong></td><td><strong>2</strong></td><td><strong>3</strong></td></tr><tr><td><strong>OR</strong></td><td><strong>3</strong></td><td><strong>2</strong></td></tr><tr><td><strong>NOR</strong></td><td><strong>4</strong></td><td><strong>1</strong></td></tr><tr><td><strong>NAND</strong></td><td><strong>1</strong></td><td><strong>4</strong></td></tr><tr><td><strong>XOR</strong></td><td><strong>4</strong></td><td><strong>5</strong></td></tr><tr><td><strong>XNOR</strong></td><td><strong>5</strong></td><td><strong>4</strong></td></tr></tbody></table></div>
-<hr>
-<h2 class="">🔢 Sequence 6: Adders & Multiplexers</h2>
-<p>1. <strong>Half Adder:</strong></p>
+<h2 class="">3.4 Gray Code (Reflected Binary / Unit Distance Code)</h2>
 <ul>
-<li>Sum = A ⊕ B, Carry = A · B</li>
-<li>Hardware: <strong>1 XOR + 1 AND</strong> (ya <strong>5 NAND</strong>)</li>
+<li>Gray code me do lagatar (consecutive) numbers ke beech me <strong>sirf 1 bit</strong> ka farak hota hai.</li>
+<li>Isliye ise <strong>Unit Distance Code</strong> ya <strong>Minimum Error Code</strong> kehte hain.</li>
+<li>Mechanical shaft encoders me rotary position measure karne ke liye use hota hai taaki transitions me glitch na aaye.</li>
 </ul>
-<p>2. <strong>Full Adder:</strong></p>
+<h3 class="">Fast Conversions:</h3>
 <ul>
-<li>Sum = A ⊕ B ⊕ Cin, Carry = AB + BCin + ACin</li>
-<li>Hardware: <strong>2 Half Adders + 1 OR Gate</strong> (ya <strong>9 NAND</strong>)</li>
-</ul>
-<p>3. <strong>Multiplexer (MUX) Formula:</strong></p>
-<ul>
-<li>Inputs = <span class="math">2^{\text{Select Lines}}</span></li>
-<li><strong>Tree MUX Formula:</strong> 2×1 MUX ka use karke agar N×1 MUX banana ho, toh hamesha <strong>N - 1</strong> MUX lagenge.</li>
-<li>Example: 16×1 MUX banane ke liye: <span class="math">16 - 1 =</span> <strong>15</strong> MUX lagenge.</li>
+<li><strong>Binary <span class="math">\to</span> Gray:</strong> MSB same rakho (<span class="math">G_3 = B_3</span>). Fir aage consecutive bits ka XOR karte jao (<span class="math">G_2 = B_3 \oplus B_2</span>, <span class="math">G_1 = B_2 \oplus B_1</span>).</li>
+<li><strong>Gray <span class="math">\to</span> Binary:</strong> MSB same rakho (<span class="math">B_3 = G_3</span>). Fir result aur agle Gray bit ka diagonal XOR karo (<span class="math">B_2 = B_3 \oplus G_2</span>, <span class="math">B_1 = B_2 \oplus G_1</span>).</li>
 </ul>
 <hr>
-<h2 class="">🔢 Sequence 7: Flip-Flop Table & Key Features</h2>
-<div class="table-wrapper"><table><thead><tr><th>Flip-Flop</th><th>Inputs</th><th>Agli State (Equation)</th><th>Khaas Baat Jo BPSC Poochhta Hai</th></tr></thead><tbody><tr><td><strong>SR</strong></td><td>S, R</td><td>Q(next) = S + R'Q</td><td>S=1, R=1 par <strong>Invalid / Forbidden</strong> state aati hai.</td></tr><tr><td><strong>JK</strong></td><td>J, K</td><td>Q(next) = J·Q' + K'·Q</td><td>J=1, K=1 par <strong>Toggle</strong> karta hai (Race Around problem).</td></tr><tr><td><strong>D</strong></td><td>D</td><td>Q(next) = D</td><td><strong>Data Buffer / Delay</strong> — jo input doge wahi output aayega.</td></tr><tr><td><strong>T</strong></td><td>T</td><td>Q(next) = T ⊕ Q</td><td>T=1 par <strong>Toggle</strong> karta hai — <strong>Frequency Divider (÷2)</strong> ke roop me use hota hai.</td></tr></tbody></table></div>
+<h2 class="">3.5 Error Detection & Correction: Hamming Code</h2>
 <ul>
-<li><strong>Race-Around Problem:</strong> Sirf JK Flip-Flop me aati hai jab J=1, K=1 ho.</li>
-<li><strong>Isko solve kaise karte hain?</strong> <strong>Master-Slave JK Flip-Flop</strong> laga kar ya Edge Triggering use karke.</li>
+<li><strong>Parity Bit:</strong> Sirf 1-bit error detect kar sakta hai, correct nahi kar sakta.</li>
+<li><strong>Hamming Code:</strong> Error detect bhi karta hai aur correct bhi karta hai.</li>
+<li><strong>Minimum Hamming Distance Formulas (<span class="math">d_{\min}</span>):</strong></li>
+</ul>
+<p>  1. To <strong>Detect</strong> <span class="math">s</span> bit errors: <span class="math">\mathbf{d_{\min} \ge s + 1}</span></p>
+<p>  2. To <strong>Correct</strong> <span class="math">t</span> bit errors: <span class="math">\mathbf{d_{\min} \ge 2t + 1}</span></p>
+<ul>
+<li><strong>Parity Bits Calculation:</strong> Agar data me <span class="math">m</span> data bits hain aur <span class="math">p</span> parity bits hain, toh formula:</li>
+</ul>
+<p>  $<span class="math">\mathbf{2^p \ge m + p + 1}</span>$</p>
+<ul>
+<li>Parity bits hamesha <span class="math">2</span> ki power positions par rakhi jati hain: Bit 1 (<span class="math">2^0</span>), Bit 2 (<span class="math">2^1</span>), Bit 4 (<span class="math">2^2</span>), Bit 8 (<span class="math">2^3</span>), etc.</li>
 </ul>
 <hr>
-<h2 class="">🎯 Top 5 BPSC Model Questions (Direct Solutions)</h2>
-<p>1. <strong>(110101.11)₂ ko Octal me badlo:</strong></p>
+<h1 class="chapter-title">📐 CHAPTER 4: Boolean Algebra & Canonical Forms</h1>
+<hr>
+<h2 class="">4.1 Boolean Algebra Laws & Postulates</h2>
+<div class="table-wrapper"><table><thead><tr><th>Law Name</th><th>OR Form (<span class="math">+</span>)</th><th>AND Form (<span class="math">\cdot</span>)</th></tr></thead><tbody><tr><td><strong>Identity Law</strong></td><td><span class="math">A + 0 = A</span></td><td><span class="math">A \cdot 1 = A</span></td></tr><tr><td><strong>Null / Boundedness Law</strong></td><td><span class="math">A + 1 = 1</span></td><td><span class="math">A \cdot 0 = 0</span></td></tr><tr><td><strong>Idempotent Law</strong></td><td><span class="math">A + A = A</span></td><td><span class="math">A \cdot A = A</span></td></tr><tr><td><strong>Complement Law</strong></td><td><span class="math">A + A' = 1</span></td><td><span class="math">A \cdot A' = 0</span></td></tr><tr><td><strong>Commutative Law</strong></td><td><span class="math">A + B = B + A</span></td><td><span class="math">A \cdot B = B \cdot A</span></td></tr><tr><td><strong>Associative Law</strong></td><td><span class="math">(A + B) + C = A + (B + C)</span></td><td><span class="math">(A \cdot B) \cdot C = A \cdot (B \cdot C)</span></td></tr><tr><td><strong>Distributive Law</strong></td><td><span class="math">A + (B \cdot C) = (A + B)(A + C)</span> <em>(Super Important!)</em></td><td><span class="math">A \cdot (B + C) = AB + AC</span></td></tr><tr><td><strong>Absorption Law</strong></td><td><span class="math">A + AB = A</span> aur <span class="math">A + A'B = A + B</span></td><td><span class="math">A(A + B) = A</span> aur <span class="math">A(A' + B) = AB</span></td></tr><tr><td><strong>Consensus (Redundancy) Theorem</strong></td><td><span class="math">\mathbf{AB + A'C + BC = AB + A'C}</span></td><td><span class="math">(A+B)(A'+C)(B+C) = (A+B)(A'+C)</span></td></tr></tbody></table></div>
+<div class="callout">💡 <strong>Consensus Theorem Pehchanne ki Trick:</strong><br>1. Teen variables hone chahiye (<span class="math">A, B, C</span>).<br>2. Har variable do baar aana chahiye.<br>3. Ek variable normal aur complemented form me ho (<span class="math">A</span> aur <span class="math">A'</span>).<br><span class="math">\implies</span> Jo doosra term bina complemented variable ka hai (<span class="math">BC</span>), wo <strong>Redundant (Faltu)</strong> hota hai, use drop kar do!</div>
+<hr>
+<h2 class="">4.2 De Morgan's Laws</h2>
+<p>1. <span class="math">\mathbf{(A + B)' = A' \cdot B'}</span> (NAND equivalent to Bubbled OR)</p>
+<p>2. <span class="math">\mathbf{(A \cdot B)' = A' + B'}</span> (NOR equivalent to Bubbled AND)</p>
 <ul>
-<li>Point ke pehle 3-3 ka group: <code>110 101</code> → 65</li>
-<li>Point ke baad 3 bit: <code>.110</code> → .6</li>
-<li>👉 <strong>Answer:</strong> <code>(65.6)₈</code></li>
+<li>Rule: "Break the line, change the sign" (Upar ki bar todo, aur beech ka sign badlo: <code>+</code> ko <code>.</code> aur <code>.</code> ko <code>+</code>).</li>
 </ul>
-<p>2. <strong><code>10110010</code> ka 2's complement kya hoga?</strong></p>
+<hr>
+<h2 class="">4.3 Duality Principle</h2>
+<p>Kisi bhi valid Boolean equation ka <strong>Dual</strong> nikalne ke liye:</p>
 <ul>
-<li>Right side se pehla 1 mila bit 2 par (<code>...10</code>).</li>
-<li>Baaki left side ki bits ulat do → <code>01001110</code>.</li>
-<li>👉 <strong>Answer:</strong> <code>01001110</code></li>
+<li><code>+</code> (OR) ko badlo <code>.</code> (AND) me.</li>
+<li><code>.</code> (AND) ko badlo <code>+</code> (OR) me.</li>
+<li><code>0</code> ko badlo <code>1</code> me, aur <code>1</code> ko badlo <code>0</code> me.</li>
+<li><em>(Variables ko complement nahi kiya jata!)</em></li>
 </ul>
-<p>3. <strong>8-bit 2's complement <code>11110000</code> ka decimal value kya hai?</strong></p>
+<hr>
+<h2 class="">4.4 Canonical Forms: Minterms vs Maxterms</h2>
+<div class="table-wrapper"><table><thead><tr><th>Feature</th><th><strong>Minterms (<span class="math">m</span>)</strong></th><th><strong>Maxterms (<span class="math">M</span>)</strong></th></tr></thead><tbody><tr><td><strong>Expression Form</strong></td><td><strong>SOP (Sum of Products)</strong> e.g., <span class="math">A'B + AB'</span></td><td><strong>POS (Product of Sums)</strong> e.g., <span class="math">(A+B)(A'+B')</span></td></tr><tr><td><strong>Output Value</strong></td><td>Function ki value <strong>1</strong> hone par banta hai</td><td>Function ki value <strong>0</strong> hone par banta hai</td></tr><tr><td><strong>Variable Rule</strong></td><td><span class="math">1 \implies A</span>, <span class="math">0 \implies A'</span></td><td><span class="math">0 \implies A</span>, <span class="math">1 \implies A'</span></td></tr><tr><td><strong>Symbol</strong></td><td><span class="math">\Sigma m(1, 2, \dots)</span></td><td><span class="math">\Pi M(0, 3, \dots)</span></td></tr><tr><td><strong>Relationship</strong></td><td><span class="math">\mathbf{m_i' = M_i}</span> (Minterm ka complement = Maxterm)</td><td><span class="math">\mathbf{M_i' = m_i}</span></td></tr></tbody></table></div>
+<hr>
+<h1 class="chapter-title">🔌 CHAPTER 5: Logic Gates & Universal Realization</h1>
+<hr>
+<h2 class="">5.1 Basic, Universal & Special Gates Summary</h2>
+<pre><code>                      LOGIC GATES
+                           │
+       ┌───────────────────┼───────────────────┐
+  Basic Gates        Universal Gates     Arithmetic / Special
+  - NOT (Inverter)   - NAND              - XOR (Staircase / Parity)
+  - AND              - NOR               - XNOR (Coincidence / Equivalence)
+  - OR</code></pre>
+<h3 class="">1. XOR Gate (<span class="math">\oplus</span>):</h3>
 <ul>
-<li>Pehli bit 1 hai matlab negative number hai.</li>
-<li>Weight: -128 + 64 + 32 + 16 = -16.</li>
-<li>👉 <strong>Answer:</strong> <code>-16</code></li>
+<li>Output <span class="math">Y = A \oplus B = A'B + AB'</span></li>
+<li><strong>Odd 1s Detector:</strong> Jab inputs me <code>1</code> ki sankhya odd hoti hai, tab output <code>1</code> hota hai.</li>
+<li><strong>Controlled Inverter:</strong></li>
+<li><span class="math">A \oplus 0 = A</span> (Buffer / Pass)</li>
+<li><span class="math">A \oplus 1 = A'</span> (Inverter)</li>
+<li><strong>Properties:</strong> Associative aur Commutative dono hota hai (<span class="math">A \oplus A = 0</span>, <span class="math">A \oplus 0 = A</span>).</li>
 </ul>
-<p>4. <strong>XOR Gate banane ke liye kam se kam kitne NAND Gate chahiye?</strong></p>
+<h3 class="">2. XNOR Gate (<span class="math">\odot</span>):</h3>
 <ul>
-<li>Sequence yaad karo: NOT(1), AND(2), OR(3), XOR(4).</li>
-<li>👉 <strong>Answer:</strong> <code>4</code></li>
+<li>Output <span class="math">Y = A \odot B = AB + A'B' = (A \oplus B)'</span></li>
+<li><strong>Even 1s Detector / Coincidence Gate:</strong> Dono input same hone par output <code>1</code> deta hai.</li>
+<li>For odd number of variables: XOR aur XNOR functions equal hote hain. For even number of variables: <span class="math">A \odot B = (A \oplus B)'</span>.</li>
 </ul>
-<p>5. <strong>16×1 MUX banane ke liye kitne 2×1 MUX lagenge?</strong></p>
+<hr>
+<h2 class="">5.2 Universal Gates Realization Table (Memory Trick: 1, 2, 3, 4, 5)</h2>
+<p>Dono universal gates ke liye bas ye sequence dhyan me rakhein:</p>
+<pre><code>  NAND Gates Sequence:  NOT (1) ──&gt; AND (2) ──&gt; OR (3) ──&gt; XOR (4) ──&gt; XNOR (5)
+  NOR Gates Sequence:   NOT (1) ──&gt; OR (2)  ──&gt; AND (3) ──&gt; XNOR (4) ──&gt; XOR (5)</code></pre>
+<div class="table-wrapper"><table><thead><tr><th>Target Gate</th><th>Minimum NAND Gates</th><th>Minimum NOR Gates</th></tr></thead><tbody><tr><td><strong>NOT</strong></td><td><strong>1</strong></td><td><strong>1</strong></td></tr><tr><td><strong>AND</strong></td><td><strong>2</strong></td><td><strong>3</strong></td></tr><tr><td><strong>OR</strong></td><td><strong>3</strong></td><td><strong>2</strong></td></tr><tr><td><strong>NOR</strong></td><td><strong>4</strong></td><td><strong>1</strong></td></tr><tr><td><strong>NAND</strong></td><td><strong>1</strong></td><td><strong>4</strong></td></tr><tr><td><strong>XOR</strong></td><td><strong>4</strong></td><td><strong>5</strong></td></tr><tr><td><strong>XNOR</strong></td><td><strong>5</strong></td><td><strong>4</strong></td></tr></tbody></table></div>
+<hr>
+<h1 class="chapter-title">🗺️ CHAPTER 6: Karnaugh Maps (K-Map) & Minimization</h1>
+<hr>
+<h2 class="">6.1 K-Map Structure & Gray Code Ordering</h2>
+<p>K-Map me adjacent cells ke beech sirf 1 bit ka difference hona chahiye, isliye cells ki numbering hamesha <strong>Gray Code order</strong> me hoti hai: <code>00, 01, 11, 10</code> (BPSC trap: <code>11</code> pehle aata hai <code>10</code> se!).</p>
 <ul>
-<li>Formula: N - 1 = 16 - 1 = 15.</li>
-<li>👉 <strong>Answer:</strong> <code>15</code></li>
+<li><span class="math">n</span> variables ke K-Map me total <strong><span class="math">2^n</span> cells</strong> hote hain:</li>
+<li>2-variable: 4 cells</li>
+<li>3-variable: 8 cells</li>
+<li>4-variable: 16 cells</li>
 </ul>
+<pre><code>             3-Variable K-Map (A \ BC)
+               00     01     11     10
+            ┌──────┬──────┬──────┬──────┐
+       0    │  m0  │  m1  │  m3  │  m2  │
+            ├──────┼──────┼──────┼──────┤
+       1    │  m4  │  m5  │  m7  │  m6  │
+            └──────┴──────┴──────┴──────┘</code></pre>
+<hr>
+<h2 class="">6.2 Grouping Rules & Definitions</h2>
+<p>1. <strong>Allowed Group Sizes:</strong> Sirf <span class="math">2</span> ki powers me group bante hain (<span class="math">1, 2, 4, 8, 16</span>). K-Map me 3 ya 6 ka group banana <strong>paap</strong> hai!</p>
+<p>2. <strong>Variable Elimination Rule:</strong></p>
+<ul>
+<li>2 ka group (Pair) <span class="math">\implies</span> <strong>1 variable eliminate</strong> hota hai.</li>
+<li>4 ka group (Quad) <span class="math">\implies</span> <strong>2 variables eliminate</strong> hote hain.</li>
+<li>8 ka group (Octet) <span class="math">\implies</span> <strong>3 variables eliminate</strong> hote hain.</li>
+</ul>
+<p>3. <strong>Important Terms:</strong></p>
+<ul>
+<li><strong>Implicant:</strong> K-Map ka koi bhi single <code>1</code>.</li>
+<li><strong>Prime Implicant (PI):</strong> Sabse bada group jo kisi doosre group me poori tarah na samaye.</li>
+<li><strong>Essential Prime Implicant (EPI):</strong> Aisa Prime Implicant jisme kam se kam ek aisa <code>1</code> ho jo kisi aur group me shamil nahi ho sakta. Yeh final simplified answer me <strong>hamesha aayega</strong>.</li>
+<li><strong>Don't Care Condition (<span class="math">X</span> ya <span class="math">d</span>):</strong> Aisi input combination jo system me kabhi occur nahi hogi. Isko group bada karne ke liye <code>1</code> ki tarah treat kar sakte hain, lekin alag se iska group banana zaroori nahi hai.</li>
+</ul>
+<hr>
+<h1 class="chapter-title">⚡ CHAPTER 7: Combinational Logic Circuits</h1>
+<p>Combinational circuits me koi memory nahi hoti; inka output <strong>sirf present input par depend karta hai</strong> (No feedback, no clock).</p>
+<hr>
+<h2 class="">7.1 Half Adder & Full Adder</h2>
+<pre><code>               HALF ADDER                                  FULL ADDER
+           ┌─────────────────┐                        ┌─────────────────┐
+     A ────┤                 ├── Sum = A ⊕ B    A ────┤                 ├── Sum = A ⊕ B ⊕ Cin
+           │   Half Adder    │                  B ────┤   Full Adder    │
+     B ────┤                 ├── Carry = AB   Cin ────┤                 ├── Carry = AB + BCin + ACin
+           └─────────────────┘                        └─────────────────┘</code></pre>
+<div class="table-wrapper"><table><thead><tr><th>Parameter</th><th><strong>Half Adder</strong></th><th><strong>Full Adder</strong></th></tr></thead><tbody><tr><td><strong>Inputs</strong></td><td>2 inputs (<span class="math">A, B</span>)</td><td>3 inputs (<span class="math">A, B, C_{\text{in}}</span>)</td></tr><tr><td><strong>Outputs</strong></td><td>2 outputs (Sum, Carry)</td><td>2 outputs (Sum, Carry)</td></tr><tr><td><strong>Sum Equation</strong></td><td><span class="math">S = A \oplus B</span></td><td><span class="math">S = A \oplus B \oplus C_{\text{in}}</span></td></tr><tr><td><strong>Carry Equation</strong></td><td><span class="math">C = AB</span></td><td><span class="math">C_{\text{out}} = AB + BC_{\text{in}} + AC_{\text{in}} = AB + C_{\text{in}}(A \oplus B)</span></td></tr><tr><td><strong>Hardware Required</strong></td><td><strong>1 XOR + 1 AND</strong></td><td><strong>2 Half Adders + 1 OR Gate</strong></td></tr><tr><td><strong>Minimum NANDs</strong></td><td><strong>5 NAND Gates</strong></td><td><strong>9 NAND Gates</strong></td></tr></tbody></table></div>
+<hr>
+<h2 class="">7.2 Half Subtractor & Full Subtractor</h2>
+<ul>
+<li><strong>Half Subtractor:</strong> <span class="math">\text{Difference} = A \oplus B</span>, <span class="math">\text{Borrow} = A'B</span> (Hardware: 1 XOR + 1 AND with inverted input).</li>
+<li><strong>Full Subtractor:</strong> <span class="math">\text{Difference} = A \oplus B \oplus B_{\text{in}}</span>, <span class="math">\text{Borrow} = A'B + A'B_{\text{in}} + BB_{\text{in}}</span>.</li>
+</ul>
+<hr>
+<h2 class="">7.3 Multiplexer (MUX) — Data Selector</h2>
+<ul>
+<li>MUX ek aisi circuit hai jisme <span class="math">2^n</span> input lines hoti hain, <span class="math">n</span> select lines hoti hain, aur <strong>sirf 1 output</strong> hota hai (<span class="math">2^n : 1</span>).</li>
+<li>Formula: <strong><span class="math">\text{Inputs} = 2^{\text{Select Lines}}</span></strong></li>
+<li>MUX ko <strong>Universal Logic Circuit</strong> kaha jata hai kyunki kisi bhi Boolean function ko bina extra gates ke MUX se implement kiya ja sakta hai.</li>
+<li><strong>Tree Multiplexer Shortcut Formula:</strong></li>
+</ul>
+<p>  Chhote <span class="math">2 \times 1</span> MUX se bada <span class="math">N \times 1</span> MUX banane ke liye hamesha <strong><span class="math">N - 1</span></strong> MUX lagte hain!</p>
+<ul>
+<li><span class="math">4 \times 1</span> ke liye: <span class="math">4 - 1 = \mathbf{3}</span></li>
+<li><span class="math">8 \times 1</span> ke liye: <span class="math">8 - 1 = \mathbf{7}</span></li>
+<li><span class="math">16 \times 1</span> ke liye: <span class="math">16 - 1 = \mathbf{15}</span></li>
+<li><span class="math">64 \times 1</span> ke liye: <span class="math">64 - 1 = \mathbf{63}</span></li>
+</ul>
+<hr>
+<h2 class="">7.4 Demultiplexer & Decoders</h2>
+<ul>
+<li><strong>Demultiplexer (DEMUX):</strong> 1 input ko <span class="math">2^n</span> output me distribute karta hai using <span class="math">n</span> select lines (<span class="math">1 : 2^n</span>). MUX ka theek ulta.</li>
+<li><strong>Decoder (<span class="math">n : 2^n</span>):</strong> <span class="math">n</span> input lines ko <span class="math">2^n</span> output lines me decode karta hai.</li>
+<li><span class="math">2 : 4</span> Decoder, <span class="math">3 : 8</span> Decoder (Octal decoder), <span class="math">4 : 16</span> Decoder.</li>
+<li>Decoder + External OR Gate lagakar koi bhi Boolean function implement kiya ja sakta hai.</li>
+<li><strong>Encoder (<span class="math">2^n : n</span>):</strong> Decoder ka theek ulta. Active input ko binary code me convert karta hai.</li>
+<li><strong>Priority Encoder:</strong> Agar ek se zyada input ek sath active ho jayein, toh highest priority wale input ko output code banata hai.</li>
+</ul>
+<hr>
+<h1 class="chapter-title">🔄 CHAPTER 8: Sequential Logic Circuits (Flip-Flops)</h1>
+<p>Sequential circuits me <strong>Memory element (Feedback)</strong> hota hai. Output <strong>present input aur past output dono par depend karta hai</strong>.</p>
+<hr>
+<h2 class="">8.1 Latch vs. Flip-Flop</h2>
+<div class="table-wrapper"><table><thead><tr><th>Feature</th><th><strong>Latch</strong></th><th><strong>Flip-Flop</strong></th></tr></thead><tbody><tr><td><strong>Clock Signal</strong></td><td>Clock nahi hoti (Asynchronous)</td><td>Clock pulse hoti hai (Synchronous)</td></tr><tr><td><strong>Triggering</strong></td><td><strong>Level-Triggered</strong> (High ya Low voltage par sensitive)</td><td><strong>Edge-Triggered</strong> (Positive <span class="math">\uparrow</span> ya Negative <span class="math">\downarrow</span> edge par sensitive)</td></tr><tr><td><strong>Speed</strong></td><td>Tez hota hai</td><td>Thoda slow hota hai</td></tr><tr><td><strong>Reliability</strong></td><td>Glitches/Noise aane par output badal sakta hai</td><td>Reliable aur predictable hota hai</td></tr></tbody></table></div>
+<hr>
+<h2 class="">8.2 Master Flip-Flop Comparison Table</h2>
+<div class="table-wrapper"><table><thead><tr><th>Flip-Flop</th><th>Inputs</th><th>Characteristic Equation (Next State)</th><th>Excitation Table (<span class="math">Q_n \to Q_{n+1}</span>)</th><th>Key BPSC Exam Feature</th></tr></thead><tbody><tr><td><strong>SR</strong></td><td><span class="math">S, R</span></td><td><span class="math">\mathbf{Q_{n+1} = S + R'Q_n}</span> (<span class="math">SR = 0</span>)</td><td><span class="math">0\to0</span>: <span class="math">S=0, R=X</span><br><span class="math">0\to1</span>: <span class="math">S=1, R=0</span><br><span class="math">1\to0</span>: <span class="math">S=0, R=1</span><br><span class="math">1\to1</span>: <span class="math">S=X, R=0</span></td><td><span class="math">S=1, R=1</span> is <strong>Invalid / Forbidden</strong></td></tr><tr><td><strong>JK</strong></td><td><span class="math">J, K</span></td><td><span class="math">\mathbf{Q_{n+1} = JQ_n' + K'Q_n}</span></td><td><span class="math">0\to0</span>: <span class="math">J=0, K=X</span><br><span class="math">0\to1</span>: <span class="math">J=1, K=X</span><br><span class="math">1\to0</span>: <span class="math">J=X, K=1</span><br><span class="math">1\to1</span>: <span class="math">J=X, K=0</span></td><td><span class="math">J=1, K=1</span> par <strong>Toggle</strong> karta hai (Race-around trap)</td></tr><tr><td><strong>D (Data)</strong></td><td><span class="math">D</span></td><td><span class="math">\mathbf{Q_{n+1} = D}</span></td><td><span class="math">0\to0</span>: <span class="math">D=0</span><br><span class="math">0\to1</span>: <span class="math">D=1</span><br><span class="math">1\to0</span>: <span class="math">D=0</span><br><span class="math">1\to1</span>: <span class="math">D=1</span></td><td><strong>Delay / Buffer / Transparent latch</strong></td></tr><tr><td><strong>T (Toggle)</strong></td><td><span class="math">T</span></td><td><span class="math">\mathbf{Q_{n+1} = T \oplus Q_n}</span></td><td><span class="math">0\to0</span>: <span class="math">T=0</span><br><span class="math">0\to1</span>: <span class="math">T=1</span><br><span class="math">1\to0</span>: <span class="math">T=1</span><br><span class="math">1\to1</span>: <span class="math">T=0</span></td><td><span class="math">T=1 \implies</span> Toggle; <strong>Frequency Divider (<span class="math">\div 2</span>)</strong></td></tr></tbody></table></div>
+<hr>
+<h2 class="">8.3 Race-Around Condition in JK Flip-Flop</h2>
+<ul>
+<li><strong>Kya hota hai?</strong> Jab <span class="math">J = 1</span> aur <span class="math">K = 1</span> ho, aur clock pulse width (<span class="math">t_p</span>) flip-flop ke propagation delay (<span class="math">t_{pd}</span>) se badi ho (<span class="math">t_p > t_{pd}</span>), toh ek hi clock pulse ke dauran output lagatar <span class="math">0 \to 1 \to 0 \to 1</span> toggle karta rehta hai. Clock khatam hone par state unpredictable ho jati hai.</li>
+<li><strong>Iske teen ilaj (Solutions):</strong></li>
+</ul>
+<p>  1. <strong>Master-Slave JK Flip-Flop</strong> use karo (Master positive edge par kaam karega, Slave negative edge par).</p>
+<p>  2. <strong>Edge Triggering</strong> use karo (Narrow spike triggers).</p>
+<p>  3. Clock pulse width ko propagation delay se kam rakho (<span class="math">t_p < t_{pd}</span>).</p>
+<hr>
+<h1 class="chapter-title">🔢 CHAPTER 9: Registers & Counters</h1>
+<hr>
+<h2 class="">9.1 Shift Registers</h2>
+<p><span class="math">n</span>-bit shift register banane ke liye <strong><span class="math">n</span> Flip-Flops</strong> ki zaroorat hoti hai.</p>
+<p>1. <strong>SISO (Serial In Serial Out):</strong> <span class="math">n</span> bits enter karne me <span class="math">n</span> clock cycles, aur bahar nikalne me <span class="math">n-1</span> clock cycles. Total = <span class="math">2n - 1</span>.</p>
+<p>2. <strong>SIPO (Serial In Parallel Out):</strong> Data enter karne me <span class="math">n</span> clock cycles, output 1 cycle me parallel mil jata hai.</p>
+<p>3. <strong>PISO (Parallel In Serial Out):</strong> Data load 1 cycle me, serial out me <span class="math">n-1</span> cycles.</p>
+<p>4. <strong>PIPO (Parallel In Parallel Out):</strong> Sabse fast! Read aur Write dono <strong>1 clock cycle</strong> me ho jata hai.</p>
+<hr>
+<h2 class="">9.2 Ring Counter vs Johnson Counter</h2>
+<pre><code>      RING COUNTER (Normal Feedback)               JOHNSON COUNTER (Inverted Feedback)
+   ┌───┐     ┌───┐     ┌───┐     ┌───┐          ┌───┐     ┌───┐     ┌───┐     ┌───┐
+   │FF0├───&gt; │FF1├───&gt; │FF2├───&gt; │FF3│          │FF0├───&gt; │FF1├───&gt; │FF2├───&gt; │FF3│
+   └───┘     └───┘     └───┘     └─┬─┘          └───┘     └───┘     └───┘     └─┬─┘
+     ^                             │              ^                         │ Q' (Inverted)
+     └─────────────────────────────┘              └─────────────────────────┘</code></pre>
+<div class="table-wrapper"><table><thead><tr><th>Parameter</th><th><strong>Ring Counter</strong></th><th><strong>Johnson Counter (Twisted Ring / Moebius)</strong></th></tr></thead><tbody><tr><td><strong>Feedback Connection</strong></td><td>Last flip-flop ka normal output (<span class="math">Q</span>) pehle FF me</td><td>Last flip-flop ka inverted output (<span class="math">Q'</span>) pehle FF me</td></tr><tr><td><strong>Total States (Modulus)</strong></td><td><strong><span class="math">N</span> States</strong> (MOD-<span class="math">N</span>)</td><td><strong><span class="math">2N</span> States</strong> (MOD-<span class="math">2N</span>)</td></tr><tr><td><strong>Unused States</strong></td><td><strong><span class="math">2^N - N</span></strong></td><td><strong><span class="math">2^N - 2N</span></strong></td></tr><tr><td><strong>Decoding Circuit</strong></td><td>Kisi decoder ki zaroorat nahi hoti</td><td>2-input AND/OR gates chahiye</td></tr><tr><td><strong>4-bit Flip-Flop Example</strong></td><td>States = <strong>4</strong>, Unused = <span class="math">16 - 4 =</span> <strong>12</strong></td><td>States = <strong>8</strong>, Unused = <span class="math">16 - 8 =</span> <strong>8</strong></td></tr></tbody></table></div>
+<hr>
+<h2 class="">9.3 Asynchronous (Ripple) vs Synchronous Counters</h2>
+<ul>
+<li><strong>Asynchronous (Ripple) Counter:</strong></li>
+<li>Pehle Flip-Flop ko external clock di jati hai. Agle Flip-Flop ki clock pichhle Flip-Flop ka output (<span class="math">Q</span> ya <span class="math">Q'</span>) hota hai.</li>
+<li><strong>Ripple Delay:</strong> Cumulative propagation delay <span class="math">T = n \times t_{pd}</span>. Slow hota hai.</li>
+<li><strong>Synchronous Counter:</strong></li>
+<li>Saare Flip-Flops ko <strong>ek sath same common clock</strong> di jati hai.</li>
+<li>Bohat tez (Fast) hota hai kyunki koi ripple delay nahi hota.</li>
+<li><strong>Flip-Flops Required Formula:</strong> Agar counter ko <span class="math">N</span> states count karni hain (MOD-<span class="math">N</span> counter):</li>
+</ul>
+<p>  $<span class="math">\mathbf{2^n \ge N} \implies n = \lceil \log_2 N \rceil</span>$</p>
+<ul>
+<li>Example: MOD-10 (Decade counter) ke liye <span class="math">2^n \ge 10 \implies n =</span> <strong>4 Flip-Flops</strong> lagenge.</li>
+</ul>
+<hr>
+<h1 class="chapter-title">🎯 CHAPTER 10: BPSC TRE 5-Option Model Drill</h1>
+<hr>
+<h3 class="">Question 1: Number Systems</h3>
+<p><strong>The octal equivalent of the hexadecimal number <code>(A7.C)₁₆</code> is:</strong></p>
+<p>(A) <code>(247.6)₈</code>  </p>
+<p>(B) <code>(247.3)₈</code>  </p>
+<p>(C) <code>(517.6)₈</code>  </p>
+<p>(D) More than one of the above  </p>
+<p>(E) None of the above  </p>
+<div class="callout"><strong>Correct Answer:</strong> <strong>(A)</strong><br><strong>Post-Mortem & Method:</strong><br>Step 1: Hexadecimal ko 4-bit binary me todo:<br><code>A</code> = <code>1010</code>, <code>7</code> = <code>0111</code>, <code>.</code> = <code>.</code>, <code>C</code> = <code>1100</code> <span class="math">\implies</span> <code>(10100111.1100)₂</code><br>Step 2: Binary ko 3-3 bit group me badlo:<br>Point ke pehle (←): <code>010</code> (2), <code>100</code> (4), <code>111</code> (7) <span class="math">\implies</span> <strong>247</strong><br>Point ke baad (→): <code>110</code> (6) <span class="math">\implies</span> <strong>.6</strong><br>Final Result = <code>(247.6)₈</code>. Option (A) is strictly correct.</div>
+<hr>
+<h3 class="">Question 2: Complements & Ranges</h3>
+<p><strong>In an 8-bit 2's complement representation, which of the following statements is/are correct?</strong></p>
+<p>(A) The range of representable integers is <span class="math">-128</span> to <span class="math">+127</span>.  </p>
+<p>(B) The number zero has a unique representation (<code>00000000</code>).  </p>
+<p>(C) The binary sequence <code>10000000</code> represents decimal <span class="math">-128</span>.  </p>
+<p>(D) More than one of the above  </p>
+<p>(E) None of the above  </p>
+<div class="callout"><strong>Correct Answer:</strong> <strong>(D) More than one of the above</strong><br><strong>Rule of 2 Trap:</strong><br>Option (A) is correct (<span class="math">-2^7</span> to <span class="math">+2^7 - 1 = -128</span> to <span class="math">+127</span>).<br>Option (B) is correct (Unlike 1's complement, 2's complement has only one zero).<br>Do option sahi milte hi <strong>Rule of 2</strong> trigger hota hai <span class="math">\implies</span> Answer is guaranteed <strong>(D)</strong>! (Option C is also correct).</div>
+<hr>
+<h3 class="">Question 3: Codes</h3>
+<p><strong>Which of the following binary codes is/are classified as non-weighted code(s)?</strong></p>
+<p>(A) Excess-3 Code  </p>
+<p>(B) Gray Code  </p>
+<p>(C) BCD (8421) Code  </p>
+<p>(D) More than one of the above  </p>
+<p>(E) None of the above  </p>
+<div class="callout"><strong>Correct Answer:</strong> <strong>(D) More than one of the above</strong><br><strong>Post-Mortem:</strong><br>Excess-3 and Gray code dono me positions ka koi mathematical weight (<span class="math">8, 4, 2, 1</span>) nahi hota. Isliye dono non-weighted hain. Do option sahi <span class="math">\implies</span> Option (D)!</div>
+<hr>
+<h3 class="">Question 4: Universal Gates</h3>
+<p><strong>How many minimum 2-input NAND gates are required to implement a 2-input XOR gate and XNOR gate respectively?</strong></p>
+<p>(A) 4 and 5  </p>
+<p>(B) 5 and 4  </p>
+<p>(C) 4 and 4  </p>
+<p>(D) More than one of the above  </p>
+<p>(E) None of the above  </p>
+<div class="callout"><strong>Correct Answer:</strong> <strong>(A)</strong><br><strong>Sequence Memory Trick:</strong><br>NAND Sequence: <code>NOT(1) → AND(2) → OR(3) → XOR(4) → XNOR(5)</code>.<br>Isliye XOR = 4 NAND gates, aur XNOR = 5 NAND gates. Option (A) is exact.</div>
+<hr>
+<h3 class="">Question 5: Sequential Circuits</h3>
+<p><strong>A 4-bit Ring counter and a 4-bit Johnson counter have how many total distinct states respectively?</strong></p>
+<p>(A) 4 and 8  </p>
+<p>(B) 16 and 8  </p>
+<p>(C) 4 and 16  </p>
+<p>(D) More than one of the above  </p>
+<p>(E) None of the above  </p>
+<div class="callout"><strong>Correct Answer:</strong> <strong>(A)</strong><br><strong>Post-Mortem:</strong><br>For <span class="math">N</span> flip-flops:<br>Ring Counter states = <span class="math">N = 4</span>.<br>Johnson Counter states = <span class="math">2N = 2 \times 4 = 8</span>.<br>Isliye 4 and 8. Option (A) is correct.</div>
 </body>
 </html>
