@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>BPSC CS Module 01: Digital Electronics & Number Systems</title>
+<style>
+
+    @page {
+        size: A4;
+        margin: 14mm 12mm 14mm 12mm;
+        @bottom-right {
+            content: counter(page);
+        }
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.55;
+        color: #1e293b;
+        background: #ffffff;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 20px;
+        color: #0f172a;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid #2563eb;
+    }
+    h2 {
+        font-size: 16px;
+        color: #1e40af;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #cbd5e1;
+    }
+    h3 {
+        font-size: 14px;
+        color: #0369a1;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    h4 {
+        font-size: 13px;
+        color: #334155;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+    p {
+        margin: 5px 0;
+    }
+    ul {
+        margin: 4px 0 6px 20px;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 3px;
+    }
+    hr {
+        border: 0;
+        border-top: 1px dashed #cbd5e1;
+        margin: 12px 0;
+    }
+    .callout {
+        background: #f8fafc;
+        border-left: 4px solid #3b82f6;
+        padding: 8px 12px;
+        margin: 10px 0;
+        border-radius: 0 4px 4px 0;
+        font-size: 12.5px;
+        color: #334155;
+    }
+    pre {
+        background: #0f172a;
+        color: #f8fafc;
+        padding: 10px 12px;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+        font-size: 11.5px;
+        line-height: 1.4;
+        margin: 8px 0;
+    }
+    code {
+        font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+        background: #f1f5f9;
+        color: #b91c1c;
+        padding: 1px 4px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+    pre code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+    }
+    .table-wrapper {
+        margin: 8px 0;
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+        margin: 4px 0;
+    }
+    th, td {
+        border: 1px solid #cbd5e1;
+        padding: 5px 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f1f5f9;
+        font-weight: 600;
+        color: #0f172a;
+    }
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+    .math {
+        font-family: "Cambria Math", "Times New Roman", serif;
+        font-style: italic;
+        color: #1e3a8a;
+        font-weight: 500;
+    }
+    .chapter-title {
+        page-break-before: auto;
+        background: #eff6ff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        border-left: 5px solid #2563eb;
+    }
+    @media print {
+        body { font-size: 12px; }
+        pre { font-size: 10.5px; }
+        table { font-size: 11px; }
+        h1 { font-size: 17px; }
+        h2 { font-size: 14.5px; }
+        h3 { font-size: 13px; }
+    }
+    
+</style>
+</head>
+<body>
+<h1 class="chapter-title">📘 BPSC CS Module 01: Digital Electronics & Number Systems (Sequence & Trick Master Notes)</h1>
+<div class="callout"><strong>🎯 Target:</strong> 15 / 15 Marks in Part-III (BPSC TRE Standard)<br><strong>Rule:</strong> No extra fluff. Pure sequence, exact steps, and memory formulas.</div>
+<hr>
+<h2 class="">🔢 Sequence 1: Number Systems & Fast Conversion</h2>
+<h3 class="">1.1 Base & Bit Capacity</h3>
+<ul>
+<li><strong>Binary (Base 2):</strong> Digits <code>0, 1</code> <span class="math">\to</span> <strong>1 bit</strong> per digit</li>
+<li><strong>Octal (Base 8):</strong> Digits <code>0 to 7</code> <span class="math">\to</span> <strong>3 bits</strong> per digit (<span class="math">2^3 = 8</span>)</li>
+<li><strong>Decimal (Base 10):</strong> Digits <code>0 to 9</code></li>
+<li><strong>Hexadecimal (Base 16):</strong> Digits <code>0 to 9, A(10), B(11), C(12), D(13), E(14), F(15)</code> <span class="math">\to</span> <strong>4 bits</strong> per digit (<span class="math">2^4 = 16</span>)</li>
+</ul>
+<hr>
+<h3 class="">1.2 Binary <span class="math">\leftrightarrow</span> Octal & Hexadecimal Grouping Rule</h3>
+<pre><code>                      [ DECIMAL POINT . ]
+        INTEGER PART                        FRACTIONAL PART
+  &lt;=== (Right to Left)                     (Left to Right) ===&gt;
+  Group from Point towards LEFT            Group from Point towards RIGHT
+  (Add 0 on extreme LEFT if needed)        (Add 0 on extreme RIGHT if needed)</code></pre>
+<h4 class="">📌 Step-by-Step Sequence:</h4>
+<p>1. <strong>Octal ke liye:</strong> <strong>3-3 bits</strong> ke groups banayein.</p>
+<p>2. <strong>Hexadecimal ke liye:</strong> <strong>4-4 bits</strong> ke groups banayein.</p>
+<p>3. <strong>Point se pehle:</strong> Point ke bagal se shuru karke <strong>Left ki taraf (<span class="math">\leftarrow</span>)</strong> chalo. Kam pade to Left me <code>0</code> lagao.</p>
+<p>4. <strong>Point ke baad:</strong> Point ke bagal se shuru karke <strong>Right ki taraf (<span class="math">\rightarrow</span>)</strong> chalo. Kam pade to Right me <code>0</code> lagao.</p>
+<ul>
+<li><strong>Example 1 (Binary to Octal):</strong> <code>(110101.11)₂</code></li>
+<li>Point ke pehle (<span class="math">\leftarrow</span>): <code>101</code> = <strong>5</strong>, <code>110</code> = <strong>6</strong> <span class="math">\implies</span> <strong>65</strong></li>
+<li>Point ke baad (<span class="math">\rightarrow</span>): <code>11</code> me ek zero joda <span class="math">\to</span> <code>110</code> = <strong>6</strong> <span class="math">\implies</span> <strong>.6</strong></li>
+<li>👉 <strong>Answer:</strong> <strong><code>(65.6)₈</code></strong></li>
+<li><strong>Example 2 (Binary to Hex):</strong> <code>(10110111)₂</code></li>
+<li>Right group (4 bits): <code>0111</code> = <strong>7</strong></li>
+<li>Left group (4 bits): <code>1011</code> = 11 = <strong>B</strong></li>
+<li>👉 <strong>Answer:</strong> <strong><code>(B7)₁₆</code></strong></li>
+</ul>
+<hr>
+<h3 class="">1.3 Decimal Fraction <span class="math">\to</span> Binary Sequence</h3>
+<ul>
+<li>Number ko lagatar <strong><span class="math">\times 2</span></strong> karo.</li>
+<li>Har baar jo Integer (0 ya 1) aayega, use <strong>Top to Bottom</strong> likho:</li>
+<li><span class="math">0.625 \times 2 = \mathbf{1}.25</span> (Carry 1)</li>
+<li><span class="math">0.25 \times 2 = \mathbf{0}.50</span> (Carry 0)</li>
+<li><span class="math">0.50 \times 2 = \mathbf{1}.00</span> (Carry 1 <span class="math">\to</span> finish!)</li>
+<li>👉 <strong>Answer:</strong> <strong><code>(0.101)₂</code></strong></li>
+</ul>
+<hr>
+<h2 class="">🔢 Sequence 2: 2's Complement 3-Second Inspection Rule</h2>
+<ul>
+<li><strong>1's Complement:</strong> Saari bits ulto (<code>0 ↔ 1</code>).</li>
+<li><strong>2's Complement:</strong> <span class="math">\text{1's Complement} + 1</span>.</li>
+</ul>
+<pre><code>           [ 1   0   1   1   0   0 ]
+             │   │   │   │   └───┴── Rightmost 0s: Same rakho (00)
+             │   │   │   └────────── Pehla 1: Same rakho (1)
+             └───┴───┴────────────── Iske baad Left ki saari bits INVERT kar do (010)
+             Result: 0 1 0 1 0 0</code></pre>
+<ul>
+<li><strong>Step 1:</strong> Rightmost (LSB) se dekhna shuru karo.</li>
+<li><strong>Step 2:</strong> Jab tak <strong>pehla 1</strong> na mile, tab tak saari bits <strong>SAME</strong> rakho.</li>
+<li><strong>Step 3:</strong> Us pehle 1 ke baad Left side ki baaki saari bits ko <strong>INVERT (0 ko 1, 1 ko 0)</strong> kar do!</li>
+</ul>
+<hr>
+<h2 class="">🔢 Sequence 3: n-Bit Ranges (Direct Formula Sequence)</h2>
+<div class="table-wrapper"><table><thead><tr><th>Representation</th><th>Minimum to Maximum Range</th><th>Zero (0) ke roop</th><th>Total Distinct Values</th></tr></thead><tbody><tr><td><strong>Unsigned</strong></td><td><strong><span class="math">0</span> se <span class="math">+(2^n - 1)</span></strong></td><td>1 (<code>00...0</code>)</td><td><span class="math">2^n</span></td></tr><tr><td><strong>Signed Magnitude</strong></td><td><strong><span class="math">-(2^{n-1} - 1)</span> se <span class="math">+(2^{n-1} - 1)</span></strong></td><td>2 (<code>+0</code> aur <code>-0</code>)</td><td><span class="math">2^n - 1</span></td></tr><tr><td><strong>1's Complement</strong></td><td><strong><span class="math">-(2^{n-1} - 1)</span> se <span class="math">+(2^{n-1} - 1)</span></strong></td><td>2 (<code>+0</code> aur <code>-0</code>)</td><td><span class="math">2^n - 1</span></td></tr><tr><td><strong>2's Complement</strong></td><td><strong><span class="math">-2^{n-1}</span> se <span class="math">+(2^{n-1} - 1)</span></strong></td><td><strong>Sirf 1 (<code>00...0</code>)</strong></td><td><strong><span class="math">2^n</span></strong></td></tr></tbody></table></div>
+<ul>
+<li>🎯 <strong>8-Bit Direct Numbers (<span class="math">n = 8</span>):</strong></li>
+<li>2's Complement range: <strong><span class="math">-128</span> se <span class="math">+127</span></strong></li>
+<li>Extra negative number: <strong><span class="math">-128</span></strong> (<code>10000000</code>)</li>
+<li>MSB weight in 2's complement: <strong><span class="math">-2^{n-1}</span></strong> (Negative weight)</li>
+</ul>
+<hr>
+<h2 class="">🔢 Sequence 4: Codes (BCD, Excess-3, Gray, Hamming)</h2>
+<p>1. <strong>BCD (8421):</strong></p>
+<ul>
+<li>Valid digits: <strong><span class="math">0</span> se <span class="math">9</span></strong> (<code>0000</code> se <code>1001</code>).</li>
+<li>Invalid states: <strong><span class="math">10</span> se <span class="math">15</span></strong> (Total 6 invalid codes).</li>
+<li><strong>Addition Rule:</strong> Agar sum <span class="math">> 9</span> ho ya carry out aaye <span class="math">\implies</span> <strong><span class="math">+6</span> (<code>0110</code>)</strong> add karo.</li>
+</ul>
+<p>2. <strong>Excess-3 (XS-3):</strong></p>
+<ul>
+<li>Formula: <strong><span class="math">\text{BCD} + 0011_2 (+3)</span></strong>.</li>
+<li><strong>Self-Complementing:</strong> Excess-3 ka 1's complement = Us number ka <strong>9's complement</strong>.</li>
+</ul>
+<p>3. <strong>Gray Code (Unit Distance Code):</strong></p>
+<ul>
+<li>Do consecutive numbers me <strong>sirf 1 bit</strong> ka difference hota hai.</li>
+<li><strong>Binary <span class="math">\to</span> Gray:</strong> MSB same rakho (<span class="math">G_3 = B_3</span>), fir consecutive XOR karo (<span class="math">G_2 = B_3 \oplus B_2</span>).</li>
+<li><strong>Gray <span class="math">\to</span> Binary:</strong> MSB same rakho (<span class="math">B_3 = G_3</span>), fir diagonal XOR karo (<span class="math">B_2 = B_3 \oplus G_2</span>).</li>
+</ul>
+<p>4. <strong>Hamming Code (Error Detection & Correction):</strong></p>
+<ul>
+<li>Detect <span class="math">s</span> bit errors: <span class="math">\mathbf{d_{\min} \ge s + 1}</span></li>
+<li>Correct <span class="math">t</span> bit errors: <span class="math">\mathbf{d_{\min} \ge 2t + 1}</span></li>
+<li>Parity bits (<span class="math">p</span>) for <span class="math">m</span> data bits: <span class="math">\mathbf{2^p \ge m + p + 1}</span></li>
+</ul>
+<hr>
+<h2 class="">🔢 Sequence 5: Minimum Universal Gates Sequence (1, 2, 3, 4, 5)</h2>
+<p>Dono universal gates ke liye bas ye sequence yaad rakhiye:</p>
+<pre><code>  NAND Gates Sequence:  NOT (1) ──&gt; AND (2) ──&gt; OR (3) ──&gt; XOR (4) ──&gt; XNOR (5)
+  NOR Gates Sequence:   NOT (1) ──&gt; OR (2)  ──&gt; AND (3) ──&gt; XNOR (4) ──&gt; XOR (5)</code></pre>
+<div class="table-wrapper"><table><thead><tr><th>Target Gate</th><th>Min NAND Required</th><th>Min NOR Required</th></tr></thead><tbody><tr><td><strong>NOT</strong></td><td><strong>1</strong></td><td><strong>1</strong></td></tr><tr><td><strong>AND</strong></td><td><strong>2</strong></td><td><strong>3</strong></td></tr><tr><td><strong>OR</strong></td><td><strong>3</strong></td><td><strong>2</strong></td></tr><tr><td><strong>NOR</strong></td><td><strong>4</strong></td><td><strong>1</strong></td></tr><tr><td><strong>NAND</strong></td><td><strong>1</strong></td><td><strong>4</strong></td></tr><tr><td><strong>XOR</strong></td><td><strong>4</strong></td><td><strong>5</strong></td></tr><tr><td><strong>XNOR</strong></td><td><strong>5</strong></td><td><strong>4</strong></td></tr></tbody></table></div>
+<hr>
+<h2 class="">🔢 Sequence 6: Adders & Multiplexers</h2>
+<p>1. <strong>Half Adder:</strong></p>
+<ul>
+<li><span class="math">\text{Sum} = A \oplus B</span>, <span class="math">\text{Carry} = AB</span></li>
+<li>Hardware: <strong>1 XOR + 1 AND</strong> (ya <strong>5 NAND</strong>)</li>
+</ul>
+<p>2. <strong>Full Adder:</strong></p>
+<ul>
+<li><span class="math">\text{Sum} = A \oplus B \oplus C_{\text{in}}</span>, <span class="math">\text{Carry} = AB + BC_{\text{in}} + AC_{\text{in}}</span></li>
+<li>Hardware: <strong>2 Half Adders + 1 OR Gate</strong> (ya <strong>9 NAND</strong>)</li>
+</ul>
+<p>3. <strong>Multiplexer (MUX):</strong></p>
+<ul>
+<li>Formula: <span class="math">\mathbf{\text{Inputs} = 2^{\text{Select Lines}}}</span></li>
+<li><strong>Tree MUX shortcut:</strong> <span class="math">2 \times 1</span> MUX se <span class="math">N \times 1</span> MUX banane ke liye hamesha <strong><span class="math">N - 1</span></strong> MUX lagenge (<span class="math">16 \times 1</span> banane ke liye <span class="math">16 - 1 = \mathbf{15}</span>).</li>
+</ul>
+<hr>
+<h2 class="">🔢 Sequence 7: Flip-Flop Equations & Key Features</h2>
+<div class="table-wrapper"><table><thead><tr><th>Flip-Flop</th><th>Inputs</th><th>Characteristic Equation</th><th>Key Feature to Remember</th></tr></thead><tbody><tr><td><strong>SR</strong></td><td><span class="math">S, R</span></td><td><span class="math">Q_{n+1} = S + R'\bar{Q}_n</span></td><td><span class="math">S=1, R=1 \implies</span> <strong>Invalid / Forbidden</strong></td></tr><tr><td><strong>JK</strong></td><td><span class="math">J, K</span></td><td><span class="math">Q_{n+1} = J\bar{Q}_n + K'Q_n</span></td><td><span class="math">J=1, K=1 \implies</span> <strong>Toggle</strong> (<span class="math">Q_{n+1} = \bar{Q}_n</span>)</td></tr><tr><td><strong>D</strong></td><td><span class="math">D</span></td><td><span class="math">Q_{n+1} = D</span></td><td><strong>Data delay / Buffer</strong> (Output = Input)</td></tr><tr><td><strong>T</strong></td><td><span class="math">T</span></td><td><span class="math">Q_{n+1} = T \oplus Q_n</span></td><td><span class="math">T=1 \implies</span> <strong>Toggle</strong>; <strong>Frequency Divider (<span class="math">\div 2</span>)</strong></td></tr></tbody></table></div>
+<ul>
+<li><strong>Race-Around Condition (in JK):</strong> Jab <span class="math">J=1, K=1</span> ho aur clock pulse <span class="math">t_p > t_{pd}</span> ho.</li>
+<li><strong>Solution:</strong> <strong>Master-Slave JK Flip-Flop</strong> ya Edge Triggering.</li>
+</ul>
+<hr>
+<h2 class="">🎯 Top 5 BPSC Model Questions (Sequence Applied)</h2>
+<p>1. <strong>Binary <code>(110101.11)₂</code> in Octal:</strong> Point ke left 3-3 group (<code>110 101</code> <span class="math">\to</span> 65), right group (<code>.110</code> <span class="math">\to</span> .6) <span class="math">\implies</span> <strong><code>65.6₈</code></strong>.</p>
+<p>2. <strong>2's complement of <code>10110010</code>:</strong> Right se pehla 1 mila bit 2 par (<code>...10</code>). Baaki left bits ulto <span class="math">\implies</span> <strong><code>01001110</code></strong>.</p>
+<p>3. <strong>8-bit 2's complement <code>11110000</code> in decimal:</strong> MSB weight is <span class="math">-128 \implies -128 + 64 + 32 + 16 = \mathbf{-16}</span>.</p>
+<p>4. <strong>Minimum NAND for XOR gate:</strong> Sequence 1, 2, 3, 4 <span class="math">\implies</span> <strong>4 NAND</strong>.</p>
+<p>5. <strong>How many <span class="math">2 \times 1</span> MUX for <span class="math">16 \times 1</span> MUX:</strong> <span class="math">N - 1 = 16 - 1 = \mathbf{15}</span>.</p>
+</body>
+</html>
