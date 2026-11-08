@@ -3,7 +3,7 @@
 
 > **🎯 Mission Target:** 12 / 12 Marks in Part-III (BPSC TRE Standard)  
 > **Exam Philosophy:** Anti-GATE Rule (Direct, Factual, Deep First-Principles, NCERT & BCA Core Standard)  
-> **Golden BPSC Rule:** Rule of 2 — Har option ko scan karo. Do options sahi mile $\implies$ Option (D) "More than one of the above" guaranteed!
+> **Golden BPSC Rule:** Rule of 2 — Har option ko scan karo. Do options sahi mile ⇒ Option (D) "More than one of the above" guaranteed!
 
 ---
 
@@ -64,7 +64,7 @@ Computer ek bade **Restaurant** ki tarah kaam karta hai:
 > * (A) Galat: Arithmetic aur logical kaam ALU karta hai, CU nahi.  
 > * (B) Sahi: CU sabhi units ke liye timing aur control signals generate karta hai.  
 > * (C) Sahi: Instruction register me jo instruction aati hai, use decode/interpret karne ka kaam CU ka Instruction Decoder hi karta hai.  
-> * **Rule of 2:** Chunki (B) aur (C) dono sahi hain $\implies$ **Option (D)!**  
+> * **Rule of 2:** Chunki (B) aur (C) dono sahi hain ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 2
@@ -95,10 +95,10 @@ Computer ek bade **Restaurant** ki tarah kaam karta hai:
 CPU, Memory aur I/O devices ke beech signals carry karne wale parallel wires ke group ko **System Bus** kehte hain:
 
 1. **Address Bus (पते की सड़क):**
-   * **Direction:** **Unidirectional (One-way: Sirf CPU $\to$ Memory/IO)**. CPU hi hamesha address batata hai; memory kabhi CPU ko address nahi bhejti!
+   * **Direction:** **Unidirectional (One-way: Sirf CPU → Memory/IO)**. CPU hi hamesha address batata hai; memory kabhi CPU ko address nahi bhejti!
    * **Kaam:** Memory ka **Maximum Size (Capacity)** decide karta hai.
 2. **Data Bus (सामान की सड़क):**
-   * **Direction:** **Bidirectional (Two-way: CPU $\leftrightarrow$ Memory/IO)**. CPU data read bhi karta hai aur write bhi karta hai.
+   * **Direction:** **Bidirectional (Two-way: CPU ↔ Memory/IO)**. CPU data read bhi karta hai aur write bhi karta hai.
    * **Kaam:** Word size decide karta hai (8-bit bus = 1 byte per cycle, 16-bit bus = 2 bytes per cycle).
 3. **Control Bus (कमांड और टाइमिंग):**
    * **Direction:** **Bidirectional**. Read (`RD`), Write (`WR`), Timing clock, aur Interrupt signals carry karta hai.
@@ -109,22 +109,22 @@ CPU, Memory aur I/O devices ke beech signals carry karne wale parallel wires ke 
 
 ### 2. 🔢 Memory Capacity Formula (Pura Tod Kar):
 
-$$\mathbf{\text{Maximum Memory Capacity} = 2^k \quad (k = \text{Address Bus Width in Bits})}$$
+$**Maximum Memory Capacity** = 2^k   (k = Address Bus Width in Bits)
 
 Computer me har 10 bits par unit badalti hai:
-* $2^{10} = \mathbf{1\text{ KB}}$ (KiloByte)
-* $2^{20} = \mathbf{1\text{ MB}}$ (MegaByte)
-* $2^{30} = \mathbf{1\text{ GB}}$ (GigaByte)
+* 2^{10} = **1 KB** (KiloByte)
+* 2^{20} = **1 MB** (MegaByte)
+* 2^{30} = **1 GB** (GigaByte)
 
 #### 🎯 "Tukde Karke Todne Wala" Shortcut:
 * **16-bit Address Bus (Intel 8085):**  
-  $16 = 6 + 10 \implies 2^6 \times 2^{10} = 64 \times \text{KB} = \mathbf{64\text{ KB}}$!
+  16 = 6 + 10 ⇒ 2^6 × 2^{10} = 64 × KB = **64 KB**!
 * **20-bit Address Bus (Intel 8086):**  
-  $20 = 0 + 20 \implies 2^0 \times 2^{20} = 1 \times \text{MB} = \mathbf{1\text{ MB}}$!
+  20 = 0 + 20 ⇒ 2^0 × 2^{20} = 1 × MB = **1 MB**!
 * **24-bit Address Bus (Intel 80286):**  
-  $24 = 4 + 20 \implies 2^4 \times 2^{20} = 16 \times \text{MB} = \mathbf{16\text{ MB}}$!
+  24 = 4 + 20 ⇒ 2^4 × 2^{20} = 16 × MB = **16 MB**!
 * **32-bit Address Bus (Intel 80386 / 32-bit PC):**  
-  $32 = 2 + 30 \implies 2^2 \times 2^{30} = 4 \times \text{GB} = \mathbf{4\text{ GB}}$!
+  32 = 2 + 30 ⇒ 2^2 × 2^{30} = 4 × GB = **4 GB**!
 
 ---
 
@@ -137,31 +137,31 @@ Computer me har 10 bits par unit badalti hai:
 (C) Control Bus  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Sirf Address Bus ek-tarfa (Unidirectional: CPU $\to$ Memory) hoti hai. Data bus aur Control bus dono bidirectional hoti hain.  
+> **💡 Post-Mortem:** Sirf Address Bus ek-tarfa (Unidirectional: CPU → Memory) hoti hai. Data bus aur Control bus dono bidirectional hoti hain.  
 > ✅ **Correct Answer: (A)**
 
 #### ❓ Question 2
 **The maximum memory addressing capacity of a microprocessor with a 16-bit address bus is:**  
-(A) $16\text{ KB}$  
-(B) $64\text{ KB}$  
-(C) $1\text{ MB}$  
+(A) 16 KB  
+(B) 64 KB  
+(C) 1 MB  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** $2^{16} = 2^6 \times 2^{10} = 64\text{ KB}$.  
+> **💡 Post-Mortem:** 2^{16} = 2^6 × 2^{10} = 64 KB.  
 > ✅ **Correct Answer: (B)**
 
 #### ❓ Question 3
 **A computer system has a 20-bit address bus and a 16-bit data bus. Which of the following statements is/are correct?**  
-(A) The processor can directly address a maximum of $1\text{ MB}$ of memory.  
+(A) The processor can directly address a maximum of 1 MB of memory.  
 (B) The processor transfers 2 bytes of data in a single memory access cycle.  
 (C) The address bus carries signals from memory to the CPU.  
 (D) More than one of the above  
 (E) None of the above  
 > **💡 Post-Mortem:**  
-> * (A) Sahi: $2^{20} = 1\text{ MB}$.  
-> * (B) Sahi: $16\text{ bits} = 2\text{ bytes}$ data bus.  
+> * (A) Sahi: 2^{20} = 1 MB.  
+> * (B) Sahi: 16 bits = 2 bytes data bus.  
 > * (C) Galat: Address CPU se memory jata hai, ulta nahi.  
-> * Rule of 2: (A) aur (B) dono sahi hain $\implies$ **Option (D)!**  
+> * Rule of 2: (A) aur (B) dono sahi hain ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 ---
@@ -170,7 +170,7 @@ Computer me har 10 bits par unit badalti hai:
 
 ### 1. 🗄️ CPU Registers ka Post-Mortem:
 * **PC (Program Counter) — "Next Page Marker":**  
-  Ye us instruction ka memory address hold karta hai jo **NEXT (agli)** chalne wali hai. Instruction fetch hote hi PC automatically **$+1$ increment** ho jata hai.
+  Ye us instruction ka memory address hold karta hai jo **NEXT (agli)** chalne wali hai. Instruction fetch hote hi PC automatically **+1 increment** ho jata hai.
 * **MAR (Memory Address Register) — "Address Holder":**  
   Memory ke jis address par data padhna ya likhna hai, wo address MAR me rehta hai. Seedhe **Address Bus** se juda hota hai.
 * **MDR / MBR (Memory Data Register) — "Data ka Dabba":**  
@@ -178,16 +178,16 @@ Computer me har 10 bits par unit badalti hai:
 * **IR (Instruction Register) — "Current Order":**  
   Jo instruction **ABHI (currently)** chal rahi hai, use IR me rakha jata hai. Control Unit isi ko decode karti hai.
 * **AC (Accumulator) — "Chef ki Thaali":**  
-  ALU jo bhi calculation ($5 + 3 = 8$) karta hai, uska result hamesha Accumulator me store hota hai.
+  ALU jo bhi calculation (5 + 3 = 8) karta hai, uska result hamesha Accumulator me store hota hai.
 
 ---
 
-### 2. 🔄 The 3-Step Instruction Cycle (Fetch $\to$ Decode $\to$ Execute):
+### 2. 🔄 The 3-Step Instruction Cycle (Fetch → Decode → Execute):
 1. **Step 1 (FETCH):**  
-   * $MAR \leftarrow [PC]$ : PC apna address MAR ko deta hai.
-   * $MDR \leftarrow \text{Memory}[MAR]$ : Memory se instruction Data Bus ke jariye MDR me aati hai.
-   * $IR \leftarrow [MDR]$ : Instruction MDR se nikal kar IR me baithti hai.
-   * $PC \leftarrow [PC] + 1$ : PC turant ek kadam aage badh jata hai agli instruction ke liye!
+   * MAR ← [PC] : PC apna address MAR ko deta hai.
+   * MDR ← Memory[MAR] : Memory se instruction Data Bus ke jariye MDR me aati hai.
+   * IR ← [MDR] : Instruction MDR se nikal kar IR me baithti hai.
+   * PC ← [PC] + 1 : PC turant ek kadam aage badh jata hai agli instruction ke liye!
 2. **Step 2 (DECODE):** Control Unit IR me rakhe opcode ko interpret karti hai ki karna kya hai.
 3. **Step 3 (EXECUTE):** ALU operation perform karta hai aur result Accumulator me daal deta hai.
 
@@ -212,7 +212,7 @@ Computer me har 10 bits par unit badalti hai:
 (C) Accumulator (AC) holds the address of the next instruction.  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** (A) Sahi (MAR $\to$ Address Bus), (B) Sahi (MDR $\to$ Data Bus), (C) Galat (Accumulator ALU ka result hold karta hai, next instruction ka address PC rakhta hai). Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** (A) Sahi (MAR → Address Bus), (B) Sahi (MDR → Data Bus), (C) Galat (Accumulator ALU ka result hold karta hai, next instruction ka address PC rakhta hai). Rule of 2 ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 3
@@ -222,7 +222,7 @@ Computer me har 10 bits par unit badalti hai:
 (C) It stores the intermediate mathematical result of the execution.  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** PC address MAR ko deta hai aur turant $+1$ increment ho jata hai.  
+> **💡 Post-Mortem:** PC address MAR ko deta hai aur turant +1 increment ho jata hai.  
 > ✅ **Correct Answer: (B)**
 
 ---
@@ -248,10 +248,10 @@ Computer me har 10 bits par unit badalti hai:
 
 | Processor | Generation & Word Size | Address Bus | Maximum Addressable Memory |
 | :--- | :---: | :---: | :---: |
-| **Intel 8085** | 2nd Gen (8-bit) | **16-bit** | $2^{16} = \mathbf{64\text{ KB}}$ |
-| **Intel 8086** | 3rd Gen (16-bit) | **20-bit** | $2^{20} = \mathbf{1\text{ MB}}$ |
-| **Intel 80286** | 3rd Gen (16-bit) | **24-bit** | $2^{24} = \mathbf{16\text{ MB}}$ |
-| **Intel 80386** | 4th Gen (32-bit) | **32-bit** | $2^{32} = \mathbf{4\text{ GB}}$ |
+| **Intel 8085** | 2nd Gen (8-bit) | **16-bit** | 2^{16} = **64 KB** |
+| **Intel 8086** | 3rd Gen (16-bit) | **20-bit** | 2^{20} = **1 MB** |
+| **Intel 80286** | 3rd Gen (16-bit) | **24-bit** | 2^{24} = **16 MB** |
+| **Intel 80386** | 4th Gen (32-bit) | **32-bit** | 2^{32} = **4 GB** |
 
 ---
 
@@ -269,22 +269,22 @@ Computer me har 10 bits par unit badalti hai:
 
 #### ❓ Question 2
 **Which of the following pairs of microprocessor and its maximum addressable memory capacity is/are correctly matched?**  
-(A) Intel 8085 $\to 64\text{ KB}$  
-(B) Intel 8086 $\to 1\text{ MB}$  
-(C) Intel 80286 $\to 16\text{ MB}$  
+(A) Intel 8085 → 64 KB  
+(B) Intel 8086 → 1 MB  
+(C) Intel 80286 → 16 MB  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Teeno ke teeno matches bilkul 100% correct hain ($2^{16}=64\text{KB}$, $2^{20}=1\text{MB}$, $2^{24}=16\text{MB}$). Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** Teeno ke teeno matches bilkul 100% correct hain (2^{16}=64KB, 2^{20}=1MB, 2^{24}=16MB). Rule of 2 ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 3
-**Which was the first 32-bit microprocessor introduced by Intel that could address up to $4\text{ GB}$ of physical memory?**  
+**Which was the first 32-bit microprocessor introduced by Intel that could address up to 4 GB of physical memory?**  
 (A) Intel 8086  
 (B) Intel 80286  
 (C) Intel 80386  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Intel 80386 (1985) Intel ka pehla 32-bit processor tha jisme 32-bit address bus thi ($4\text{ GB}$ memory).  
+> **💡 Post-Mortem:** Intel 80386 (1985) Intel ka pehla 32-bit processor tha jisme 32-bit address bus thi (4 GB memory).  
 > ✅ **Correct Answer: (C)**
 
 ---
@@ -292,16 +292,16 @@ Computer me har 10 bits par unit badalti hai:
 ## 🔹 Topic 2.2: Intel 8085 Hardware Specs, Pins & Flags
 
 ### 1. ⚙️ 8085 ke Hardware Specs:
-* **Word Size:** 8-bit | **Pins:** 40-Pin DIP | **Power:** $+5\text{V}$ DC | **Technology:** NMOS.
-* **Clock Frequency:** Standard **$3\text{ MHz}$** (6 MHz crystal frequency divide by 2).
-* **Multiplexed Bus ($AD_0 - AD_7$):** Pins bachane ke liye Address aur Data mix hain:
+* **Word Size:** 8-bit | **Pins:** 40-Pin DIP | **Power:** +5V DC | **Technology:** NMOS.
+* **Clock Frequency:** Standard **3 MHz** (6 MHz crystal frequency divide by 2).
+* **Multiplexed Bus (AD_0 - AD_7):** Pins bachane ke liye Address aur Data mix hain:
   * **ALE (Address Latch Enable):**
-    * Jab **$ALE = 1$** $\implies$ Bus par **Address ($A_0 - A_7$)** hai.
-    * Jab **$ALE = 0$** $\implies$ Bus par **Data ($D_0 - D_7$)** hai.
+    * Jab **ALE = 1** ⇒ Bus par **Address (A_0 - A_7)** hai.
+    * Jab **ALE = 0** ⇒ Bus par **Data (D_0 - D_7)** hai.
     * ALE ka kaam hai bus ko **Demultiplex** karna!
-* **$IO/\overline{M}$ Pin:**
-  * High (1) par $\implies$ I/O device se communication.
-  * Low (0) par $\implies$ Memory se communication (Bar wali pin 0 par active hoti hai).
+* **IO/M' Pin:**
+  * High (1) par ⇒ I/O device se communication.
+  * Low (0) par ⇒ Memory se communication (Bar wali pin 0 par active hoti hai).
 * **READY Pin:** Slow memory ya peripheral ke liye CPU ko wait state me daalti hai.
 * **HOLD & HLDA:** DMA controller ke sath bus lene-dene ke handshake signals.
 
@@ -311,11 +311,11 @@ Computer me har 10 bits par unit badalti hai:
 * **General Purpose Registers:** B, C, D, E, H, L (All 8-bit).
 * **Register Pairs (16-bit):** BC pair, DE pair, aur **HL Pair (HL pair is default Memory Pointer 'M')**.
 * **Flag Register (5 Active Flags):**
-  1. **S (Sign):** Result negative ($D_7 = 1$) to $S = 1$.
-  2. **Z (Zero):** Result $00\text{H}$ aaye to $Z = 1$.
-  3. **AC (Auxiliary Carry):** Carry from $D_3 \to D_4$. **BCD arithmetic aur `DAA` instruction** me use hota hai.
-  4. **P (Parity):** Result me 1s ki sankhya EVEN ho to $P = 1$.
-  5. **CY (Carry):** Final bit ($D_7$) se carry nikle to $CY = 1$.
+  1. **S (Sign):** Result negative (D_7 = 1) to S = 1.
+  2. **Z (Zero):** Result 00H aaye to Z = 1.
+  3. **AC (Auxiliary Carry):** Carry from D_3 → D_4. **BCD arithmetic aur `DAA` instruction** me use hota hai.
+  4. **P (Parity):** Result me 1s ki sankhya EVEN ho to P = 1.
+  5. **CY (Carry):** Final bit (D_7) se carry nikle to CY = 1.
 
 ---
 
@@ -323,12 +323,12 @@ Computer me har 10 bits par unit badalti hai:
 
 #### ❓ Question 1
 **What is the function of the ALE (Address Latch Enable) signal in the Intel 8085 microprocessor?**  
-(A) It is used to demultiplex the multiplexed address/data bus ($AD_0 - AD_7$).  
+(A) It is used to demultiplex the multiplexed address/data bus (AD_0 - AD_7).  
 (B) It indicates whether the processor is communicating with Memory or an I/O device.  
-(C) When active high, it signals that the lower 8 lines contain an address ($A_0 - A_7$).  
+(C) When active high, it signals that the lower 8 lines contain an address (A_0 - A_7).  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** (A) Sahi (demultiplex karta hai), (B) Galat (ye kaam $IO/\overline{M}$ pin ka hai), (C) Sahi (high hone par address hold karta hai). Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** (A) Sahi (demultiplex karta hai), (B) Galat (ye kaam IO/M' pin ka hai), (C) Sahi (high hone par address hold karta hai). Rule of 2 ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 2
@@ -342,13 +342,13 @@ Computer me har 10 bits par unit badalti hai:
 > ✅ **Correct Answer: (C)**
 
 #### ❓ Question 3
-**Which flag of the Intel 8085 microprocessor is set when a carry is generated from bit $D_3$ to bit $D_4$, and is specifically used in BCD arithmetic and the `DAA` instruction?**  
-(A) Carry Flag ($CY$)  
-(B) Auxiliary Carry Flag ($AC$)  
-(C) Parity Flag ($P$)  
+**Which flag of the Intel 8085 microprocessor is set when a carry is generated from bit D_3 to bit D_4, and is specifically used in BCD arithmetic and the `DAA` instruction?**  
+(A) Carry Flag (CY)  
+(B) Auxiliary Carry Flag (AC)  
+(C) Parity Flag (P)  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Auxiliary Carry Flag ($AC$) $D_3 \to D_4$ carry par set hota hai aur BCD / `DAA` me use hota hai.  
+> **💡 Post-Mortem:** Auxiliary Carry Flag (AC) D_3 → D_4 carry par set hota hai aur BCD / `DAA` me use hota hai.  
 > ✅ **Correct Answer: (B)**
 
 ---
@@ -367,18 +367,18 @@ Computer me har 10 bits par unit badalti hai:
   Priority Sequence: TRAP (Rank 1) ──> RST 7.5 ──> RST 6.5 ──> RST 5.5 ──> INTR (Rank 5)
 ```
 
-| Priority Rank | Interrupt Name | Maskable? | Vectored? | Triggering Type | Restart Vector Address Formula ($N \times 8 \to$ Hex) |
+| Priority Rank | Interrupt Name | Maskable? | Vectored? | Triggering Type | Restart Vector Address Formula (N × 8 → Hex) |
 | :---: | :---: | :---: | :---: | :---: | :--- |
-| 🥇 **1 (Highest)** | **TRAP** *(RST 4.5)*| **Non-Maskable** (Power cut/Emergency) | **Vectored** (`0024H`) | **Edge + Level (Dono!)** | $4.5 \times 8 = 36 \implies 16 \times 2 + 4 \implies \mathbf{0024H}$ |
-| 🥈 **2** | **RST 7.5** | **Maskable** | **Vectored** (`003CH`) | **Edge** (Rising edge) | $7.5 \times 8 = 60 \implies 16 \times 3 + 12(\text{C}) \implies \mathbf{003CH}$ |
-| 🥉 **3** | **RST 6.5** | **Maskable** | **Vectored** (`0034H`) | **Level** | $6.5 \times 8 = 52 \implies 16 \times 3 + 4 \implies \mathbf{0034H}$ |
-| 4️⃣ **4** | **RST 5.5** | **Maskable** | **Vectored** (`002CH`) | **Level** | $5.5 \times 8 = 44 \implies 16 \times 2 + 12(\text{C}) \implies \mathbf{002CH}$ |
+| 🥇 **1 (Highest)** | **TRAP** *(RST 4.5)*| **Non-Maskable** (Power cut/Emergency) | **Vectored** (`0024H`) | **Edge + Level (Dono!)** | 4.5 × 8 = 36 ⇒ 16 × 2 + 4 ⇒ **0024H** |
+| 🥈 **2** | **RST 7.5** | **Maskable** | **Vectored** (`003CH`) | **Edge** (Rising edge) | 7.5 × 8 = 60 ⇒ 16 × 3 + 12(C) ⇒ **003CH** |
+| 🥉 **3** | **RST 6.5** | **Maskable** | **Vectored** (`0034H`) | **Level** | 6.5 × 8 = 52 ⇒ 16 × 3 + 4 ⇒ **0034H** |
+| 4️⃣ **4** | **RST 5.5** | **Maskable** | **Vectored** (`002CH`) | **Level** | 5.5 × 8 = 44 ⇒ 16 × 2 + 12(C) ⇒ **002CH** |
 | 5️⃣ **5 (Lowest)** | **INTR** | **Maskable** | ❌ **Non-Vectored** | **Level** | External hardware address supply karta hai |
 
 > 💡 **3 Golden Rules for Exam:**
 > 1. **Maskable vs Non-Maskable:** Sirf **TRAP** Non-Maskable hai (Emergency siren). Baaki 4 Maskable hain!
 > 2. **Vectored vs Non-Vectored:** Jinke naam me **Number** hai wo sab **Vectored** hain. Jiske naam me koi number nahi (**INTR**) wo **Non-Vectored** hai!
-> 3. **Active Low Pins:** Bar wali pins (jaise $\overline{\text{INTA}}$, $\overline{\text{RD}}$, $\overline{\text{WR}}$) hamesha **`0`** par active hoti hain!
+> 3. **Active Low Pins:** Bar wali pins (jaise INTA', RD', WR') hamesha **`0`** par active hoti hain!
 
 ---
 
@@ -401,7 +401,7 @@ Computer me har 10 bits par unit badalti hai:
 (C) INTR  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Jinke naam me number hai (RST 7.5 aur RST 6.5) wo dono vectored hain. INTR non-vectored hai. Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** Jinke naam me number hai (RST 7.5 aur RST 6.5) wo dono vectored hain. INTR non-vectored hai. Rule of 2 ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 3
@@ -411,7 +411,7 @@ Computer me har 10 bits par unit badalti hai:
 (C) `003CH`  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** $7.5 \times 8 = 60$. 60 ko 16 se divide kiya: $16 \times 3 = 48$, remainder bacha 12. Hex me 12 ko `C` kehte hain. Toh ban gaya `3CH` $\implies$ `003CH`!  
+> **💡 Post-Mortem:** 7.5 × 8 = 60. 60 ko 16 se divide kiya: 16 × 3 = 48, remainder bacha 12. Hex me 12 ko `C` kehte hain. Toh ban gaya `3CH` ⇒ `003CH`!  
 > ✅ **Correct Answer: (C)**
 
 ---
@@ -419,7 +419,7 @@ Computer me har 10 bits par unit badalti hai:
 ## 🔹 Topic 2.4: Intel 8086 Basics & 20-Bit Physical Address Calculation
 
 ### 1. ⚙️ 8086 Basics & Architecture:
-* 16-bit processor, 40-pin DIP, 16-bit data bus, **20-bit address bus ($2^{20} = \mathbf{1\text{ MB}}$ memory)**.
+* 16-bit processor, 40-pin DIP, 16-bit data bus, **20-bit address bus (2^{20} = **1 MB** memory)**.
 * **Do Independent Units:**
   * **BIU (Bus Interface Unit):** Bus se instructions fetch karta hai, **6-byte instruction queue (FIFO)** maintain karta hai, aur physical address calculate karta hai.
   * **EU (Execution Unit):** ALU aur general registers (AX, BX, CX, DX) se instruction decode aur execute karta hai.
@@ -429,7 +429,7 @@ Computer me har 10 bits par unit badalti hai:
 
 ### 2. 🧮 20-Bit Physical Address Calculation (2-Step Shortcut):
 
-$$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \text{Offset}}$$
+**Physical Address** = (Segment Address ke aage 0 lagao) + Offset
 
 ```text
        Example Problem: CS = 2500H, IP = 0480H
@@ -443,11 +443,11 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 * **Another Example (Hex addition with letters):** CS = `348AH`, IP = `4214H`
   * Step 1: `348A0`
   * Step 2: `348A0 + 4214`:
-    * Last digit: $0 + 4 = \mathbf{4}$
-    * 2nd digit: $\text{A} + 1 = 10 + 1 = 11 = \mathbf{B}$
-    * 3rd digit: $8 + 2 = 10 = \mathbf{A}$
-    * 4th digit: $4 + 4 = \mathbf{8}$
-    * 5th digit: $3 + 0 = \mathbf{3}$
+    * Last digit: 0 + 4 = **4**
+    * 2nd digit: A + 1 = 10 + 1 = 11 = **B**
+    * 3rd digit: 8 + 2 = 10 = **A**
+    * 4th digit: 4 + 4 = **8**
+    * 5th digit: 3 + 0 = **3**
     * 👉 **Answer:** **`38AB4H`**!
 
 ---
@@ -455,7 +455,7 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 ### 📝 Topic 2.4 Classroom Practice Questions:
 
 #### ❓ Question 1
-**In an 8086 system, if $\text{CS} = 348\text{AH}$ and $\text{IP} = 4214\text{H}$, what is the 20-bit physical address?**  
+**In an 8086 system, if CS = 348AH and IP = 4214H, what is the 20-bit physical address?**  
 (A) `38AB4H`  
 (B) `38AC4H`  
 (C) `769EH`  
@@ -471,25 +471,25 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 (C) Executing arithmetic and logic operations using the ALU  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** (A) Sahi (6-byte queue BIU me hoti hai), (B) Sahi (physical address generator BIU me hota hai), (C) Galat (ALU execution Execution Unit - EU me hota hai). Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** (A) Sahi (6-byte queue BIU me hoti hai), (B) Sahi (physical address generator BIU me hota hai), (C) Galat (ALU execution Execution Unit - EU me hota hai). Rule of 2 ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 3
 **What is the maximum size of any single logical memory segment in Intel 8086?**  
-(A) $16\text{ KB}$  
-(B) $64\text{ KB}$  
-(C) $1\text{ MB}$  
+(A) 16 KB  
+(B) 64 KB  
+(C) 1 MB  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Total memory 1 MB hoti hai, par kisi bhi single segment ka maximum size **$64\text{ KB}$** ($2^{16}$) hota hai kyunki offset registers 16-bit ke hote hain.  
+> **💡 Post-Mortem:** Total memory 1 MB hoti hai, par kisi bhi single segment ka maximum size **64 KB** (2^{16}) hota hai kyunki offset registers 16-bit ke hote hain.  
 > ✅ **Correct Answer: (B)**
 
 ---
 
 ## 🔹 Topic 2.5: Microprocessor vs. Microcontroller
 
-* **Microprocessor ($\mu\text{P}$):** **"Sirf Gaadi ka Engine (CPU on a Chip)"**. Is chip par sirf CPU hota hai. RAM, ROM, I/O bahar se lagana padta hai. General purpose (PC, Laptop). E.g. Intel 8085, 8086, Core i7.
-* **Microcontroller ($\mu\text{C}$):** **"Puri Gaadi (Computer on a Single Chip)"**. Is ek hi silicon chip par CPU + RAM + ROM + Timers + I/O Ports sab pack hota hai! Dedicated/embedded systems (Washing machine, Microwave, Cars, AC Remote). E.g. Intel 8051, PIC, Arduino.
+* **Microprocessor (µP):** **"Sirf Gaadi ka Engine (CPU on a Chip)"**. Is chip par sirf CPU hota hai. RAM, ROM, I/O bahar se lagana padta hai. General purpose (PC, Laptop). E.g. Intel 8085, 8086, Core i7.
+* **Microcontroller (µC):** **"Puri Gaadi (Computer on a Single Chip)"**. Is ek hi silicon chip par CPU + RAM + ROM + Timers + I/O Ports sab pack hota hai! Dedicated/embedded systems (Washing machine, Microwave, Cars, AC Remote). E.g. Intel 8051, PIC, Arduino.
 
 ---
 
@@ -512,7 +512,7 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 (C) Microcontrollers are primarily designed for general-purpose applications like desktop PCs.  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** (A) Sahi, (B) Sahi, (C) Galat (Microcontroller embedded/dedicated systems ke liye hote hain, general PC ke liye nahi). Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** (A) Sahi, (B) Sahi, (C) Galat (Microcontroller embedded/dedicated systems ke liye hote hain, general PC ke liye nahi). Rule of 2 ⇒ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 ---
@@ -525,10 +525,10 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 ## 🔹 Topic 3.1: Instruction Formats (0, 1, 2, 3 Address)
 
 * **Instruction Anatomy:** `[ Opcode (Kya karna hai?) ] [ Operands (Kiske upar karna hai?) ]`
-* **Opcode Bits Formula:** $2^{\text{bits}} \ge N$ (e.g. 128 distinct operations $\implies 2^7 \implies \mathbf{7\text{ bits}}$).
-* **3-Address:** `ADD R1, R2, R3` ($R1 \leftarrow R2 + R3$). Source aur destination alag (RISC).
-* **2-Address:** `ADD R1, R2` ($R1 \leftarrow R1 + R2$). Ek hi register Source aur Destination dono (x86/CISC).
-* **1-Address:** `ADD X` ($AC \leftarrow AC + M[X]$). Destination register likhna nahi padta, **Accumulator ($AC$) implied** hota hai.
+* **Opcode Bits Formula:** 2^{bits} ≥ N (e.g. 128 distinct operations ⇒ 2^7 ⇒ **7 bits**).
+* **3-Address:** `ADD R1, R2, R3` (R1 ← R2 + R3). Source aur destination alag (RISC).
+* **2-Address:** `ADD R1, R2` (R1 ← R1 + R2). Ek hi register Source aur Destination dono (x86/CISC).
+* **1-Address:** `ADD X` (AC ← AC + M[X]). Destination register likhna nahi padta, **Accumulator (AC) implied** hota hai.
 * **0-Address (Zero-Address):** `ADD`. Ye **STACK-organized** computers me use hota hai jahan operands stack ke top se uthaye jate hain (Postfix / RPN evaluation).
 
 ---
@@ -537,14 +537,14 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 
 | Addressing Mode | Data Kahan Milta Hai? | Memory References | Exam Keyword / Use |
 | :--- | :--- | :---: | :--- |
-| **Immediate** | Instruction ke andar hi ($EA = \text{none}$) | **0 (Zero)** | Constants initialize karna (`MVI A, 05H`) |
-| **Direct (Absolute)**| Memory ke fixed address par ($EA = A$) | **1** | Global variables access (`LDA 2000H`) |
+| **Immediate** | Instruction ke andar hi (EA = none) | **0 (Zero)** | Constants initialize karna (`MVI A, 05H`) |
+| **Direct (Absolute)**| Memory ke fixed address par (EA = A) | **1** | Global variables access (`LDA 2000H`) |
 | **Indirect** | Pata kisi dusre pate ko point karta hai | **2** | **Pointers** implementation |
-| **Register** | CPU Register ke andar ($EA = \text{none}$) | **0 (Fastest)** | Register-to-register data transfer |
-| **Register Indirect**| Register me memory ka address ($EA = [R]$) | **1** | Pointers via registers (`MOV A, M`) |
-| **Indexed** | Base address + Index register ($EA = A + XR$) | **1** | **Arrays & Tables traversal** |
-| **Relative (PC)** | Offset added to PC ($EA = PC + A$) | **1** | **Branch / Jump instructions** |
-| **Base Register** | Offset added to Base reg ($EA = BR + A$) | **1** | **Program Relocation by OS** |
+| **Register** | CPU Register ke andar (EA = none) | **0 (Fastest)** | Register-to-register data transfer |
+| **Register Indirect**| Register me memory ka address (EA = [R]) | **1** | Pointers via registers (`MOV A, M`) |
+| **Indexed** | Base address + Index register (EA = A + XR) | **1** | **Arrays & Tables traversal** |
+| **Relative (PC)** | Offset added to PC (EA = PC + A) | **1** | **Branch / Jump instructions** |
+| **Base Register** | Offset added to Base reg (EA = BR + A) | **1** | **Program Relocation by OS** |
 
 ---
 
@@ -567,7 +567,7 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 (C) Direct Addressing Mode  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Arrays aur Tables ke liye hamesha Indexed Addressing Mode ($EA = \text{Base} + \text{Index}$) use hota hai.  
+> **💡 Post-Mortem:** Arrays aur Tables ke liye hamesha Indexed Addressing Mode (EA = Base + Index) use hota hai.  
 > ✅ **Correct Answer: (B)**
 
 #### ❓ Question 3
@@ -676,7 +676,7 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 
 1. **Programmed I/O:** CPU lagatar loop me device status check karta rehta hai ("Busy Waiting"). CPU ka time barbaad hota hai.
 2. **Interrupt-driven I/O:** Device ready hone par interrupt bhejti hai. Busy waiting khatam, par data ka har byte CPU registers se hokar hi jata hai.
-3. **Direct Memory Access (DMA):** High-speed devices (Hard disk) bina CPU registers ke seedhe **Device $\leftrightarrow$ RAM** bulk data transfer karti hain.
+3. **Direct Memory Access (DMA):** High-speed devices (Hard disk) bina CPU registers ke seedhe **Device ↔ RAM** bulk data transfer karti hain.
    * CPU initialization parameters: Starting Address, Word Count, aur Direction (Read/Write).
    * **HOLD:** DMA controller CPU se bus maangta hai.
    * **HLDA (Hold Acknowledge):** CPU bus chhodkar DMA ko confirm karta hai.
@@ -694,7 +694,7 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 | **Address Bus for I/O** | 16-bit address | **8-bit address (Max 256 Ports)** |
 | **Instructions** | Normal memory commands (`MOV`, `LDA`, `STA`) | Special commands: **`IN`** aur **`OUT`** |
 | **RAM Capacity** | Usable RAM space kam ho jata hai | RAM ki capacity puri bachi rehti hai |
-| **Control Signal** | Normal `MEMR` / `MEMW` | $IO/\overline{M} = 1$ ke sath `IOR` / `IOW` |
+| **Control Signal** | Normal `MEMR` / `MEMW` | IO/M' = 1 ke sath `IOR` / `IOW` |
 
 ---
 
@@ -731,13 +731,13 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 
 1. **Pipelining Concept:** Car factory ki assembly line jaisa technique. Multiple instructions ke execution ko overlap karna.
 2. **5 Classic Stages:**
-   $$\mathbf{IF \text{ (Fetch)} \longrightarrow ID \text{ (Decode)} \longrightarrow EX \text{ (Execute)} \longrightarrow MEM \text{ (Memory)} \longrightarrow WB \text{ (Write Back)}}$$
+   **IF  (Fetch)** → ID  (Decode) → EX  (Execute) → MEM  (Memory) → WB  (Write Back)
 3. **Maksad:** Individual instruction ka execution time (latency) kam nahi hota; **Throughput (instructions per unit time) badhta hai**!
-4. **Maximum Speedup:** $S_{\text{max}} = \mathbf{k}$ (where $k$ = number of stages in pipeline).
+4. **Maximum Speedup:** S_{max} = **k** (where k = number of stages in pipeline).
 5. **3 Pipeline Hazards:**
-   * **Data Hazard (Data ka intezaar):** Agli instruction ko pichhli instruction ke result/data ka intezaar (RAW dependency). $\implies$ **Solution: Operand Forwarding (Bypassing)**.
-   * **Control Hazard (Mod par bhatakna):** Branch, Jump, Call instructions se pipeline bhatak jana. $\implies$ **Solution: Branch Prediction**.
-   * **Structural Hazard (Machine par ladai):** Ek hi hardware resource par do instructions ek sath lad padna. $\implies$ **Solution: Separate Instruction & Data Caches**.
+   * **Data Hazard (Data ka intezaar):** Agli instruction ko pichhli instruction ke result/data ka intezaar (RAW dependency). ⇒ **Solution: Operand Forwarding (Bypassing)**.
+   * **Control Hazard (Mod par bhatakna):** Branch, Jump, Call instructions se pipeline bhatak jana. ⇒ **Solution: Branch Prediction**.
+   * **Structural Hazard (Machine par ladai):** Ek hi hardware resource par do instructions ek sath lad padna. ⇒ **Solution: Separate Instruction & Data Caches**.
 
 ---
 
@@ -763,7 +763,7 @@ $$\mathbf{\text{Physical Address} = (\text{Segment Address ke aage 0 lagao}) + \
 (C) Most instructions are designed to execute in a single clock cycle.  
 (D) More than one of the above  
 (E) None of the above  
-> **💡 Post-Mortem:** Teeno statements RISC ke classic hallmarks hain. Rule of 2 $\implies$ **Option (D)!**  
+> **💡 Post-Mortem:** Teeno statements RISC ke classic hallmarks hain. Rule of 2 ⇒$ **Option (D)!**  
 > ✅ **Correct Answer: (D)**
 
 #### ❓ Question 2
